@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Прехвърля изтеглянията от браузъра към Retriever."
+  },
+  "menu": {
+    "message": "Изтеглете с Retriever"
+  },
+  "video_download": {
+    "message": "Изтеглете видео"
+  },
+  "video_more": {
+    "message": "Още опции"
+  },
+  "video_hide_here": {
+    "message": "Не показвайте на този видеоклип"
+  },
+  "video_never_site": {
+    "message": "Никога на $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Настройки на бутона..."
+  },
+  "video_sent": {
+    "message": "Изпратено до Retriever"
+  },
+  "menu_selected": {
+    "message": "Изтеглете избрани връзки с Retriever"
+  },
+  "menu_all": {
+    "message": "Изтеглете всички връзки с Retriever"
+  },
+  "status_connected": {
+    "message": "Свързан с Retriever"
+  },
+  "status_connected_version": {
+    "message": "Свързан с Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "На пауза: изтеглянията остават в браузъра"
+  },
+  "status_not_installed": {
+    "message": "Retriever не е инсталиран или интеграцията му с браузъра не е настроена"
+  },
+  "status_forbidden": {
+    "message": "Retriever не приема това копие на разширението"
+  },
+  "status_not_running": {
+    "message": "Retriever не стартира навреме"
+  },
+  "status_host_failed": {
+    "message": "Връзката с Retriever прекъсна"
+  },
+  "status_too_large": {
+    "message": "Данните за това изтегляне бяха твърде големи, за да бъдат предадени"
+  },
+  "status_update_app": {
+    "message": "Актуализирайте Retriever, за да използвате всичко, което предлага това разширение"
+  },
+  "popup_take": {
+    "message": "Приемайте изтегляния от този браузър"
+  },
+  "popup_proxy": {
+    "message": "Изпращайте изтеглянията през прокси или VPN разширението на този браузър"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever след това изтегля през същия прокси сървър като този браузър. Браузърът ще ви попита веднъж дали да го разрешите; изключването на тази опция отменя това."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever изтегля през същия прокси сървър като този браузър. Докато тази опция е изключена, разширението не чете прокси сървъра на браузъра."
+  },
+  "popup_exclude_site": {
+    "message": "Никога не вземайте изтегляния от $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Изтеглянията от $site$ остават в браузъра",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Отворете Retriever"
+  },
+  "popup_options": {
+    "message": "Опции..."
+  },
+  "popup_help": {
+    "message": "Помощ"
+  },
+  "popup_support": {
+    "message": "Подкрепете Retriever"
+  },
+  "popup_fix": {
+    "message": "Как да го поправите"
+  },
+  "popup_by_hand": {
+    "message": "Това копие е заредено ръчно и няма да се актуализира автоматично."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Това копие е заредено ръчно: няма да се актуализира само и браузърът ще го премахне при рестартиране."
+  },
+  "popup_store_chrome": {
+    "message": "Добавете го от Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "Добавете го от addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Оставено на браузъра: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Последното изтегляне беше оставено на браузъра."
+  },
+  "declined_file_type": {
+    "message": "Типът му не е в Опции → Файлови типове."
+  },
+  "declined_site": {
+    "message": "Сайтът му е в Опции → Файлови типове, сайтове, оставени на браузъра."
+  },
+  "declined_address": {
+    "message": "Адресът му е в Опции → Файлови типове, адреси, оставени на браузъра."
+  },
+  "declined_small": {
+    "message": "По-малък е от минималния размер в Опции → Файлови типове."
+  },
+  "declined_browser": {
+    "message": "Този браузър не е отметнат в Опции → Общи."
+  },
+  "declined_integration_off": {
+    "message": "„Използване на разширена интеграция с браузъра“ е изключено в Опции → Общи."
+  },
+  "declined_torrents": {
+    "message": "Това е торент и „Отваряне на магнитни връзки и .torrent файлове с Retriever“ е изключено в настройките за торенти."
+  },
+  "declined_site_access": {
+    "message": "Разширението няма разрешение да чете този сайт (достъпът на браузъра до сайта)."
+  },
+  "popup_alt": {
+    "message": "Задръжте Alt, докато щраквате върху връзка, за да позволите на браузъра да я изтегли."
+  },
+  "popup_media": {
+    "message": "Мултимедия на тази страница"
+  },
+  "popup_media_none": {
+    "message": "Все още не е намерено видео или звук на тази страница. Пуснете го, след което отворете това отново."
+  },
+  "popup_media_streamed": {
+    "message": "Плейърът на тази страница предава видеото на части, затова няма файл за показване. Посочете видеото и използвайте бутона му „Изтеглете видео“."
+  },
+  "popup_media_store": {
+    "message": "Правилата на Chrome Web Store държат това копие на добавката настрана от видеата на този сайт. „Помощ“ обяснява какво можете да направите."
+  },
+  "popup_media_download": {
+    "message": "Изтеглете"
+  },
+  "popup_media_protected": {
+    "message": "Защитено"
+  },
+  "popup_media_live": {
+    "message": "На живо"
+  },
+  "video_off": {
+    "message": "Изключено за този сайт"
+  },
+  "video_drm": {
+    "message": "Защитено видео"
+  },
+  "video_unnamed": {
+    "message": "Не може да се определи кое видео е това: отворете собствената му страница и опитайте там"
+  },
+  "video_looking": {
+    "message": "Търсене на качествата…"
+  },
+  "video_no_choices": {
+    "message": "Тук няма видео за изтегляне"
+  },
+  "video_playlist": {
+    "message": "Списък с видеоклипове: изберете ги в Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever се нуждае от yt-dlp за това видео"
+  },
+  "video_too_long": {
+    "message": "Търсенето отне твърде много време"
+  },
+  "video_busy": {
+    "message": "Retriever е зает с други видеоклипове"
+  },
+  "video_queued": {
+    "message": "Добавено към опашката"
+  },
+  "video_failed_lookup": {
+    "message": "Търсенето не успя"
+  },
+  "video_tab_video": {
+    "message": "Видео"
+  },
+  "video_tab_audio": {
+    "message": "Аудио"
+  },
+  "video_open_post": {
+    "message": "Отворете публикацията, за да я изтеглите"
+  },
+  "popup_send_to": {
+    "message": "Изпращане на изтегляния до"
+  },
+  "popup_send_here": {
+    "message": "Този компютър"
+  },
+  "popup_send_remote": {
+    "message": "Друг Retriever (сървър)"
+  },
+  "popup_remote_code": {
+    "message": "Код за сдвояване"
+  },
+  "popup_remote_open": {
+    "message": "Отворете го"
+  },
+  "popup_remote_pair": {
+    "message": "Сдвояване"
+  },
+  "popup_remote_help": {
+    "message": "Отворете адреса му веднъж и приемете сертификата му, след което въведете код от неговите Опции, Отдалечен, Сдвояване на устройство (или retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Изтеглянията отиват на $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Въведете неговия https:// адрес."
+  },
+  "remote_unreachable": {
+    "message": "Не е достигнато. Отворете адреса му веднъж в този браузър и приемете сертификата му, след което опитайте отново."
+  },
+  "remote_wrong_code": {
+    "message": "Грешен код."
+  },
+  "remote_no_code": {
+    "message": "Сега не показва код: първо щракнете върху Сдвояване на устройство там."
+  },
+  "remote_too_soon": {
+    "message": "Изчакайте малко, след което опитайте отново."
+  },
+  "remote_failed": {
+    "message": "Не се получи. Опитайте отново."
+  },
+  "remote_device_name": {
+    "message": "Разширение на браузъра"
+  },
+  "popup_media_title_name": {
+    "message": "Добавяне на заглавието на страницата пред имената на медийните файлове"
+  },
+  "video_cant_save": {
+    "message": "не може да се запише"
+  },
+  "video_open_post_button": {
+    "message": "Отворете публикацията"
+  },
+  "video_drag_dots": {
+    "message": "Плъзнете точките, за да го преместите по ръба"
+  },
+  "video_tip": {
+    "message": "Изтеглете $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Изтеглете най-доброто качество"
+  },
+  "video_sending": {
+    "message": "Изпращане към Retriever..."
+  },
+  "video_added": {
+    "message": "Добавено към Retriever"
+  },
+  "video_show": {
+    "message": "Покажете"
+  },
+  "video_no_answer": {
+    "message": "Retriever не отговори"
+  },
+  "video_get_mdm": {
+    "message": "Вземете Retriever"
+  },
+  "video_retry": {
+    "message": "Опитайте отново"
+  },
+  "video_turn_on": {
+    "message": "Включете"
+  },
+  "video_best": {
+    "message": "най-добро"
+  },
+  "video_all_qualities": {
+    "message": "Всички качества и субтитри..."
+  },
+  "video_part": {
+    "message": "Изтегляне на част оттук..."
+  },
+  "video_failed": {
+    "message": "Retriever не е инсталиран или не е стартиран"
+  },
+  "video_download_best": {
+    "message": "Изтегляне на най-доброто"
+  },
+  "video_original": {
+    "message": "оригинал"
+  },
+  "video_compatible": {
+    "message": "Най-съвместим"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Скриване на бутона за изтегляне в режим на цял екран"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Докато страницата е на цял екран, нейните видеоклипове не показват бутон за изтегляне на видео"
+  },
+  "popup_remote_forget": {
+    "message": "Забрави"
+  },
+  "popup_gear": {
+    "message": "Опции в Retriever"
+  },
+  "popup_tabs": {
+    "message": "Раздели на изскачащия прозорец"
+  },
+  "popup_tab_downloads": {
+    "message": "Изтегляния"
+  },
+  "popup_tab_page": {
+    "message": "Тази страница"
+  },
+  "popup_tab_settings": {
+    "message": "Настройки"
+  },
+  "popup_conn": {
+    "message": "Свързан · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Свързан"
+  },
+  "popup_conn_off": {
+    "message": "Няма връзка"
+  },
+  "popup_conn_paused": {
+    "message": "На пауза"
+  },
+  "popup_conn_update": {
+    "message": "Актуализирайте Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Изпращане до $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Отказ"
+  },
+  "popup_page_none": {
+    "message": "Това не е уеб страница: тук няма какво да се прави."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Оставено на браузъра от правило в Опции"
+  },
+  "popup_dl_search": {
+    "message": "Търсене на изтегляния"
+  },
+  "popup_dl_filters": {
+    "message": "Покажете"
+  },
+  "popup_dl_all": {
+    "message": "Всички"
+  },
+  "popup_dl_running": {
+    "message": "Изтеглят се"
+  },
+  "popup_dl_done_filter": {
+    "message": "Готово"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Неуспешно"
+  },
+  "popup_dl_clear": {
+    "message": "Изчистване на завършените"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ изтегляния се извършват в момента",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Това са изтеглянията на Retriever на сървъра $server$. Отворете файловете им там.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Показани са най-новите $shown$ от $total$. Retriever показва всички.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ от $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Остават $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Стартиране..."
+  },
+  "popup_dl_paused": {
+    "message": "На пауза"
+  },
+  "popup_dl_waiting": {
+    "message": "Изчаква се"
+  },
+  "popup_dl_done": {
+    "message": "Готово"
+  },
+  "popup_dl_just_now": {
+    "message": "току-що"
+  },
+  "popup_dl_failed": {
+    "message": "Неуспешно"
+  },
+  "popup_dl_failed_why": {
+    "message": "Неуспешно: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Файлът е изтрит или преместен"
+  },
+  "popup_dl_loading": {
+    "message": "Търсене на изтегляния..."
+  },
+  "popup_dl_none": {
+    "message": "Все още няма изтегляния"
+  },
+  "popup_dl_none_text": {
+    "message": "Тук се показват изтеглянията с Retriever."
+  },
+  "popup_dl_no_match": {
+    "message": "Няма съвпадения"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Няма изтегляне с име или адрес, съдържащ „$words$“.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Покажете всички изтегляния"
+  },
+  "popup_list_off": {
+    "message": "Retriever не работи"
+  },
+  "popup_list_off_text": {
+    "message": "Стартирайте го, за да видите изтеглянията си тук."
+  },
+  "popup_list_start": {
+    "message": "Стартирайте Retriever"
+  },
+  "popup_list_old": {
+    "message": "Актуализирайте Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Тази версия все още не може да показва изтеглянията си тук."
+  },
+  "popup_list_busy": {
+    "message": "Retriever е зает. Опитва се отново..."
+  },
+  "popup_list_unreached": {
+    "message": "Няма връзка с Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Няма връзка с Retriever на $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Проверете дали работи и дали този браузър приема сертификата му (Настройки → Изпращане на изтегляния към → Отваряне).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Отваряне"
+  },
+  "popup_act_open_named": {
+    "message": "Отворете $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Покажете в папката"
+  },
+  "popup_act_folder_named": {
+    "message": "Покажете $file$ в папката",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Копиране на файл"
+  },
+  "popup_act_share": {
+    "message": "Споделяне..."
+  },
+  "popup_act_copy_link": {
+    "message": "Копиране на връзка"
+  },
+  "popup_act_pause": {
+    "message": "Пауза"
+  },
+  "popup_act_pause_named": {
+    "message": "Поставете $file$ на пауза",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Продължаване"
+  },
+  "popup_act_resume_named": {
+    "message": "Продължете изтеглянето на $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Изтегляне отново"
+  },
+  "popup_act_remove": {
+    "message": "Премахване от списъка"
+  },
+  "popup_act_delete": {
+    "message": "Изтриване на файл..."
+  },
+  "popup_act_more": {
+    "message": "Още действия"
+  },
+  "popup_act_more_named": {
+    "message": "Още действия за $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Да изтрия ли файла?"
+  },
+  "popup_ask_delete": {
+    "message": "Сигурни ли сте, че искате да изтриете $file$ от компютъра си и да премахнете изтеглянето от списъка? Това действие не може да бъде отменено.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Изтриване"
+  },
+  "popup_ask_clear_title": {
+    "message": "Да изчистя ли завършените изтегляния?"
+  },
+  "popup_ask_clear": {
+    "message": "Сигурни ли сте, че искате да премахнете $count$ завършени изтегляния от списъка? Файловете им остават на мястото си.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Изчистване"
+  },
+  "popup_said_file": {
+    "message": "Копиран $file$. Поставете го в папка, чат или съобщение.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Връзката е копирана"
+  },
+  "popup_said_removed": {
+    "message": "$file$ беше премахнат от списъка",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ беше изтрит",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Изтегляне на $file$ отново",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Завършените изтегляния са изчистени"
+  },
+  "popup_act_gone": {
+    "message": "Това изтегляне вече не е в списъка."
+  },
+  "popup_act_missing": {
+    "message": "Файлът вече не е на мястото, където е записан (преместен или изтрит)."
+  },
+  "popup_act_running": {
+    "message": "Първо го поставете на пауза."
+  },
+  "popup_act_cant": {
+    "message": "Това действие не може да бъде извършено с това изтегляне в момента."
+  },
+  "popup_act_unsupported": {
+    "message": "Тази система не може да го направи."
+  },
+  "popup_act_off": {
+    "message": "Retriever не работи."
+  },
+  "popup_act_busy": {
+    "message": "Retriever не отговори навреме. Опитайте отново."
+  },
+  "popup_act_failed": {
+    "message": "Неуспешно действие. Опитайте отново."
+  },
+  "status_running": {
+    "message": "Изтеглят се: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Отваряне на страницата му"
+  }
+}

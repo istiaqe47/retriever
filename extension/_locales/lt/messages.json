@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Perduoda atsisiuntimus iš naršyklės į „Retriever“."
+  },
+  "menu": {
+    "message": "Atsisiųsti naudojant „Retriever“"
+  },
+  "video_download": {
+    "message": "Atsisiųsti vaizdo įrašą"
+  },
+  "video_more": {
+    "message": "Daugiau parinkčių"
+  },
+  "video_hide_here": {
+    "message": "Slėpti šiame vaizdo įraše"
+  },
+  "video_never_site": {
+    "message": "Niekada $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Mygtuko parametrai..."
+  },
+  "video_sent": {
+    "message": "Išsiųsta į Retriever"
+  },
+  "menu_selected": {
+    "message": "Atsisiųsti pasirinktas nuorodas su Retriever"
+  },
+  "menu_all": {
+    "message": "Atsisiųsti visas nuorodas su Retriever"
+  },
+  "status_connected": {
+    "message": "Prijungta prie Retriever"
+  },
+  "status_connected_version": {
+    "message": "Prijungta prie Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Pristabdyta: atsisiuntimai lieka naršyklėje"
+  },
+  "status_not_installed": {
+    "message": "Retriever neįdiegta arba jos naršyklės integracija nenustatyta"
+  },
+  "status_forbidden": {
+    "message": "Retriever nepriima šios plėtinio kopijos"
+  },
+  "status_not_running": {
+    "message": "Retriever nepasileido laiku"
+  },
+  "status_host_failed": {
+    "message": "Ryšys su Retriever nepavyko"
+  },
+  "status_too_large": {
+    "message": "Šio atsisiuntimo duomenys buvo per dideli, kad juos būtų galima perduoti"
+  },
+  "status_update_app": {
+    "message": "Atnaujinkite Retriever, kad galėtumėte naudotis visomis šio plėtinio funkcijomis"
+  },
+  "popup_take": {
+    "message": "Perimti atsisiuntimus iš šios naršyklės"
+  },
+  "popup_proxy": {
+    "message": "Siųsti atsisiuntimus per šios naršyklės tarpinio serverio arba VPN plėtinį"
+  },
+  "popup_proxy_title": {
+    "message": "Tada „Retriever“ atsisiunčia per tą patį tarpinį serverį, kurį naudoja ši naršyklė. Naršyklė vieną kartą paprašys jūsų tai leisti; išjungus šią parinktį, leidimas atšaukiamas."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Tada Retriever atsisiunčia naudodama tą patį tarpinį serverį kaip ir ši naršyklė. Kai ši funkcija išjungta, plėtinys neskaito naršyklės tarpinio serverio."
+  },
+  "popup_exclude_site": {
+    "message": "Niekada nepaimti atsisiuntimų iš $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Atsisiuntimai iš $site$ lieka naršyklėje",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Atidaryti Retriever"
+  },
+  "popup_options": {
+    "message": "Parinktys..."
+  },
+  "popup_help": {
+    "message": "Žinynas"
+  },
+  "popup_support": {
+    "message": "Palaikykite Retriever"
+  },
+  "popup_fix": {
+    "message": "Kaip tai ištaisyti"
+  },
+  "popup_by_hand": {
+    "message": "Ši kopija buvo įkelta rankiniu būdu ir nebus atnaujinta automatiškai."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Ši kopija buvo įkelta rankiniu būdu: ji nebus atnaujinama automatiškai, o naršyklė ją pašalins paleidus iš naujo."
+  },
+  "popup_store_chrome": {
+    "message": "Pridėti iš „Chrome“ internetinės parduotuvės"
+  },
+  "popup_store_firefox": {
+    "message": "Pridėti iš addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Palikta naršyklei: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Paskutinis atsisiuntimas buvo paliktas naršyklei."
+  },
+  "declined_file_type": {
+    "message": "Jo tipas nėra parinktyse „Failų tipai“."
+  },
+  "declined_site": {
+    "message": "Jo svetainė yra parinktyse „Failų tipai“, svetainės paliktos naršyklei."
+  },
+  "declined_address": {
+    "message": "Jo adresas yra parinktyse „Failų tipai“, adresai palikti naršyklei."
+  },
+  "declined_small": {
+    "message": "Failas mažesnis už minimalų dydį parinktyse „Failų tipai“."
+  },
+  "declined_browser": {
+    "message": "Ši naršyklė nepažymėta parinktyse „Bendra“."
+  },
+  "declined_integration_off": {
+    "message": "Parinktyse „Bendra“ išjungta „Naudoti išplėstinę naršyklės integraciją“."
+  },
+  "declined_torrents": {
+    "message": "Tai torrentas, o „Atidaryti magnetines nuorodas ir .torrent failus su Retriever“ yra išjungta torrentų nustatymuose."
+  },
+  "declined_site_access": {
+    "message": "Plėtiniui neleidžiama skaityti šios svetainės (naršyklės prieiga prie svetainės)."
+  },
+  "popup_alt": {
+    "message": "Laikykite nuspaudę Alt ir spustelėkite nuorodą, kad ją atsisiųstų naršyklė."
+  },
+  "popup_media": {
+    "message": "Medija šiame puslapyje"
+  },
+  "popup_media_none": {
+    "message": "Šiame puslapyje dar nerasta vaizdo ar garso. Paleiskite jį, tada atidarykite šį langą iš naujo."
+  },
+  "popup_media_streamed": {
+    "message": "Šio puslapio grotuvas srautu perduoda vaizdo įrašą dalimis, todėl nėra failo, kurį būtų galima parodyti. Užveskite ant vaizdo įrašo ir naudokite jo mygtuką „Atsisiųsti vaizdo įrašą“."
+  },
+  "popup_media_store": {
+    "message": "„Chrome“ internetinės parduotuvės taisyklės laiko šią priedo kopiją atokiau nuo šios svetainės vaizdo įrašų. Žinyne parašyta, ką galite padaryti."
+  },
+  "popup_media_download": {
+    "message": "Atsisiųsti"
+  },
+  "popup_media_protected": {
+    "message": "Apsaugota"
+  },
+  "popup_media_live": {
+    "message": "Tiesiogiai"
+  },
+  "video_off": {
+    "message": "Išjungta šioje svetainėje"
+  },
+  "video_drm": {
+    "message": "Apsaugotas vaizdo įrašas"
+  },
+  "video_unnamed": {
+    "message": "Neaišku, kuris tai vaizdo įrašas: atidarykite jo paties puslapį ir bandykite ten"
+  },
+  "video_looking": {
+    "message": "Ieškoma kokybių…"
+  },
+  "video_no_choices": {
+    "message": "Čia nėra vaizdo įrašo, kurį būtų galima atsisiųsti"
+  },
+  "video_playlist": {
+    "message": "Vaizdo įrašų sąrašas: pasirinkite juos programoje Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever šiam vaizdo įrašui reikia yt-dlp"
+  },
+  "video_too_long": {
+    "message": "Paieška užtruko per ilgai"
+  },
+  "video_busy": {
+    "message": "Retriever užsiėmusi kitais vaizdo įrašais"
+  },
+  "video_queued": {
+    "message": "Pridėta į eilę"
+  },
+  "video_failed_lookup": {
+    "message": "Nepavyko surasti"
+  },
+  "video_tab_video": {
+    "message": "Vaizdas"
+  },
+  "video_tab_audio": {
+    "message": "Garsas"
+  },
+  "video_open_post": {
+    "message": "Atidarykite įrašą, kad galėtumėte jį atsisiųsti"
+  },
+  "popup_send_to": {
+    "message": "Siųsti atsisiuntimus į"
+  },
+  "popup_send_here": {
+    "message": "Šis kompiuteris"
+  },
+  "popup_send_remote": {
+    "message": "Kitas „Retriever“ (serveris)"
+  },
+  "popup_remote_code": {
+    "message": "Susiejimo kodas"
+  },
+  "popup_remote_open": {
+    "message": "Atidaryti"
+  },
+  "popup_remote_pair": {
+    "message": "Susieti"
+  },
+  "popup_remote_help": {
+    "message": "Atidarykite jo adresą vieną kartą ir priimkite jo sertifikatą, tada įveskite kodą iš „Parinktys“, „Nuotolinis“, „Susieti įrenginį“ (arba „retriever-cli pair“)."
+  },
+  "status_remote": {
+    "message": "Atsisiuntimai siunčiami į $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Įveskite jo https:// adresą."
+  },
+  "remote_unreachable": {
+    "message": "Nepasiekta. Atidarykite jo adresą vieną kartą šioje naršyklėje ir priimkite jo sertifikatą, tada bandykite dar kartą."
+  },
+  "remote_wrong_code": {
+    "message": "Neteisingas kodas."
+  },
+  "remote_no_code": {
+    "message": "Dabar nerodo kodo: pirmiausia spustelėkite „Susieti įrenginį“."
+  },
+  "remote_too_soon": {
+    "message": "Palaukite, tada bandykite dar kartą."
+  },
+  "remote_failed": {
+    "message": "Nepavyko. Bandykite dar kartą."
+  },
+  "remote_device_name": {
+    "message": "Naršyklės plėtinys"
+  },
+  "popup_media_title_name": {
+    "message": "Pridėti puslapio pavadinimą prieš medijos failų vardus"
+  },
+  "video_cant_save": {
+    "message": "negali būti išsaugotas"
+  },
+  "video_open_post_button": {
+    "message": "Atidaryti įrašą"
+  },
+  "video_drag_dots": {
+    "message": "Vilkite taškus, kad perkeltumėte jį palei kraštą"
+  },
+  "video_tip": {
+    "message": "Atsisiųsti $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Atsisiųsti geriausią kokybę"
+  },
+  "video_sending": {
+    "message": "Siunčiama į Retriever..."
+  },
+  "video_added": {
+    "message": "Pridėta į Retriever"
+  },
+  "video_show": {
+    "message": "Rodyti"
+  },
+  "video_no_answer": {
+    "message": "Retriever neatsakė"
+  },
+  "video_get_mdm": {
+    "message": "Gauti Retriever"
+  },
+  "video_retry": {
+    "message": "Bandyti dar kartą"
+  },
+  "video_turn_on": {
+    "message": "Įjungti"
+  },
+  "video_best": {
+    "message": "geriausia"
+  },
+  "video_all_qualities": {
+    "message": "Visos kokybės ir subtitrai..."
+  },
+  "video_part": {
+    "message": "Atsisiųsti dalį nuo čia..."
+  },
+  "video_failed": {
+    "message": "Retriever neįdiegta arba nepasileido"
+  },
+  "video_download_best": {
+    "message": "Atsisiųsti geriausią"
+  },
+  "video_original": {
+    "message": "originalas"
+  },
+  "video_compatible": {
+    "message": "Labiausiai suderinamas"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Slėpti atsisiuntimo mygtuką viso ekrano režimu"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Kai puslapis yra viso ekrano režimu, jo vaizdo įrašuose nerodomas mygtukas „Atsisiųsti vaizdo įrašą“"
+  },
+  "popup_remote_forget": {
+    "message": "Pamiršti"
+  },
+  "popup_gear": {
+    "message": "Parinktys programoje Retriever"
+  },
+  "popup_tabs": {
+    "message": "Iššokančiojo lango sekcijos"
+  },
+  "popup_tab_downloads": {
+    "message": "Atsisiuntimai"
+  },
+  "popup_tab_page": {
+    "message": "Šis puslapis"
+  },
+  "popup_tab_settings": {
+    "message": "Parametrai"
+  },
+  "popup_conn": {
+    "message": "Prisijungta · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Prisijungta"
+  },
+  "popup_conn_off": {
+    "message": "Neprisijungta"
+  },
+  "popup_conn_paused": {
+    "message": "Pristabdyta"
+  },
+  "popup_conn_update": {
+    "message": "Atnaujinti Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Siunčiama į $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Atšaukti"
+  },
+  "popup_page_none": {
+    "message": "Tai nėra tinklalapis: čia nėra ką veikti."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Palikta naršyklei pagal parinkčių taisyklę"
+  },
+  "popup_dl_search": {
+    "message": "Ieškoti atsisiuntimų"
+  },
+  "popup_dl_filters": {
+    "message": "Rodyti"
+  },
+  "popup_dl_all": {
+    "message": "Visi"
+  },
+  "popup_dl_running": {
+    "message": "Vykdoma"
+  },
+  "popup_dl_done_filter": {
+    "message": "Baigta"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Nepavyko"
+  },
+  "popup_dl_clear": {
+    "message": "Išvalyti baigtus"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ aktyvūs atsisiuntimai",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Tai yra Retriever atsisiuntimai iš $server$. Atidarykite jų failus ten.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Naujausi $shown$ iš $total$. Retriever pateikia visus.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ iš $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Liko $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Pradedama..."
+  },
+  "popup_dl_paused": {
+    "message": "Pristabdyta"
+  },
+  "popup_dl_waiting": {
+    "message": "Laukiama"
+  },
+  "popup_dl_done": {
+    "message": "Baigta"
+  },
+  "popup_dl_just_now": {
+    "message": "ką tik"
+  },
+  "popup_dl_failed": {
+    "message": "Nepavyko"
+  },
+  "popup_dl_failed_why": {
+    "message": "Nepavyko: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Failas panaikintas arba perkeltas"
+  },
+  "popup_dl_loading": {
+    "message": "Ieškoma atsisiuntimų..."
+  },
+  "popup_dl_none": {
+    "message": "Kol kas nėra atsisiuntimų"
+  },
+  "popup_dl_none_text": {
+    "message": "Tai, ką atsisiunčiate su Retriever, rodoma čia."
+  },
+  "popup_dl_no_match": {
+    "message": "Nieko nerasta"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Jokio atsisiuntimo pavadinime ar adrese nėra „$words$“.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Rodyti visus atsisiuntimus"
+  },
+  "popup_list_off": {
+    "message": "Retriever neveikia"
+  },
+  "popup_list_off_text": {
+    "message": "Paleiskite, kad matytumėte atsisiuntimus čia."
+  },
+  "popup_list_start": {
+    "message": "Paleisti Retriever"
+  },
+  "popup_list_old": {
+    "message": "Atnaujinti Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Ši versija dar negali čia pateikti savo atsisiuntimų."
+  },
+  "popup_list_busy": {
+    "message": "Retriever užimta. Bandoma dar kartą..."
+  },
+  "popup_list_unreached": {
+    "message": "Nepavyksta pasiekti Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Nepavyksta pasiekti Retriever serveryje $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Patikrinkite, ar ji veikia ir ar ši naršyklė priima jos sertifikatą (Nustatymai → Siųsti atsisiuntimus į → Atidaryti).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Atidaryti"
+  },
+  "popup_act_open_named": {
+    "message": "Atidaryti $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Rodyti aplanke"
+  },
+  "popup_act_folder_named": {
+    "message": "Rodyti $file$ aplanke",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Kopijuoti failą"
+  },
+  "popup_act_share": {
+    "message": "Bendrinti..."
+  },
+  "popup_act_copy_link": {
+    "message": "Kopijuoti nuorodą"
+  },
+  "popup_act_pause": {
+    "message": "Pristabdyti"
+  },
+  "popup_act_pause_named": {
+    "message": "Pristabdyti $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Tęsti"
+  },
+  "popup_act_resume_named": {
+    "message": "Tęsti $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Atsisiųsti iš naujo"
+  },
+  "popup_act_remove": {
+    "message": "Pašalinti iš sąrašo"
+  },
+  "popup_act_delete": {
+    "message": "Naikinti failą..."
+  },
+  "popup_act_more": {
+    "message": "Daugiau veiksmų"
+  },
+  "popup_act_more_named": {
+    "message": "Daugiau veiksmų $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Naikinti failą?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ bus ištrintas iš jūsų kompiuterio, o atsisiuntimas pašalintas iš sąrašo. To negalima anuliuoti.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Naikinti"
+  },
+  "popup_ask_clear_title": {
+    "message": "Ar tikrai norite išvalyti baigtus atsisiuntimus?"
+  },
+  "popup_ask_clear": {
+    "message": "$count$ baigtų atsisiuntimų bus pašalinti iš sąrašo. Jų failai liks ten, kur yra.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Išvalyti"
+  },
+  "popup_said_file": {
+    "message": "Nukopijuota $file$. Įklijuokite į aplanką, pokalbį ar pranešimą.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Nuoroda nukopijuota"
+  },
+  "popup_said_removed": {
+    "message": "$file$ pašalintas iš sąrašo",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ ištrintas",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Atsisiunčiama $file$ iš naujo",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Baigti atsisiuntimai išvalyti"
+  },
+  "popup_act_gone": {
+    "message": "Šio atsisiuntimo sąraše nebėra."
+  },
+  "popup_act_missing": {
+    "message": "Jo failo nebėra ten, kur jis buvo įrašytas (perkeltas arba panaikintas)."
+  },
+  "popup_act_running": {
+    "message": "Pirmiausia pristabdykite."
+  },
+  "popup_act_cant": {
+    "message": "Šio atsisiuntimo dabar negalima atlikti."
+  },
+  "popup_act_unsupported": {
+    "message": "Ši sistema to negali padaryti."
+  },
+  "popup_act_off": {
+    "message": "Retriever neveikia."
+  },
+  "popup_act_busy": {
+    "message": "Retriever neatsakė laiku. Bandykite dar kartą."
+  },
+  "popup_act_failed": {
+    "message": "Nepavyko. Bandykite dar kartą."
+  },
+  "status_running": {
+    "message": "Atsisiunčiama: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Atidaryti jo puslapį"
+  }
+}

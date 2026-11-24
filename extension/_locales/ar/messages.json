@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "يسلم التنزيلات من المستعرض إلى Retriever."
+  },
+  "menu": {
+    "message": "تنزيل باستخدام Retriever"
+  },
+  "video_download": {
+    "message": "تنزيل الفيديو"
+  },
+  "video_more": {
+    "message": "المزيد من الخيارات"
+  },
+  "video_hide_here": {
+    "message": "إخفاء على هذا الفيديو"
+  },
+  "video_never_site": {
+    "message": "عدم الإظهار مطلقا في $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "إعدادات الزر..."
+  },
+  "video_sent": {
+    "message": "تم الإرسال إلى Retriever"
+  },
+  "menu_selected": {
+    "message": "تنزيل الروابط المحددة باستخدام Retriever"
+  },
+  "menu_all": {
+    "message": "تنزيل جميع الروابط باستخدام Retriever"
+  },
+  "status_connected": {
+    "message": "متصل بـ Retriever"
+  },
+  "status_connected_version": {
+    "message": "متصل بـ Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "متوقف مؤقتا: تبقى التنزيلات مع المستعرض"
+  },
+  "status_not_installed": {
+    "message": "لم يتم تثبيت Retriever، أو لم يتم إعداد الربط بالمستعرض الخاص به"
+  },
+  "status_forbidden": {
+    "message": "لا يقبل Retriever هذه النسخة من الملحق"
+  },
+  "status_not_running": {
+    "message": "لم يبدأ Retriever في الوقت المحدد"
+  },
+  "status_host_failed": {
+    "message": "فشل الاتصال بـ Retriever"
+  },
+  "status_too_large": {
+    "message": "كانت تفاصيل هذا التنزيل كبيرة جدا بحيث لا يمكن تسليمها"
+  },
+  "status_update_app": {
+    "message": "قم بتحديث Retriever لاستخدام كل ما يوفره هذا الملحق"
+  },
+  "popup_take": {
+    "message": "تلقي التنزيلات من هذا المستعرض"
+  },
+  "popup_proxy": {
+    "message": "إرسال التنزيلات عبر وكيل هذا المستعرض أو ملحق VPN"
+  },
+  "popup_proxy_title": {
+    "message": "يجري Retriever التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. يطلب منك المستعرض مرة واحدة السماح بذلك؛ وإيقاف هذا يلغي ذلك."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "يجري Retriever التنزيل بعد ذلك عبر الوكيل نفسه الذي يستخدمه هذا المستعرض. عندما يكون هذا الخيار متوقفا، لا يقرأ الملحق وكيل المستعرض."
+  },
+  "popup_exclude_site": {
+    "message": "عدم التقاط التنزيلات من $site$ أبدا",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "تبقى التنزيلات من $site$ مع المستعرض",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "فتح Retriever"
+  },
+  "popup_options": {
+    "message": "خيارات..."
+  },
+  "popup_help": {
+    "message": "تعليمات"
+  },
+  "popup_support": {
+    "message": "ادعم Retriever"
+  },
+  "popup_fix": {
+    "message": "كيفية إصلاحها"
+  },
+  "popup_by_hand": {
+    "message": "حملت هذه النسخة يدويا، ولن تحدث نفسها."
+  },
+  "popup_by_hand_firefox": {
+    "message": "تم تحميل هذه النسخة يدويا: لن تحدث نفسها، ويزيلها المستعرض عند إعادة تشغيله."
+  },
+  "popup_store_chrome": {
+    "message": "أضفه من Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "أضفه من addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "متروك للمتصفح: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "تم ترك آخر تنزيل للمتصفح."
+  },
+  "declined_file_type": {
+    "message": "نوعه ليس موجودا في خيارات ← أنواع الملفات."
+  },
+  "declined_site": {
+    "message": "موقعه موجود في خيارات ← أنواع الملفات، المواقع المتروكة للمتصفح."
+  },
+  "declined_address": {
+    "message": "عنوانه موجود في خيارات ← أنواع الملفات، العناوين المتروكة للمتصفح."
+  },
+  "declined_small": {
+    "message": "إنه أصغر من الحجم الأدنى في خيارات ← أنواع الملفات."
+  },
+  "declined_browser": {
+    "message": "لم يتم تحديد هذا المستعرض في خيارات ← عام."
+  },
+  "declined_integration_off": {
+    "message": "استخدام الربط المتقدم بالمستعرض معطل في خيارات ← عام."
+  },
+  "declined_torrents": {
+    "message": "إنه تورنت، وخيار «فتح روابط مغناطيسية وملفات .torrent باستخدام Retriever» متوقف في إعدادات التورنت."
+  },
+  "declined_site_access": {
+    "message": "لا يسمح للملحق بقراءة هذا الموقع (وصول الملحق إلى الموقع)."
+  },
+  "popup_alt": {
+    "message": "اضغط على Alt أثناء النقر فوق ارتباط للسماح للمستعرض بتنزيله."
+  },
+  "popup_media": {
+    "message": "الوسائط في هذه الصفحة"
+  },
+  "popup_media_none": {
+    "message": "لم يتم العثور على أي فيديو أو صوت في هذه الصفحة بعد. ابدأ تشغيله، ثم افتح هذا مرة أخرى."
+  },
+  "popup_media_streamed": {
+    "message": "يبث مشغل هذه الصفحة الفيديو على قطع، لذلك لا يوجد ملف لإدراجه. أشر إلى الفيديو واستخدم زر «تنزيل الفيديو» الخاص به."
+  },
+  "popup_media_store": {
+    "message": "تحتفظ قواعد سوق Chrome الإلكتروني بهذه النسخة من الوظيفة الإضافية بعيدا عن مقاطع الفيديو في هذا الموقع. توضح التعليمات ما يمكنك فعله."
+  },
+  "popup_media_download": {
+    "message": "تنزيل"
+  },
+  "popup_media_protected": {
+    "message": "محمي"
+  },
+  "popup_media_live": {
+    "message": "مباشر"
+  },
+  "video_off": {
+    "message": "متوقف في هذا الموقع"
+  },
+  "video_drm": {
+    "message": "فيديو محمي"
+  },
+  "video_unnamed": {
+    "message": "لا يمكن تحديد الفيديو: افتح صفحته الخاصة وحاول هناك"
+  },
+  "video_looking": {
+    "message": "يجري البحث عن الجودات…"
+  },
+  "video_no_choices": {
+    "message": "لا يوجد فيديو للتنزيل هنا"
+  },
+  "video_playlist": {
+    "message": "قائمة فيديوهات: اختر منها في Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "يحتاج Retriever إلى yt-dlp لهذا الفيديو"
+  },
+  "video_too_long": {
+    "message": "استغرق البحث وقتا طويلا"
+  },
+  "video_busy": {
+    "message": "Retriever مشغول بفيديوهات أخرى"
+  },
+  "video_queued": {
+    "message": "تمت الإضافة إلى قائمة الانتظار"
+  },
+  "video_failed_lookup": {
+    "message": "تعذر البحث"
+  },
+  "video_tab_video": {
+    "message": "فيديو"
+  },
+  "video_tab_audio": {
+    "message": "صوت"
+  },
+  "video_open_post": {
+    "message": "افتح المنشور لتنزيله"
+  },
+  "popup_send_to": {
+    "message": "إرسال التنزيلات إلى"
+  },
+  "popup_send_here": {
+    "message": "هذا الكمبيوتر"
+  },
+  "popup_send_remote": {
+    "message": "Retriever آخر (خادم)"
+  },
+  "popup_remote_code": {
+    "message": "رمز الإقران"
+  },
+  "popup_remote_open": {
+    "message": "افتحه"
+  },
+  "popup_remote_pair": {
+    "message": "إقران"
+  },
+  "popup_remote_help": {
+    "message": "افتح عنوانه مرة واحدة واقبل شهادته، ثم أدخل رمزا من خياراته، عن بعد، إقران جهاز (أو retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "تنتقل التنزيلات إلى $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "أدخل عنوان https:// الخاص به."
+  },
+  "remote_unreachable": {
+    "message": "لم يتم الوصول إليه. افتح عنوانه مرة واحدة في هذا المستعرض واقبل شهادته، ثم حاول مرة أخرى."
+  },
+  "remote_wrong_code": {
+    "message": "رمز خاطئ."
+  },
+  "remote_no_code": {
+    "message": "لا يعرض أي رمز الآن: انقر فوق \"إقران جهاز\" هناك أولا."
+  },
+  "remote_too_soon": {
+    "message": "انتظر لحظة، ثم حاول مرة أخرى."
+  },
+  "remote_failed": {
+    "message": "لم ينجح الأمر. حاول مرة أخرى."
+  },
+  "remote_device_name": {
+    "message": "ملحق المستعرض"
+  },
+  "popup_media_title_name": {
+    "message": "إضافة عنوان الصفحة قبل أسماء ملفات الوسائط"
+  },
+  "video_cant_save": {
+    "message": "لا يمكن حفظه"
+  },
+  "video_open_post_button": {
+    "message": "افتح المنشور"
+  },
+  "video_drag_dots": {
+    "message": "اسحب النقاط لتحريكه على طول الحافة"
+  },
+  "video_tip": {
+    "message": "نزل $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "نزل أفضل جودة"
+  },
+  "video_sending": {
+    "message": "قيد الإرسال إلى Retriever..."
+  },
+  "video_added": {
+    "message": "أضيف إلى Retriever"
+  },
+  "video_show": {
+    "message": "إظهار"
+  },
+  "video_no_answer": {
+    "message": "لم يستجب Retriever"
+  },
+  "video_get_mdm": {
+    "message": "احصل على Retriever"
+  },
+  "video_retry": {
+    "message": "أعد المحاولة"
+  },
+  "video_turn_on": {
+    "message": "تشغيل"
+  },
+  "video_best": {
+    "message": "الأفضل"
+  },
+  "video_all_qualities": {
+    "message": "كل الجودات والترجمات..."
+  },
+  "video_part": {
+    "message": "تنزيل جزء من هنا..."
+  },
+  "video_failed": {
+    "message": "لم يتم تثبيت Retriever أو لم يبدأ"
+  },
+  "video_download_best": {
+    "message": "تنزيل بأفضل جودة"
+  },
+  "video_original": {
+    "message": "أصلي"
+  },
+  "video_compatible": {
+    "message": "الأكثر توافقا"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "إخفاء زر التنزيل في وضع ملء الشاشة"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "أثناء وجود الصفحة في وضع ملء الشاشة، لا تعرض مقاطع الفيديو الخاصة بها زر تنزيل الفيديو"
+  },
+  "popup_remote_forget": {
+    "message": "نسيان"
+  },
+  "popup_gear": {
+    "message": "خيارات في Retriever"
+  },
+  "popup_tabs": {
+    "message": "أقسام النافذة المنبثقة"
+  },
+  "popup_tab_downloads": {
+    "message": "التنزيلات"
+  },
+  "popup_tab_page": {
+    "message": "هذه الصفحة"
+  },
+  "popup_tab_settings": {
+    "message": "الإعدادات"
+  },
+  "popup_conn": {
+    "message": "متصل · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "متصل"
+  },
+  "popup_conn_off": {
+    "message": "غير متصل"
+  },
+  "popup_conn_paused": {
+    "message": "متوقف مؤقتا"
+  },
+  "popup_conn_update": {
+    "message": "تحديث Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "إرسال إلى $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "إلغاء"
+  },
+  "popup_page_none": {
+    "message": "هذه ليست صفحة ويب: لا يوجد شيء لفعله هنا."
+  },
+  "popup_exclude_by_rule": {
+    "message": "ترك للمستعرض بموجب قاعدة في «الخيارات»"
+  },
+  "popup_dl_search": {
+    "message": "البحث في التنزيلات"
+  },
+  "popup_dl_filters": {
+    "message": "إظهار"
+  },
+  "popup_dl_all": {
+    "message": "الكل"
+  },
+  "popup_dl_running": {
+    "message": "قيد التشغيل"
+  },
+  "popup_dl_done_filter": {
+    "message": "تم"
+  },
+  "popup_dl_failed_filter": {
+    "message": "فشل"
+  },
+  "popup_dl_clear": {
+    "message": "مسح المكتملة"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ قيد التنزيل الآن",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "هذه هي تنزيلات Retriever على $server$. افتح ملفاتها هناك.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "أحدث $shown$ من $total$. يسرد Retriever كل التنزيلات.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ من $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "تبقى $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "قيد البدء..."
+  },
+  "popup_dl_paused": {
+    "message": "متوقف مؤقتا"
+  },
+  "popup_dl_waiting": {
+    "message": "في انتظار"
+  },
+  "popup_dl_done": {
+    "message": "تم"
+  },
+  "popup_dl_just_now": {
+    "message": "الآن"
+  },
+  "popup_dl_failed": {
+    "message": "فشل"
+  },
+  "popup_dl_failed_why": {
+    "message": "فشل: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "تم حذف الملف أو نقله"
+  },
+  "popup_dl_loading": {
+    "message": "البحث عن التنزيلات..."
+  },
+  "popup_dl_none": {
+    "message": "لا توجد تنزيلات بعد"
+  },
+  "popup_dl_none_text": {
+    "message": "ما تنزله باستخدام Retriever يظهر هنا."
+  },
+  "popup_dl_no_match": {
+    "message": "لا يوجد ما يطابق"
+  },
+  "popup_dl_no_match_text": {
+    "message": "لا يوجد تنزيل باسم أو عنوان يتضمن «$words$».",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "إظهار كل التنزيلات"
+  },
+  "popup_list_off": {
+    "message": "Retriever غير قيد التشغيل"
+  },
+  "popup_list_off_text": {
+    "message": "شغله لترى تنزيلاتك هنا."
+  },
+  "popup_list_start": {
+    "message": "تشغيل Retriever"
+  },
+  "popup_list_old": {
+    "message": "تحديث Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "لا يمكن لهذا الإصدار سرد تنزيلاته هنا بعد."
+  },
+  "popup_list_busy": {
+    "message": "Retriever مشغول. تتم إعادة المحاولة..."
+  },
+  "popup_list_unreached": {
+    "message": "تعذر الوصول إلى Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "تعذر الوصول إلى Retriever على $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "تحقق من أنه قيد التشغيل، ومن أن هذا المستعرض يقبل شهادته («الإعدادات» ← «إرسال التنزيلات إلى» ← «افتحه»).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "فتح"
+  },
+  "popup_act_open_named": {
+    "message": "فتح $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "إظهار في المجلد"
+  },
+  "popup_act_folder_named": {
+    "message": "إظهار $file$ في المجلد",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "نسخ الملف"
+  },
+  "popup_act_share": {
+    "message": "مشاركة..."
+  },
+  "popup_act_copy_link": {
+    "message": "نسخ الرابط"
+  },
+  "popup_act_pause": {
+    "message": "إيقاف مؤقت"
+  },
+  "popup_act_pause_named": {
+    "message": "إيقاف $file$ مؤقتا",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "متابعة"
+  },
+  "popup_act_resume_named": {
+    "message": "متابعة $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "إعادة التنزيل"
+  },
+  "popup_act_remove": {
+    "message": "إزالة من القائمة"
+  },
+  "popup_act_delete": {
+    "message": "حذف ملف..."
+  },
+  "popup_act_more": {
+    "message": "إجراءات إضافية"
+  },
+  "popup_act_more_named": {
+    "message": "إجراءات إضافية لـ $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "حذف الملف؟"
+  },
+  "popup_ask_delete": {
+    "message": "سيتم حذف $file$ من جهاز الكمبيوتر الخاص بك، وسيتم إزالة التنزيل من القائمة. لا يمكن التراجع عن هذا.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "حذف"
+  },
+  "popup_ask_clear_title": {
+    "message": "مسح التنزيلات المكتملة؟"
+  },
+  "popup_ask_clear": {
+    "message": "تزال التنزيلات المكتملة البالغ عددها $count$ من القائمة. وتبقى ملفاتها في مكانها.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "مسح"
+  },
+  "popup_said_file": {
+    "message": "نسخ $file$. الصقه في مجلد أو دردشة أو رسالة.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "تم نسخ الرابط"
+  },
+  "popup_said_removed": {
+    "message": "تمت إزالة $file$ من القائمة",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "تم حذف $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "قيد تنزيل $file$ مرة أخرى",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "مسحت التنزيلات المكتملة"
+  },
+  "popup_act_gone": {
+    "message": "لم يعد هذا التنزيل في القائمة."
+  },
+  "popup_act_missing": {
+    "message": "لم يعد ملف التنزيل في مكانه المحفوظ (نقل أو حذف)."
+  },
+  "popup_act_running": {
+    "message": "أوقفه مؤقتا أولا."
+  },
+  "popup_act_cant": {
+    "message": "لا يمكن إجراء ذلك على هذا التنزيل الآن."
+  },
+  "popup_act_unsupported": {
+    "message": "لا يمكن لهذا النظام القيام بذلك."
+  },
+  "popup_act_off": {
+    "message": "Retriever ليس قيد التشغيل."
+  },
+  "popup_act_busy": {
+    "message": "لم يستجب Retriever في الوقت المحدد. حاول مرة أخرى."
+  },
+  "popup_act_failed": {
+    "message": "لم ينجح ذلك. حاول مرة أخرى."
+  },
+  "status_running": {
+    "message": "قيد التنزيل: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "فتح صفحته"
+  }
+}

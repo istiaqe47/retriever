@@ -1,0 +1,408 @@
+/* The toolbar button's popup (#1496), in GNOME's look (libadwaita), light and dark with the
+   system: Adwaita's colours and the accent blue, boxed lists on cards, a view switcher for the
+   tabs, GNOME's switches, buttons, entries and popover menu. 400 px wide by default; it
+   reflows from the 360 px or so Firefox's overflow panel gives it up to the 800 px a browser
+   allows (container queries on .shell), right to left, at any zoom. */
+:root {
+  --popup-w: 400px;
+  --popup-h: 548px;
+  --bg: #fafafb;
+  --surface: #ffffff;
+  --hover: rgba(0, 0, 6, 0.05);
+  /* A row under the pointer, opaque (the quick buttons fade the text under them into it). */
+  --row-hover: #f3f3f4;
+  --press: rgba(0, 0, 6, 0.1);
+  --field: rgba(0, 0, 6, 0.05);
+  --btn: rgba(0, 0, 6, 0.08);
+  --btn-hover: rgba(0, 0, 6, 0.12);
+  --btn-press: rgba(0, 0, 6, 0.2);
+  --text: rgba(0, 0, 6, 0.8);
+  --text-2: rgba(0, 0, 6, 0.55);
+  --text-3: rgba(0, 0, 6, 0.4);
+  --line: rgba(0, 0, 6, 0.07);
+  --sep: rgba(0, 0, 6, 0.1);
+  --accent: #3584e4;
+  --accent-hover: #4a90e6;
+  --accent-press: #2a76d4;
+  --accent-ink: #1c71d8;
+  --on-accent: #ffffff;
+  --accent-soft: rgba(53, 132, 228, 0.12);
+  --ok: #1b8553;
+  --bad: #c01c28;
+  --bad-bg: #e01b24;
+  --bad-soft: rgba(224, 27, 36, 0.1);
+  --warn: #9c6e03;
+  --track: rgba(0, 0, 6, 0.15);
+  --switch-off: rgba(0, 0, 6, 0.15);
+  --focus: rgba(53, 132, 228, 0.5);
+  --card-sh: 0 0 0 1px rgba(0, 0, 6, 0.03), 0 1px 3px 1px rgba(0, 0, 6, 0.07), 0 2px 6px 2px rgba(0, 0, 6, 0.03);
+  --popover: #ffffff;
+  --shadow: 0 0 0 1px rgba(0, 0, 6, 0.14), 0 1px 5px 1px rgba(0, 0, 6, 0.09), 0 2px 14px 3px rgba(0, 0, 6, 0.05);
+  --r: 6px;
+  --r-lg: 12px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #222226;
+    --surface: #2e2e32;
+    --hover: rgba(255, 255, 255, 0.05);
+    --row-hover: #353539;
+    --press: rgba(255, 255, 255, 0.1);
+    --field: rgba(255, 255, 255, 0.08);
+    --btn: rgba(255, 255, 255, 0.1);
+    --btn-hover: rgba(255, 255, 255, 0.15);
+    --btn-press: rgba(255, 255, 255, 0.25);
+    --text: #ffffff;
+    --text-2: rgba(255, 255, 255, 0.6);
+    --text-3: rgba(255, 255, 255, 0.42);
+    --line: rgba(0, 0, 6, 0.36);
+    --sep: rgba(255, 255, 255, 0.1);
+    --accent-ink: #78aeed;
+    --accent-soft: rgba(120, 174, 237, 0.15);
+    --ok: #8ff0a4;
+    --bad: #ff938c;
+    --bad-soft: rgba(255, 123, 99, 0.14);
+    --warn: #f8e45c;
+    --track: rgba(255, 255, 255, 0.15);
+    --switch-off: rgba(255, 255, 255, 0.2);
+    --card-sh: 0 0 0 1px rgba(0, 0, 6, 0.09), 0 1px 3px 1px rgba(0, 0, 6, 0.18), 0 2px 6px 2px rgba(0, 0, 6, 0.09);
+    --popover: #36363a;
+    --shadow: 0 0 0 1px rgba(0, 0, 6, 0.36), 0 1px 5px 1px rgba(0, 0, 0, 0.36), 0 2px 14px 3px rgba(0, 0, 0, 0.22);
+    color-scheme: dark;
+  }
+}
+
+* { box-sizing: border-box; }
+/* The hidden attribute wins over a class's display ("How to fix it" showed while connected). */
+[hidden] { display: none !important; }
+html { background: var(--bg); }
+body {
+  /* At the left whatever the direction: a page wider than the popup (the popup opened in a tab)
+     doesn't push a right-to-left one out of the picture. */
+  margin: 0 auto 0 0;
+  width: var(--popup-w);
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.4 "Adwaita Sans", Cantarell, "Inter", "Noto Sans", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+/* Firefox's fixed-width panel (popup.js fitPanel): the panel's width, whatever it is. */
+.fit body { width: 100vw; }
+button, input { font: inherit; color: inherit; }
+.ico { flex: none; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.ico .dot-fill { fill: currentColor; stroke: none; }
+button { transition: background-color 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.2s; }
+
+.shell {
+  container: shell / inline-size;
+  display: flex;
+  flex-direction: column;
+  height: var(--popup-h);
+  max-height: 600px;
+  position: relative;
+}
+
+/* ---- focus: GNOME's ring, the accent at half strength ------------------------------------ */
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; border-radius: var(--r); }
+.dl :focus-visible { outline-offset: -2px; }
+
+/* ---- the header: a header bar -------------------------------------------------------------- */
+.top { display: flex; align-items: center; gap: 10px; min-height: 52px; padding: 8px 8px 6px 14px; }
+.logo { flex: none; width: 28px; height: 28px; }
+.ident { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.ident .name { font-size: 15px; font-weight: 700; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--text-2); min-width: 0; }
+.conn #status-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.dot { flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--text-3); }
+.conn.ok .dot { background: #2ec27e; }
+.conn.bad .dot { background: var(--bad-bg); }
+.conn.warn .dot { background: #e5a50a; }
+.problem { margin: 0 12px 8px; padding: 10px 12px; border-radius: var(--r-lg); background: var(--bad-soft); font-size: 13px; }
+.problem p { margin: 0 0 2px; }
+.problem .link { font-weight: 700; }
+
+/* ---- buttons ----------------------------------------------------------------------------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-height: 34px; padding: 5px 14px;
+  background: var(--btn); color: var(--text);
+  border: 0; border-radius: var(--r);
+  font-weight: 700;
+  cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.btn:hover { background: var(--btn-hover); }
+.btn:active { background: var(--btn-press); }
+.btn.accent { background: var(--accent); color: var(--on-accent); }
+.btn.accent:hover { background: var(--accent-hover); }
+.btn.accent:active { background: var(--accent-press); }
+.btn.danger { background: var(--bad-bg); color: #fff; }
+.btn.danger:hover { background: color-mix(in srgb, var(--bad-bg) 88%, #fff); }
+.btn.subtle { background: transparent; color: var(--text); }
+.btn.subtle:hover { background: var(--hover); }
+.btn.subtle:active { background: var(--press); }
+.btn.small { min-height: 28px; padding: 2px 12px; font-size: 13px; }
+.btn:disabled, .btn:disabled:hover { opacity: 0.5; cursor: default; }
+.btn.accent:disabled { background: var(--accent); }
+.btn.subtle:disabled, .btn.subtle:disabled:hover { background: transparent; }
+.icon-btn {
+  flex: none; display: inline-grid; place-items: center;
+  width: 34px; height: 34px; padding: 0;
+  background: transparent; border: 0; border-radius: var(--r); color: var(--text); cursor: pointer;
+}
+.icon-btn.small { width: 30px; height: 30px; border-radius: 50%; }
+.icon-btn:hover { background: var(--hover); }
+.icon-btn:active { background: var(--press); }
+.icon-btn:disabled { opacity: 0.5; background: none; cursor: default; }
+.link, .link-btn { color: var(--accent-ink); text-decoration: none; cursor: pointer; background: none; border: 0; padding: 0; }
+.link:hover, .link-btn:hover { text-decoration: underline; }
+
+/* ---- tabs: a view switcher, the page shown on a raised button ----------------------------- */
+.tabs { display: flex; gap: 4px; margin: 0 12px 6px; padding: 3px; border-radius: 9px; background: var(--btn); }
+.tab {
+  position: relative; flex: 1 1 0; min-width: 0;
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: 30px; padding: 0 8px;
+  background: transparent; border: 0; border-radius: var(--r);
+  color: var(--text); font-weight: 700; cursor: pointer;
+}
+.tab > span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tab:hover { background: var(--hover); }
+.tab[aria-selected="true"] { background: var(--surface); box-shadow: 0 1px 3px rgba(0, 0, 6, 0.12), 0 0 0 1px rgba(0, 0, 6, 0.03); }
+@media (prefers-color-scheme: dark) {
+  .tab[aria-selected="true"] { background: rgba(255, 255, 255, 0.15); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+}
+.pill {
+  flex: none; min-width: 18px; height: 18px; padding: 0 6px; border-radius: 9px;
+  background: var(--accent); color: var(--on-accent);
+  font-size: 11px; font-weight: 700; line-height: 18px; text-align: center; font-variant-numeric: tabular-nums;
+}
+.pill.quiet { background: var(--track); color: var(--text); }
+
+/* ---- panels ------------------------------------------------------------------------------ */
+.panel { flex: 1; min-height: 0; display: flex; flex-direction: column; }
+.panel .scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 8px 12px 12px; display: flex; flex-direction: column; gap: 14px; }
+/* A boxed list: a card, its rows parted by thin lines. */
+.card { background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--card-sh); padding: 0 14px; margin: 0; }
+.card h2, .media h2 { margin: 12px 0 6px; font-size: 14px; font-weight: 700; color: var(--text); }
+.note { color: var(--text-2); margin: 0; font-size: 13px; }
+.note.bad, .bad { color: var(--bad); }
+.note.tip { color: var(--text-2); font-size: 12.5px; padding: 0 4px; }
+
+/* A switch row: the text, then GNOME's switch. */
+.toggle-row { display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 8px 0; cursor: pointer; }
+.toggle-row + .toggle-row { border-top: 1px solid var(--line); }
+.toggle-text { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.toggle-text .sub { color: var(--text-2); font-size: 13px; }
+.toggle {
+  appearance: none; -webkit-appearance: none; flex: none; position: relative; margin: 0;
+  width: 46px; height: 26px; border-radius: 13px; border: 0;
+  background: var(--switch-off); cursor: pointer; transition: background 0.2s;
+}
+.toggle::before {
+  content: ""; position: absolute; top: 3px; inset-inline-start: 3px; width: 20px; height: 20px; border-radius: 50%;
+  background: #fff; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.04);
+  transition: inset-inline-start 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.toggle:hover { background: color-mix(in srgb, var(--switch-off) 100%, rgba(0, 0, 6, 0.06)); }
+.toggle:checked { background: var(--accent); }
+.toggle:checked:hover { background: var(--accent-hover); }
+.toggle:checked::before { inset-inline-start: 23px; }
+.toggle:disabled { opacity: 0.5; cursor: default; }
+.toggle:focus-visible { outline-offset: 2px; border-radius: 15px; }
+
+.said-inline { margin: 0 0 12px; padding: 8px 12px; border-radius: var(--r); background: var(--accent-soft); font-size: 13px; overflow-wrap: anywhere; }
+.declined { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; font-size: 13px; }
+#declined-what { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#declined-why { color: var(--text-2); }
+
+/* Settings: where downloads go (#157). */
+.choice { display: flex; align-items: center; gap: 10px; min-height: 40px; cursor: pointer; }
+.choice input { margin: 0; accent-color: var(--accent); width: 18px; height: 18px; flex: none; }
+.send { padding-bottom: 10px; }
+.remote-item { display: flex; align-items: center; justify-content: space-between; gap: 6px; }
+.remote-item .choice { min-width: 0; flex: 1; }
+.remote-item .choice span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.remote-form { display: flex; flex-direction: column; gap: 8px; padding: 4px 0 0 28px; }
+[dir="rtl"] .remote-form { padding: 4px 28px 0 0; }
+.field {
+  width: 100%; min-height: 34px; padding: 5px 10px;
+  background: var(--field); border: 0; border-radius: var(--r);
+}
+.field:focus { outline: 2px solid var(--focus); outline-offset: -2px; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.actions .btn { flex: 1 1 auto; min-width: 0; }
+.about { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; color: var(--text-2); font-size: 13px; padding: 0 4px 4px; margin-top: auto; }
+.footer-links { display: flex; align-items: baseline; gap: 14px; min-width: 0; flex-wrap: wrap; }
+
+/* This page: the media the tab loaded (#38), a card: its title, the naming switch, the list. */
+.media { display: flex; flex-direction: column; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--card-sh); padding: 0 14px 4px; }
+.media .note { padding: 8px 0 10px; }
+.media ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.media ul:empty { display: none; }
+.media li { display: flex; align-items: center; gap: 10px; padding: 10px 0; }
+.media li + li { border-top: 1px solid var(--line); }
+.tag { flex: none; min-width: 42px; padding: 1px 7px; border-radius: 999px; background: var(--accent-soft); color: var(--accent-ink); font-size: 11px; font-weight: 700; text-align: center; }
+.what { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.what .name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.what .meta { color: var(--text-2); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.drm { flex: none; color: var(--bad); font-size: 12px; font-weight: 700; }
+
+/* ---- Downloads (#1496) ------------------------------------------------------------------- */
+.dl-tools { display: flex; flex-direction: column; gap: 8px; padding: 6px 12px 8px; }
+.search { position: relative; display: block; }
+.search-ico { position: absolute; inset-inline-start: 10px; top: 50%; translate: 0 -50%; display: grid; color: var(--text-2); pointer-events: none; }
+#dl-search {
+  width: 100%; height: 34px; padding: 0 10px; padding-inline-start: 34px;
+  background: var(--field); border: 0; border-radius: var(--r);
+}
+#dl-search::placeholder { color: var(--text-3); }
+#dl-search:focus { outline: 2px solid var(--focus); outline-offset: -2px; }
+#dl-search::-webkit-search-cancel-button { cursor: pointer; }
+/* The filters: pill toggle buttons, the one on in the accent. */
+.chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; height: 28px; padding: 0 12px;
+  border-radius: 999px; border: 0; background: var(--btn); color: var(--text);
+  cursor: pointer; font-size: 13px; font-weight: 700;
+}
+.chip:hover { background: var(--btn-hover); }
+.chip:active { background: var(--btn-press); }
+.chip[aria-checked="true"] { background: var(--accent); color: var(--on-accent); }
+.chip .n { font-variant-numeric: tabular-nums; color: var(--text-2); font-size: 12px; font-weight: 400; }
+.chip .n:empty { display: none; }
+.chip[aria-checked="true"] .n { color: rgba(255, 255, 255, 0.85); }
+.chip:focus-visible { border-radius: 999px; }
+.note-bar { display: flex; align-items: center; gap: 8px; margin: 0 12px 8px; padding: 8px 12px; border-radius: var(--r-lg); background: var(--accent-soft); font-size: 13px; color: var(--text); }
+.note-bar .ico { color: var(--accent-ink); }
+/* A copy loaded by hand (#1613): above the tabs, its text and the store's link wrapping as one. */
+.note-bar.by-hand { align-items: flex-start; margin: 0 12px 8px; }
+.note-bar.by-hand .ico { flex: none; margin-top: 2px; }
+
+.dl-scroll { flex: 1; min-height: 0; overflow-y: auto; padding: 2px 12px 12px; scrollbar-gutter: stable; }
+/* The list: a boxed list, as Retriever's own window has it. */
+.dl-list { list-style: none; margin: 0; padding: 0; background: var(--surface); border-radius: var(--r-lg); box-shadow: var(--card-sh); overflow: hidden; }
+.dl-list:empty { display: none; }
+.dl {
+  position: relative; display: flex; align-items: center; gap: 12px;
+  min-height: 56px; padding: 8px 6px 8px 12px;
+  background: var(--surface);
+}
+.dl + .dl { border-top: 1px solid var(--line); }
+[dir="rtl"] .dl { padding: 8px 12px 8px 6px; }
+.dl:hover, .dl:focus-within { background: var(--row-hover); }
+.dl-icon { flex: none; width: 32px; height: 32px; display: grid; place-items: center; color: var(--accent-ink); border-radius: 50%; background: var(--accent-soft); }
+.dl-icon img { width: 22px; height: 22px; }
+.dl-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.dl-name {
+  display: block; max-width: 100%; padding: 0; margin: 0; border: 0; background: none;
+  text-align: start; white-space: nowrap; overflow: hidden;
+  font-weight: 400; color: var(--text); line-height: 19px; unicode-bidi: plaintext;
+}
+/* Right to left, a name in Latin letters still starts at the row's start, as its status does. */
+[dir="rtl"] .dl-name { text-align: right; }
+button.dl-name { cursor: pointer; }
+button.dl-name:hover { text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--text) 40%, transparent); text-underline-offset: 2px; }
+.dl-status { font-size: 12.5px; line-height: 16px; color: var(--text-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+.dl-status.ok { color: var(--ok); }
+.dl-status.bad { color: var(--bad); }
+.dl-status.muted { color: var(--text-3); }
+.dl[data-state="gone"] .dl-name { color: var(--text-3); }
+.dl[data-state="gone"] .dl-icon { opacity: 0.45; filter: grayscale(1); }
+.dl[data-state="failed"] .dl-icon { position: relative; }
+.dl-bar { display: block; height: 4px; margin-top: 5px; border-radius: 2px; background: var(--track); overflow: hidden; }
+.dl-bar > span { display: block; height: 100%; width: 0; border-radius: 2px; background: var(--accent); transition: width 0.4s ease-out; }
+.dl-bar.paused > span { background: var(--text-3); }
+.dl-bar.busy > span { width: 30%; animation: busy 1.4s ease-in-out infinite; }
+@keyframes busy { from { margin-inline-start: -30%; } to { margin-inline-start: 100%; } }
+
+/* The row's quick buttons: shown on its hover or focus, over the end of its text (which fades
+   into the row under them), so nothing moves and the name keeps its cut. */
+.dl-quick {
+  position: absolute; inset-inline-end: 40px; top: 50%; translate: 0 -50%;
+  display: flex; gap: 2px; padding-inline-start: 20px;
+  background: linear-gradient(to right, transparent, var(--row-hover) 18px);
+  opacity: 0; pointer-events: none;
+}
+[dir="rtl"] .dl-quick { background: linear-gradient(to left, transparent, var(--row-hover) 18px); }
+.dl:hover .dl-quick, .dl:focus-within .dl-quick { opacity: 1; pointer-events: auto; }
+.dl-more { color: var(--text); }
+
+/* Nothing to list: a status page, its big dim symbolic icon, its title, its words. */
+.empty { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 4px; padding: 36px 24px; color: var(--text-2); }
+.empty-ico { display: grid; place-items: center; width: 72px; height: 72px; margin-bottom: 12px; color: var(--text-3); }
+.empty-ico svg { width: 64px; height: 64px; stroke-width: 1; }
+.empty-title { margin: 0; font-size: 18px; font-weight: 800; color: var(--text); }
+.empty-text { margin: 0 0 14px; font-size: 13.5px; max-width: 300px; }
+.empty .btn { border-radius: 999px; padding-inline: 24px; min-height: 38px; }
+.empty.busy .empty-ico { animation: breathe 1.6s ease-in-out infinite; }
+@keyframes breathe { 50% { opacity: 0.45; } }
+.more-note { margin: 10px 8px 4px; text-align: center; color: var(--text-2); font-size: 13px; }
+
+.foot { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding: 10px 12px 12px; border-top: 1px solid var(--sep); }
+.foot .btn.accent { flex: 0 1 auto; max-width: 100%; margin-inline-start: auto; padding-inline: 18px; }
+.foot .btn.subtle { flex: 0 1 auto; }
+
+/* ---- the menu (⋯) and the question -------------------------------------------------------- */
+/* A popover menu. */
+.menu {
+  position: fixed; z-index: 10; min-width: 200px; max-width: calc(100vw - 8px); padding: 6px;
+  background: var(--popover); border: 0; border-radius: var(--r-lg); box-shadow: var(--shadow);
+}
+.menu-item {
+  display: flex; align-items: center; gap: 10px; width: 100%; min-height: 32px; padding: 0 10px;
+  background: none; border: 0; border-radius: var(--r); color: var(--text); text-align: start; cursor: pointer; white-space: nowrap;
+}
+.menu-item .ico { color: var(--text); opacity: 0.8; }
+.menu-item:hover, .menu-item:focus { background: var(--hover); }
+.menu-item:active { background: var(--press); }
+.menu-item:focus-visible { outline: 2px solid var(--focus); outline-offset: -2px; }
+.menu-item.danger, .menu-item.danger .ico { color: var(--bad); opacity: 1; }
+.menu .sep { height: 1px; margin: 6px 0; background: var(--sep); }
+
+/* The question: an alert dialog. */
+.ask {
+  width: min(320px, calc(100vw - 32px)); padding: 24px 20px 20px; border: 0; border-radius: 18px;
+  background: var(--popover); color: var(--text); box-shadow: var(--shadow); text-align: center;
+}
+.ask::backdrop { background: rgba(0, 0, 0, 0.3); }
+.ask h2 { margin: 0 0 10px; font-size: 18px; font-weight: 800; }
+.ask p { margin: 0 0 22px; color: var(--text-2); overflow-wrap: anywhere; }
+.ask .actions .btn { flex: 1 1 0; border-radius: 999px; min-height: 38px; }
+
+/* What just happened: a toast. */
+.said {
+  position: absolute; inset-inline: 24px; bottom: 66px; z-index: 5; margin: 0; padding: 10px 16px;
+  border-radius: 999px; background: rgba(30, 30, 34, 0.9); color: #fff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  font-size: 13.5px; text-align: center;
+}
+@media (prefers-color-scheme: dark) {
+  .said { background: rgba(250, 250, 251, 0.92); color: rgba(0, 0, 6, 0.85); }
+}
+.said.ok, .said.bad { border: 0; }
+body:not([data-tab="downloads"]) .said { bottom: 16px; }
+
+/* ---- widths --------------------------------------------------------------------------------- */
+/* Narrow (Firefox's overflow panel): tighter, the chips' counts kept, the footer's buttons in a column. */
+@container shell (max-width: 380px) {
+  .top { padding-inline: 12px 6px; }
+  .dl-tools { padding-inline: 10px; }
+  .chip { padding: 0 10px; }
+  .dl { gap: 10px; }
+}
+/* Wide (up to 800 px): more room for names and status, the filters beside the search. */
+@container shell (min-width: 560px) {
+  .dl-tools { flex-direction: row; align-items: center; }
+  .search { flex: 1; }
+  .dl { min-height: 52px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  .dl-bar.busy > span { width: 100%; opacity: 0.5; margin: 0; }
+}
+@media (forced-colors: active) {
+  .tab[aria-selected="true"], .dl-bar > span, .pill { background: Highlight; forced-color-adjust: none; }
+  .toggle:checked { background: Highlight; }
+}

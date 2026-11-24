@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Siirtää lataukset selaimesta Retrieveriin."
+  },
+  "menu": {
+    "message": "Lataa Retrieverilla"
+  },
+  "video_download": {
+    "message": "Lataa video"
+  },
+  "video_more": {
+    "message": "Lisää vaihtoehtoja"
+  },
+  "video_hide_here": {
+    "message": "Piilota tässä videossa"
+  },
+  "video_never_site": {
+    "message": "Ei koskaan sivustolla $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Painikkeen asetukset..."
+  },
+  "video_sent": {
+    "message": "Lähetetty Retriever:lle"
+  },
+  "menu_selected": {
+    "message": "Lataa valitut linkit sovelluksella Retriever"
+  },
+  "menu_all": {
+    "message": "Lataa kaikki linkit sovelluksella Retriever"
+  },
+  "status_connected": {
+    "message": "Yhdistetty sovellukseen Retriever"
+  },
+  "status_connected_version": {
+    "message": "Yhdistetty sovellukseen Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Ei käytössä: lataukset jäävät selaimeen"
+  },
+  "status_not_installed": {
+    "message": "Retriever ei ole asennettu, tai sen selainintegrointia ei ole määritetty"
+  },
+  "status_forbidden": {
+    "message": "Retriever ei hyväksy tätä laajennuksen kopiota"
+  },
+  "status_not_running": {
+    "message": "Retriever ei käynnistynyt ajoissa"
+  },
+  "status_host_failed": {
+    "message": "Yhteyden muodostaminen sovellukseen Retriever epäonnistui"
+  },
+  "status_too_large": {
+    "message": "Tämän latauksen tiedot olivat liian suuria siirrettäviksi"
+  },
+  "status_update_app": {
+    "message": "Päivitä Retriever, jotta voit käyttää kaikkia tämän laajennuksen tarjoamia ominaisuuksia"
+  },
+  "popup_take": {
+    "message": "Latausten siirtäminen tästä selaimesta"
+  },
+  "popup_proxy": {
+    "message": "Lähetä lataukset tämän selaimen välityspalvelimen tai VPN-laajennuksen kautta"
+  },
+  "popup_proxy_title": {
+    "message": "Tällöin Retriever lataa saman välityspalvelimen kautta kuin tämä selain. Selain pyytää kerran lupaa; tämän poistaminen käytöstä peruuttaa luvan."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever lataa tiedostot sitten tämän selaimen käyttämän välityspalvelimen kautta. Kun tämä asetus on pois päältä, laajennus ei lue selaimen välityspalvelimen asetuksia."
+  },
+  "popup_exclude_site": {
+    "message": "Älä koskaan ota latauksia sivustolta $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Lataukset sivustolta $site$ jäävät selaimelle",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Avaa Retriever"
+  },
+  "popup_options": {
+    "message": "Asetukset..."
+  },
+  "popup_help": {
+    "message": "Ohje"
+  },
+  "popup_support": {
+    "message": "Tue Retriever:ää"
+  },
+  "popup_fix": {
+    "message": "Miten korjata"
+  },
+  "popup_by_hand": {
+    "message": "Tämä kopio ladattiin käsin, eikä se päivity itsestään."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Tämä kopio ladattiin käsin: se ei päivity itsestään, ja selain poistaa sen uudelleenkäynnistyksen yhteydessä."
+  },
+  "popup_store_chrome": {
+    "message": "Lisää se Chrome Web Storesta"
+  },
+  "popup_store_firefox": {
+    "message": "Lisää se osoitteesta addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Jätetty selaimelle: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Viimeisin lataus jätettiin selaimelle."
+  },
+  "declined_file_type": {
+    "message": "Sen tyyppi ei ole kohdassa Asetukset → Tiedostotyypit."
+  },
+  "declined_site": {
+    "message": "Sen sivusto on kohdassa Asetukset → Tiedostotyypit, selaimelle jätetyt sivustot."
+  },
+  "declined_address": {
+    "message": "Sen osoite on kohdassa Asetukset → Tiedostotyypit, selaimelle jätetyt osoitteet."
+  },
+  "declined_small": {
+    "message": "Se on pienempi kuin vähimmäiskoko kohdassa Asetukset → Tiedostotyypit."
+  },
+  "declined_browser": {
+    "message": "Tätä selainta ei ole valittu kohdassa Asetukset → Yleiset."
+  },
+  "declined_integration_off": {
+    "message": "Käytä laajennettua selainintegraatiota on pois päältä kohdassa Asetukset → Yleiset."
+  },
+  "declined_torrents": {
+    "message": "Se on torrent, ja Avaa magnet-linkit ja .torrent-tiedostot sovelluksella Retriever on pois päältä Torrent-asetuksissa."
+  },
+  "declined_site_access": {
+    "message": "Laajennuksella ei ole lupaa lukea tätä sivustoa (selaimen sivustokäyttö)."
+  },
+  "popup_alt": {
+    "message": "Pidä Alt-näppäintä painettuna napsauttaessasi linkkiä, jotta selain lataa sen."
+  },
+  "popup_media": {
+    "message": "Sivun media"
+  },
+  "popup_media_none": {
+    "message": "Sivulta ei ole vielä löytynyt videoita eikä ääntä. Toista videota tai ääntä ja avaa tämä uudelleen."
+  },
+  "popup_media_streamed": {
+    "message": "Tämän sivun soitin suoratoistaa videon paloina, joten luetteloitavaa tiedostoa ei ole. Osoita videota ja käytä sen Lataa video -painiketta."
+  },
+  "popup_media_store": {
+    "message": "Chrome Web Storen säännöt pitävät tämän lisäosan kopion erossa tämän sivuston videoista. Ohje kertoo, mitä voit tehdä."
+  },
+  "popup_media_download": {
+    "message": "Lataa"
+  },
+  "popup_media_protected": {
+    "message": "Suojattu"
+  },
+  "popup_media_live": {
+    "message": "Live"
+  },
+  "video_off": {
+    "message": "Pois päältä tällä sivustolla"
+  },
+  "video_drm": {
+    "message": "Suojattu video"
+  },
+  "video_unnamed": {
+    "message": "Ei selviä, mikä video tämä on: avaa videon oma sivu ja yritä siellä"
+  },
+  "video_looking": {
+    "message": "Haetaan laatuvaihtoehtoja…"
+  },
+  "video_no_choices": {
+    "message": "Täällä ei ole ladattavaa videota"
+  },
+  "video_playlist": {
+    "message": "Videoluettelo: valitse videot sovelluksessa Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever tarvitsee yt-dlp:n tätä videota varten"
+  },
+  "video_too_long": {
+    "message": "Haku kesti liian kauan"
+  },
+  "video_busy": {
+    "message": "Retriever on varattu muiden videoiden takia"
+  },
+  "video_queued": {
+    "message": "Lisätty jonoon"
+  },
+  "video_failed_lookup": {
+    "message": "Hakeminen epäonnistui"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Ääni"
+  },
+  "video_open_post": {
+    "message": "Avaa julkaisu ladataksesi videon"
+  },
+  "popup_send_to": {
+    "message": "Lähetä lataukset kohteeseen"
+  },
+  "popup_send_here": {
+    "message": "Tämä tietokone"
+  },
+  "popup_send_remote": {
+    "message": "Toinen Retriever (palvelin)"
+  },
+  "popup_remote_code": {
+    "message": "Pariliitoskoodi"
+  },
+  "popup_remote_open": {
+    "message": "Avaa se"
+  },
+  "popup_remote_pair": {
+    "message": "Laita pariksi"
+  },
+  "popup_remote_help": {
+    "message": "Avaa sen osoite kerran ja hyväksy sen varmenne, anna sitten koodi sen Asetukset, Etä, Laita laite pariksi -kohdasta (tai retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Lataukset menevät osoitteeseen $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Anna sen https://-osoite."
+  },
+  "remote_unreachable": {
+    "message": "Ei tavoitettu. Avaa sen osoite kerran tässä selaimessa ja hyväksy sen varmenne, yritä sitten uudelleen."
+  },
+  "remote_wrong_code": {
+    "message": "Väärä koodi."
+  },
+  "remote_no_code": {
+    "message": "Se ei näytä koodia nyt: napsauta ensin Laita laite pariksi -painiketta siellä."
+  },
+  "remote_too_soon": {
+    "message": "Odota hetki ja yritä sitten uudelleen."
+  },
+  "remote_failed": {
+    "message": "Se ei toiminut. Yritä uudelleen."
+  },
+  "remote_device_name": {
+    "message": "Selaimen laajennus"
+  },
+  "popup_media_title_name": {
+    "message": "Lisää sivun otsikko mediatiedostojen nimien eteen"
+  },
+  "video_cant_save": {
+    "message": "ei voi tallentaa"
+  },
+  "video_open_post_button": {
+    "message": "Avaa julkaisu"
+  },
+  "video_drag_dots": {
+    "message": "Vedä pisteitä siirtääksesi sitä reunaa pitkin"
+  },
+  "video_tip": {
+    "message": "Lataa $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Lataa paras laatu"
+  },
+  "video_sending": {
+    "message": "Lähetetään Retriever:ään..."
+  },
+  "video_added": {
+    "message": "Lisätty Retriever:ään"
+  },
+  "video_show": {
+    "message": "Näytä"
+  },
+  "video_no_answer": {
+    "message": "Retriever ei vastannut"
+  },
+  "video_get_mdm": {
+    "message": "Hanki Retriever"
+  },
+  "video_retry": {
+    "message": "Yritä uudelleen"
+  },
+  "video_turn_on": {
+    "message": "Käynnistä"
+  },
+  "video_best": {
+    "message": "paras"
+  },
+  "video_all_qualities": {
+    "message": "Kaikki laadut ja tekstitykset..."
+  },
+  "video_part": {
+    "message": "Lataa osa tästä..."
+  },
+  "video_failed": {
+    "message": "Retriever ei ole asennettu tai sitä ei käynnistetty"
+  },
+  "video_download_best": {
+    "message": "Lataa paras"
+  },
+  "video_original": {
+    "message": "alkuperäinen"
+  },
+  "video_compatible": {
+    "message": "Yhteensopivin"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Piilota latauspainike koko näytön tilassa"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Kun sivu on koko näytön tilassa, sen videoissa ei näy Lataa video -painiketta"
+  },
+  "popup_remote_forget": {
+    "message": "Unohda"
+  },
+  "popup_gear": {
+    "message": "Asetukset ohjelmassa Retriever"
+  },
+  "popup_tabs": {
+    "message": "Ponnahdusikkunan osat"
+  },
+  "popup_tab_downloads": {
+    "message": "Lataukset"
+  },
+  "popup_tab_page": {
+    "message": "Tämä sivu"
+  },
+  "popup_tab_settings": {
+    "message": "Asetukset"
+  },
+  "popup_conn": {
+    "message": "Yhdistetty · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Yhdistetty"
+  },
+  "popup_conn_off": {
+    "message": "Ei yhteyttä"
+  },
+  "popup_conn_paused": {
+    "message": "Keskeytetty"
+  },
+  "popup_conn_update": {
+    "message": "Päivitä Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Lähetetään kohteeseen $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Peruuta"
+  },
+  "popup_page_none": {
+    "message": "Tämä ei ole verkkosivu: täällä ei ole mitään tehtävää."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Jätetty selaimelle asetusten säännön mukaan"
+  },
+  "popup_dl_search": {
+    "message": "Hae latauksia"
+  },
+  "popup_dl_filters": {
+    "message": "Näytä"
+  },
+  "popup_dl_all": {
+    "message": "Kaikki"
+  },
+  "popup_dl_running": {
+    "message": "Käynnissä"
+  },
+  "popup_dl_done_filter": {
+    "message": "Valmis"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Epäonnistui"
+  },
+  "popup_dl_clear": {
+    "message": "Tyhjennä valmiit"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ latausta käynnissä",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Nämä ovat Retriever-sovelluksen latauksia osoitteessa $server$. Avaa niiden tiedostot sieltä.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Uusimmat $shown$/$total$ latausta. Retriever näyttää ne kaikki.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$/$size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Aikaa jäljellä: $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Käynnistetään..."
+  },
+  "popup_dl_paused": {
+    "message": "Keskeytetty"
+  },
+  "popup_dl_waiting": {
+    "message": "Odottaa"
+  },
+  "popup_dl_done": {
+    "message": "Valmis"
+  },
+  "popup_dl_just_now": {
+    "message": "juuri nyt"
+  },
+  "popup_dl_failed": {
+    "message": "Epäonnistui"
+  },
+  "popup_dl_failed_why": {
+    "message": "Epäonnistui: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Tiedosto poistettu tai siirretty"
+  },
+  "popup_dl_loading": {
+    "message": "Etsitään latauksia..."
+  },
+  "popup_dl_none": {
+    "message": "Ei latauksia vielä"
+  },
+  "popup_dl_none_text": {
+    "message": "Retrieverilla (Retriever) lataamasi näkyvät täällä."
+  },
+  "popup_dl_no_match": {
+    "message": "Mikään ei vastaa"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Yhdenkään latauksen nimessä tai osoitteessa ei ole ”$words$”.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Näytä kaikki lataukset"
+  },
+  "popup_list_off": {
+    "message": "Retriever ei ole käynnissä"
+  },
+  "popup_list_off_text": {
+    "message": "Käynnistä sovellus, niin näet latauksesi täällä."
+  },
+  "popup_list_start": {
+    "message": "Käynnistä Retriever"
+  },
+  "popup_list_old": {
+    "message": "Päivitä Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Tämä versio ei voi vielä luetteloida latauksiaan täällä."
+  },
+  "popup_list_busy": {
+    "message": "Retriever on varattu. Yritetään uudelleen..."
+  },
+  "popup_list_unreached": {
+    "message": "Ei yhteyttä sovellukseen Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Ei yhteyttä sovellukseen Retriever osoitteessa $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Tarkista, että se on käynnissä ja että tämä selain hyväksyy sen varmenteen (Asetukset → Lähetä lataukset kohteeseen → Avaa se).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Avaa"
+  },
+  "popup_act_open_named": {
+    "message": "Avaa $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Näytä kansiossa"
+  },
+  "popup_act_folder_named": {
+    "message": "Näytä $file$ kansiossa",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Kopioi tiedosto"
+  },
+  "popup_act_share": {
+    "message": "Jaa..."
+  },
+  "popup_act_copy_link": {
+    "message": "Kopioi linkki"
+  },
+  "popup_act_pause": {
+    "message": "Keskeytä"
+  },
+  "popup_act_pause_named": {
+    "message": "Keskeytä $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Jatka"
+  },
+  "popup_act_resume_named": {
+    "message": "Jatka $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Lataa uudelleen"
+  },
+  "popup_act_remove": {
+    "message": "Poista luettelosta"
+  },
+  "popup_act_delete": {
+    "message": "Poista tiedosto..."
+  },
+  "popup_act_more": {
+    "message": "Lisää toimintoja"
+  },
+  "popup_act_more_named": {
+    "message": "Lisää toimintoja tiedostolle $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Poistetaanko tiedosto?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ poistetaan tietokoneeltasi, ja lataus poistetaan luettelosta. Tätä ei voi kumota.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Poista"
+  },
+  "popup_ask_clear_title": {
+    "message": "Tyhjennetäänkö valmiit lataukset?"
+  },
+  "popup_ask_clear": {
+    "message": "$count$ valmista latausta poistetaan luettelosta. Niiden tiedostot pysyvät paikoillaan.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Tyhjennä"
+  },
+  "popup_said_file": {
+    "message": "Tiedosto $file$ kopioitiin. Liitä se kansioon, keskusteluun tai viestiin.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Linkki kopioitu"
+  },
+  "popup_said_removed": {
+    "message": "$file$ poistettiin luettelosta",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ poistettiin",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Ladataan tiedostoa $file$ uudelleen",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Valmiit lataukset tyhjennetty"
+  },
+  "popup_act_gone": {
+    "message": "Lataus ei ole enää luettelossa."
+  },
+  "popup_act_missing": {
+    "message": "Tiedostoa ei enää ole tallennuspaikassaan (siirretty tai poistettu)."
+  },
+  "popup_act_running": {
+    "message": "Keskeytä lataus ensin."
+  },
+  "popup_act_cant": {
+    "message": "Tätä ei voi tehdä tälle lataukselle nyt."
+  },
+  "popup_act_unsupported": {
+    "message": "Tämä järjestelmä ei voi tehdä sitä."
+  },
+  "popup_act_off": {
+    "message": "Retriever ei ole käynnissä."
+  },
+  "popup_act_busy": {
+    "message": "Retriever ei vastannut ajoissa. Yritä uudelleen."
+  },
+  "popup_act_failed": {
+    "message": "Toiminto epäonnistui. Yritä uudelleen."
+  },
+  "status_running": {
+    "message": "Ladataan: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Avaa sen sivu"
+  }
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- Flat, as GNOME's current icons: one colour and a plain darker edge, no gradient or shine. -->
+  <rect x="12" y="16" width="104" height="102" rx="22" fill="#1b6f80"/>
+  <rect x="12" y="10" width="104" height="100" rx="22" fill="#2a9db0"/>
+  <path d="M42 28l22 18 22-18" fill="none" stroke="#a8e6dc" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 48l22 18 22-18" fill="none" stroke="#d4f4ee" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 68l22 18 22-18" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M38 98h52" stroke="#ffffff" stroke-width="8" stroke-linecap="round"/>
+</svg>

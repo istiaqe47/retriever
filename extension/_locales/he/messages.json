@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "מעביר הורדות מהדפדפן אל Retriever."
+  },
+  "menu": {
+    "message": "הורד באמצעות Retriever"
+  },
+  "video_download": {
+    "message": "הורד סרטון"
+  },
+  "video_more": {
+    "message": "אפשרויות נוספות"
+  },
+  "video_hide_here": {
+    "message": "הסתר בסרטון זה"
+  },
+  "video_never_site": {
+    "message": "לעולם לא ב-$site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "הגדרות לחצן..."
+  },
+  "video_sent": {
+    "message": "נשלח אל Retriever"
+  },
+  "menu_selected": {
+    "message": "הורד את הקישורים שנבחרו באמצעות Retriever"
+  },
+  "menu_all": {
+    "message": "הורד את כל הקישורים באמצעות Retriever"
+  },
+  "status_connected": {
+    "message": "מחובר אל Retriever"
+  },
+  "status_connected_version": {
+    "message": "מחובר אל Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "מושהה: ההורדות נשארות בדפדפן"
+  },
+  "status_not_installed": {
+    "message": "Retriever אינו מותקן, או ששילוב הדפדפן שלו אינו מוגדר"
+  },
+  "status_forbidden": {
+    "message": "Retriever אינו מקבל עותק זה של ההרחבה"
+  },
+  "status_not_running": {
+    "message": "Retriever לא הופעל בזמן"
+  },
+  "status_host_failed": {
+    "message": "החיבור ל- Retriever נכשל"
+  },
+  "status_too_large": {
+    "message": "פרטי ההורדה הזו היו גדולים מדי למסירה"
+  },
+  "status_update_app": {
+    "message": "עדכן את Retriever כדי להשתמש בכל מה שתוסף זה מציע"
+  },
+  "popup_take": {
+    "message": "קבל הורדות מדפדפן זה"
+  },
+  "popup_proxy": {
+    "message": "שלח הורדות דרך שרת ה-Proxy או הרחבת ה-VPN של דפדפן זה"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever מוריד אז דרך אותו שרת Proxy כמו הדפדפן הזה. הדפדפן יבקש ממך פעם אחת לאפשר זאת; כיבוי אפשרות זו מבטל זאת."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever יוריד אז דרך אותו שרת proxy שבו משתמש הדפדפן הזה. כשהאפשרות הזו כבויה, התוסף לא קורא את שרת ה-proxy של הדפדפן."
+  },
+  "popup_exclude_site": {
+    "message": "לעולם אל תיקח הורדות מ־$site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "הורדות מ־$site$ נשארות בדפדפן",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "פתח את Retriever"
+  },
+  "popup_options": {
+    "message": "אפשרויות..."
+  },
+  "popup_help": {
+    "message": "עזרה"
+  },
+  "popup_support": {
+    "message": "תמוך ב-Retriever"
+  },
+  "popup_fix": {
+    "message": "איך לתקן זאת"
+  },
+  "popup_by_hand": {
+    "message": "עותק זה נטען ידנית ולא יתעדכן בעצמו."
+  },
+  "popup_by_hand_firefox": {
+    "message": "עותק זה נטען ידנית: הוא לא יתעדכן מעצמו, והדפדפן יסיר אותו כשהוא יופעל מחדש."
+  },
+  "popup_store_chrome": {
+    "message": "הוסף אותו מחנות האינטרנט של Chrome"
+  },
+  "popup_store_firefox": {
+    "message": "הוסף אותו מ־addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "הושאר לדפדפן: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "ההורדה האחרונה הושארה לדפדפן."
+  },
+  "declined_file_type": {
+    "message": "הסוג שלו אינו נמצא ב'אפשרויות' ← 'סוגי קבצים'."
+  },
+  "declined_site": {
+    "message": "האתר שלו נמצא ב'אפשרויות' ← 'סוגי קבצים', אתרים שהושארו לדפדפן."
+  },
+  "declined_address": {
+    "message": "הכתובת שלו נמצאת ב'אפשרויות' ← 'סוגי קבצים', כתובות שהושארו לדפדפן."
+  },
+  "declined_small": {
+    "message": "הוא קטן מהגודל המינימלי ב'אפשרויות' ← 'סוגי קבצים'."
+  },
+  "declined_browser": {
+    "message": "דפדפן זה אינו מסומן ב'אפשרויות' ← 'כללי'."
+  },
+  "declined_integration_off": {
+    "message": "האפשרות 'השתמש בשילוב דפדפן מתקדם' כבויה ב'אפשרויות' ← 'כללי'."
+  },
+  "declined_torrents": {
+    "message": "זהו קובץ טורנט, והאפשרות ״פתיחת קישורי magnet וקובצי .torrent באמצעות Retriever״ כבויה בהגדרות הטורנט."
+  },
+  "declined_site_access": {
+    "message": "אין הרשאה להרחבה לקרוא אתר זה (גישת האתר של הדפדפן)."
+  },
+  "popup_alt": {
+    "message": "החזק את Alt תוך כדי לחיצה על קישור כדי לאפשר לדפדפן להוריד אותו."
+  },
+  "popup_media": {
+    "message": "מדיה בדף זה"
+  },
+  "popup_media_none": {
+    "message": "לא נמצאו סרטונים או צלילים בדף זה עדיין. הפעל אותם, ואז פתח זאת שוב."
+  },
+  "popup_media_streamed": {
+    "message": "הנגן בדף הזה מזרים את הסרטון בחלקים, לכן אין קובץ להציג ברשימה. הצביעו על הסרטון והשתמשו בלחצן שלו „הורד סרטון”."
+  },
+  "popup_media_store": {
+    "message": "כללי חנות האינטרנט של Chrome מרחיקים עותק זה של התוסף מהסרטונים באתר הזה. ב„עזרה” כתוב מה אפשר לעשות."
+  },
+  "popup_media_download": {
+    "message": "הורד"
+  },
+  "popup_media_protected": {
+    "message": "מוגן"
+  },
+  "popup_media_live": {
+    "message": "שידור חי"
+  },
+  "video_off": {
+    "message": "כבוי באתר זה"
+  },
+  "video_drm": {
+    "message": "סרטון מוגן"
+  },
+  "video_unnamed": {
+    "message": "לא ניתן לדעת איזה סרטון זה: פתחו את הדף שלו ונסו שם"
+  },
+  "video_looking": {
+    "message": "מחפש את האיכויות…"
+  },
+  "video_no_choices": {
+    "message": "אין כאן סרטון להורדה"
+  },
+  "video_playlist": {
+    "message": "רשימת סרטונים: בחר אותם ב-Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever זקוק ל-yt-dlp עבור סרטון זה"
+  },
+  "video_too_long": {
+    "message": "החיפוש ארך זמן רב מדי"
+  },
+  "video_busy": {
+    "message": "Retriever עסוק בסרטונים אחרים"
+  },
+  "video_queued": {
+    "message": "נוסף לתור"
+  },
+  "video_failed_lookup": {
+    "message": "החיפוש נכשל"
+  },
+  "video_tab_video": {
+    "message": "וידאו"
+  },
+  "video_tab_audio": {
+    "message": "שמע"
+  },
+  "video_open_post": {
+    "message": "פתח את הפוסט כדי להוריד אותו"
+  },
+  "popup_send_to": {
+    "message": "שלח הורדות אל"
+  },
+  "popup_send_here": {
+    "message": "מחשב זה"
+  },
+  "popup_send_remote": {
+    "message": "Retriever אחר (שרת)"
+  },
+  "popup_remote_code": {
+    "message": "קוד צימוד"
+  },
+  "popup_remote_open": {
+    "message": "פתח אותו"
+  },
+  "popup_remote_pair": {
+    "message": "צמד"
+  },
+  "popup_remote_help": {
+    "message": "פתח את הכתובת שלו פעם אחת וקבל את האישור שלו, ואז הזן קוד מ'אפשרויות', 'מרוחק', 'צמד התקן' (או retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "ההורדות עוברות אל $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "הזן את כתובת ה-https:// שלו."
+  },
+  "remote_unreachable": {
+    "message": "לא הושג. פתח את הכתובת שלו פעם אחת בדפדפן זה וקבל את האישור שלו, ואז נסה שוב."
+  },
+  "remote_wrong_code": {
+    "message": "קוד שגוי."
+  },
+  "remote_no_code": {
+    "message": "הוא לא מציג קוד עכשיו: לחץ תחילה על 'צמד התקן' שם."
+  },
+  "remote_too_soon": {
+    "message": "המתן רגע, ואז נסה שוב."
+  },
+  "remote_failed": {
+    "message": "זה לא עבד. נסה שוב."
+  },
+  "remote_device_name": {
+    "message": "הרחבת דפדפן"
+  },
+  "popup_media_title_name": {
+    "message": "הוספת כותרת הדף לפני שמות קובצי המדיה"
+  },
+  "video_cant_save": {
+    "message": "לא ניתן לשמור"
+  },
+  "video_open_post_button": {
+    "message": "פתח פוסט"
+  },
+  "video_drag_dots": {
+    "message": "גרור את הנקודות כדי להזיז אותו לאורך הקצה"
+  },
+  "video_tip": {
+    "message": "הורד את $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "הורד את האיכות הטובה ביותר"
+  },
+  "video_sending": {
+    "message": "שולח ל-Retriever..."
+  },
+  "video_added": {
+    "message": "נוסף ל-Retriever"
+  },
+  "video_show": {
+    "message": "הצג"
+  },
+  "video_no_answer": {
+    "message": "Retriever לא הגיב"
+  },
+  "video_get_mdm": {
+    "message": "קבל את Retriever"
+  },
+  "video_retry": {
+    "message": "נסה שוב"
+  },
+  "video_turn_on": {
+    "message": "הפעל"
+  },
+  "video_best": {
+    "message": "הטובה ביותר"
+  },
+  "video_all_qualities": {
+    "message": "כל האיכויות והכתוביות..."
+  },
+  "video_part": {
+    "message": "הורד חלק מכאן..."
+  },
+  "video_failed": {
+    "message": "Retriever אינו מותקן או לא הופעל"
+  },
+  "video_download_best": {
+    "message": "הורד את האיכות הטובה ביותר"
+  },
+  "video_original": {
+    "message": "מקורית"
+  },
+  "video_compatible": {
+    "message": "התאמה מרבית"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "הסתרת לחצן ההורדה במסך מלא"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "כאשר הדף במסך מלא, הסרטונים שלו לא מציגים את לחצן ״הורד סרטון״"
+  },
+  "popup_remote_forget": {
+    "message": "שכח"
+  },
+  "popup_gear": {
+    "message": "אפשרויות ב- Retriever"
+  },
+  "popup_tabs": {
+    "message": "מקטעי חלון קופץ"
+  },
+  "popup_tab_downloads": {
+    "message": "הורדות"
+  },
+  "popup_tab_page": {
+    "message": "דף זה"
+  },
+  "popup_tab_settings": {
+    "message": "הגדרות"
+  },
+  "popup_conn": {
+    "message": "מחובר · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "מחובר"
+  },
+  "popup_conn_off": {
+    "message": "לא מחובר"
+  },
+  "popup_conn_paused": {
+    "message": "מושהה"
+  },
+  "popup_conn_update": {
+    "message": "עדכן את Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "שולח אל $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "ביטול"
+  },
+  "popup_page_none": {
+    "message": "זהו אינו דף אינטרנט: אין מה לעשות כאן."
+  },
+  "popup_exclude_by_rule": {
+    "message": "הושאר לדפדפן על ידי כלל בהגדרות"
+  },
+  "popup_dl_search": {
+    "message": "חפש הורדות"
+  },
+  "popup_dl_filters": {
+    "message": "הצג"
+  },
+  "popup_dl_all": {
+    "message": "הכל"
+  },
+  "popup_dl_running": {
+    "message": "פועלות"
+  },
+  "popup_dl_done_filter": {
+    "message": "הושלם"
+  },
+  "popup_dl_failed_filter": {
+    "message": "נכשל"
+  },
+  "popup_dl_clear": {
+    "message": "נקה שהושלמו"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ הורדות פעילות",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "אלה ההורדות של Retriever ב- $server$. פתח את הקבצים שלהן שם.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "$shown$ החדשות ביותר מתוך $total$. Retriever מפרט את כולן.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ מתוך $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "נותרו $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "מפעיל..."
+  },
+  "popup_dl_paused": {
+    "message": "מושהה"
+  },
+  "popup_dl_waiting": {
+    "message": "ממתין"
+  },
+  "popup_dl_done": {
+    "message": "הושלם"
+  },
+  "popup_dl_just_now": {
+    "message": "ממש עכשיו"
+  },
+  "popup_dl_failed": {
+    "message": "נכשל"
+  },
+  "popup_dl_failed_why": {
+    "message": "נכשל: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "הקובץ נמחק או הועבר"
+  },
+  "popup_dl_loading": {
+    "message": "מחפש הורדות..."
+  },
+  "popup_dl_none": {
+    "message": "אין עדיין הורדות"
+  },
+  "popup_dl_none_text": {
+    "message": "מה שתוריד באמצעות Retriever יופיע כאן."
+  },
+  "popup_dl_no_match": {
+    "message": "לא נמצאו התאמות"
+  },
+  "popup_dl_no_match_text": {
+    "message": "לא נמצאה הורדה שהשם או הכתובת שלה מכילים את ״$words$״.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "הצג את כל ההורדות"
+  },
+  "popup_list_off": {
+    "message": "Retriever אינו פועל"
+  },
+  "popup_list_off_text": {
+    "message": "הפעל אותו כדי לראות את ההורדות שלך כאן."
+  },
+  "popup_list_start": {
+    "message": "הפעל את Retriever"
+  },
+  "popup_list_old": {
+    "message": "עדכן את Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "גרסה זו לא יכולה לפרט את ההורדות שלה כאן עדיין."
+  },
+  "popup_list_busy": {
+    "message": "Retriever עסוק. מנסה שוב..."
+  },
+  "popup_list_unreached": {
+    "message": "לא ניתן להגיע אל Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "לא ניתן להגיע אל Retriever בכתובת $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "ודא שהוא פועל, ושהדפדפן הזה מקבל את האישור שלו (הגדרות ← שלח הורדות אל ← פתח אותו).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "פתח"
+  },
+  "popup_act_open_named": {
+    "message": "פתח את $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "הצג בתיקייה"
+  },
+  "popup_act_folder_named": {
+    "message": "הצג את $file$ בתיקייה",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "העתק קובץ"
+  },
+  "popup_act_share": {
+    "message": "שתף..."
+  },
+  "popup_act_copy_link": {
+    "message": "העתק קישור"
+  },
+  "popup_act_pause": {
+    "message": "השהה"
+  },
+  "popup_act_pause_named": {
+    "message": "השהה את $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "המשך"
+  },
+  "popup_act_resume_named": {
+    "message": "המשך את $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "הורד שוב"
+  },
+  "popup_act_remove": {
+    "message": "הסר מהרשימה"
+  },
+  "popup_act_delete": {
+    "message": "מחק קובץ..."
+  },
+  "popup_act_more": {
+    "message": "פעולות נוספות"
+  },
+  "popup_act_more_named": {
+    "message": "פעולות נוספות עבור $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "למחוק את הקובץ?"
+  },
+  "popup_ask_delete": {
+    "message": "הקובץ $file$ יימחק מהמחשב שלך, וההורדה תוסר מהרשימה. לא ניתן לבטל פעולה זו.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "מחק"
+  },
+  "popup_ask_clear_title": {
+    "message": "לנקות הורדות שהושלמו?"
+  },
+  "popup_ask_clear": {
+    "message": "ההורדות שהושלמו ($count$) יוסרו מהרשימה. הקבצים שלהן יישארו במקומם.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "נקה"
+  },
+  "popup_said_file": {
+    "message": "הועתק $file$. הדבק אותו בתיקיה, בצ׳אט או בהודעה.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "הקישור הועתק"
+  },
+  "popup_said_removed": {
+    "message": "$file$ הוסר מהרשימה",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ נמחק",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "מוריד את $file$ שוב",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "הורדות שהושלמו נוקו"
+  },
+  "popup_act_gone": {
+    "message": "ההורדה הזו כבר לא ברשימה."
+  },
+  "popup_act_missing": {
+    "message": "הקובץ שלו כבר לא נמצא במקום שבו נשמר (הועבר או נמחק)."
+  },
+  "popup_act_running": {
+    "message": "השהה קודם."
+  },
+  "popup_act_cant": {
+    "message": "לא ניתן לבצע זאת בהורדה זו כעת."
+  },
+  "popup_act_unsupported": {
+    "message": "המערכת הזו לא יכולה לעשות זאת."
+  },
+  "popup_act_off": {
+    "message": "Retriever אינו פועל."
+  },
+  "popup_act_busy": {
+    "message": "Retriever לא ענה בזמן. נסה שוב."
+  },
+  "popup_act_failed": {
+    "message": "זה לא עבד. נסה שוב."
+  },
+  "status_running": {
+    "message": "מוריד: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "פתח את הדף שלו"
+  }
+}

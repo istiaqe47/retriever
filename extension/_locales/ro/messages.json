@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Transferă descărcările din browser către Retriever."
+  },
+  "menu": {
+    "message": "Descărcați cu Retriever"
+  },
+  "video_download": {
+    "message": "Descărcați videoclipul"
+  },
+  "video_more": {
+    "message": "Mai multe opțiuni"
+  },
+  "video_hide_here": {
+    "message": "Ascundeți pe acest videoclip"
+  },
+  "video_never_site": {
+    "message": "Niciodată pe $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Setări buton..."
+  },
+  "video_sent": {
+    "message": "Trimis la Retriever"
+  },
+  "menu_selected": {
+    "message": "Descărcați linkurile selectate cu Retriever"
+  },
+  "menu_all": {
+    "message": "Descărcați toate linkurile cu Retriever"
+  },
+  "status_connected": {
+    "message": "Conectat la Retriever"
+  },
+  "status_connected_version": {
+    "message": "Conectat la Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Întrerupt: descărcările rămân în browser"
+  },
+  "status_not_installed": {
+    "message": "Retriever nu este instalat sau integrarea browserului nu este configurată"
+  },
+  "status_forbidden": {
+    "message": "Retriever nu acceptă această copie a extensiei"
+  },
+  "status_not_running": {
+    "message": "Retriever nu a pornit la timp"
+  },
+  "status_host_failed": {
+    "message": "Conexiunea la Retriever a eșuat"
+  },
+  "status_too_large": {
+    "message": "Detaliile acestei descărcări au fost prea mari pentru a fi transferate"
+  },
+  "status_update_app": {
+    "message": "Actualizați Retriever pentru a utiliza tot ce oferă această extensie"
+  },
+  "popup_take": {
+    "message": "Preluare descărcări din acest browser"
+  },
+  "popup_proxy": {
+    "message": "Trimiteți descărcările prin proxy-ul sau extensia VPN a acestui browser"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever descarcă apoi prin același proxy ca și acest browser. Browserul vă va cere o singură dată să permiteți acest lucru; dezactivarea acestei opțiuni anulează permisiunea."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever descarcă apoi prin același proxy ca acest browser. Cât timp această opțiune este dezactivată, extensia nu citește setările proxy ale browserului."
+  },
+  "popup_exclude_site": {
+    "message": "Nu preluați niciodată descărcări de pe $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Descărcările de pe $site$ rămân în browser",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Deschideți Retriever"
+  },
+  "popup_options": {
+    "message": "Opțiuni..."
+  },
+  "popup_help": {
+    "message": "Ajutor"
+  },
+  "popup_support": {
+    "message": "Susține Retriever"
+  },
+  "popup_fix": {
+    "message": "Cum se remediază"
+  },
+  "popup_by_hand": {
+    "message": "Această copie a fost încărcată manual și nu se va actualiza singură."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Această copie a fost încărcată manual: nu se va actualiza singură, iar browserul o va elimina la repornire."
+  },
+  "popup_store_chrome": {
+    "message": "Adăugați-l din Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "Adăugați-l de pe addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Lăsat browserului: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Ultima descărcare a fost lăsată browserului."
+  },
+  "declined_file_type": {
+    "message": "Tipul său nu este în Opțiuni → Tipuri de fișiere."
+  },
+  "declined_site": {
+    "message": "Site-ul său este în Opțiuni → Tipuri de fișiere, site-uri lăsate browserului."
+  },
+  "declined_address": {
+    "message": "Adresa sa este în Opțiuni → Tipuri de fișiere, adrese lăsate browserului."
+  },
+  "declined_small": {
+    "message": "Este mai mic decât dimensiunea minimă din Opțiuni → Tipuri de fișiere."
+  },
+  "declined_browser": {
+    "message": "Acest browser nu este bifat în Opțiuni → General."
+  },
+  "declined_integration_off": {
+    "message": "Opțiunea „Utilizare integrare avansată browser” este dezactivată în Opțiuni → General."
+  },
+  "declined_torrents": {
+    "message": "Este un torrent, iar „Deschideți linkurile magnet și fișierele .torrent cu Retriever” este dezactivat în setările Torrent."
+  },
+  "declined_site_access": {
+    "message": "Extensia nu are permisiunea de a citi acest site (accesul la site al browserului)."
+  },
+  "popup_alt": {
+    "message": "Țineți apăsat Alt în timp ce faceți clic pe un link pentru a lăsa browserul să-l descarce."
+  },
+  "popup_media": {
+    "message": "Media pe această pagină"
+  },
+  "popup_media_none": {
+    "message": "Nu s-a găsit încă niciun videoclip sau sunet pe această pagină. Redați-l, apoi deschideți din nou."
+  },
+  "popup_media_streamed": {
+    "message": "Playerul acestei pagini transmite videoclipul pe bucăți, așa că nu există niciun fișier de afișat. Indicați videoclipul și folosiți butonul său „Descărcați videoclipul”."
+  },
+  "popup_media_store": {
+    "message": "Regulile Magazinului web Chrome țin această copie a suplimentului departe de videoclipurile acestui site. La „Ajutor” găsiți ce puteți face."
+  },
+  "popup_media_download": {
+    "message": "Descărcați"
+  },
+  "popup_media_protected": {
+    "message": "Protejat"
+  },
+  "popup_media_live": {
+    "message": "În direct"
+  },
+  "video_off": {
+    "message": "Dezactivat pe acest site"
+  },
+  "video_drm": {
+    "message": "Videoclip protejat"
+  },
+  "video_unnamed": {
+    "message": "Nu se poate stabili ce videoclip este: deschideți pagina proprie a videoclipului și încercați acolo"
+  },
+  "video_looking": {
+    "message": "Se caută calitățile…"
+  },
+  "video_no_choices": {
+    "message": "Nu există niciun videoclip de descărcat aici"
+  },
+  "video_playlist": {
+    "message": "O listă de videoclipuri: alegeți-le în Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever are nevoie de yt-dlp pentru acest videoclip"
+  },
+  "video_too_long": {
+    "message": "Căutarea a durat prea mult"
+  },
+  "video_busy": {
+    "message": "Retriever este ocupat cu alte videoclipuri"
+  },
+  "video_queued": {
+    "message": "Adăugat la coadă"
+  },
+  "video_failed_lookup": {
+    "message": "Căutarea nu a reușit"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Deschideți postarea pentru a o descărca"
+  },
+  "popup_send_to": {
+    "message": "Trimite descărcările la"
+  },
+  "popup_send_here": {
+    "message": "Acest computer"
+  },
+  "popup_send_remote": {
+    "message": "Alt Retriever (un server)"
+  },
+  "popup_remote_code": {
+    "message": "Cod de asociere"
+  },
+  "popup_remote_open": {
+    "message": "Deschideți-l"
+  },
+  "popup_remote_pair": {
+    "message": "Asociați"
+  },
+  "popup_remote_help": {
+    "message": "Deschideți adresa o dată și acceptați certificatul, apoi introduceți un cod din Opțiuni, la distanță, Asociați un dispozitiv (sau retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Descărcările merg la $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Introduceți adresa https://."
+  },
+  "remote_unreachable": {
+    "message": "Nu s-a ajuns la destinație. Deschideți adresa o dată în acest browser și acceptați certificatul, apoi încercați din nou."
+  },
+  "remote_wrong_code": {
+    "message": "Cod greșit."
+  },
+  "remote_no_code": {
+    "message": "Nu afișează niciun cod acum: faceți clic pe Asociați un dispozitiv acolo mai întâi."
+  },
+  "remote_too_soon": {
+    "message": "Așteptați un moment, apoi încercați din nou."
+  },
+  "remote_failed": {
+    "message": "Nu a funcționat. Încercați din nou."
+  },
+  "remote_device_name": {
+    "message": "Extensie de browser"
+  },
+  "popup_media_title_name": {
+    "message": "Adaugă titlul paginii înaintea numelor fișierelor media"
+  },
+  "video_cant_save": {
+    "message": "nu poate fi salvat"
+  },
+  "video_open_post_button": {
+    "message": "Deschideți postarea"
+  },
+  "video_drag_dots": {
+    "message": "Trageți punctele pentru a-l muta de-a lungul marginii"
+  },
+  "video_tip": {
+    "message": "Descărcați $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Descărcați cea mai bună calitate"
+  },
+  "video_sending": {
+    "message": "Se trimite către Retriever..."
+  },
+  "video_added": {
+    "message": "Adăugat la Retriever"
+  },
+  "video_show": {
+    "message": "Afișați"
+  },
+  "video_no_answer": {
+    "message": "Retriever nu a răspuns"
+  },
+  "video_get_mdm": {
+    "message": "Obțineți Retriever"
+  },
+  "video_retry": {
+    "message": "Reîncercați"
+  },
+  "video_turn_on": {
+    "message": "Activați"
+  },
+  "video_best": {
+    "message": "cea mai bună"
+  },
+  "video_all_qualities": {
+    "message": "Toate calitățile și subtitrările..."
+  },
+  "video_part": {
+    "message": "Descărcați o parte de aici..."
+  },
+  "video_failed": {
+    "message": "Retriever nu este instalat sau nu a pornit"
+  },
+  "video_download_best": {
+    "message": "Descărcați cea mai bună calitate"
+  },
+  "video_original": {
+    "message": "original"
+  },
+  "video_compatible": {
+    "message": "Cea mai compatibilă"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Ascundeți butonul de descărcare în modul ecran complet"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "În timp ce pagina este în modul ecran complet, videoclipurile sale nu afișează butonul Descărcați videoclipul"
+  },
+  "popup_remote_forget": {
+    "message": "Uită"
+  },
+  "popup_gear": {
+    "message": "Opțiuni în Retriever"
+  },
+  "popup_tabs": {
+    "message": "Secțiuni pop-up"
+  },
+  "popup_tab_downloads": {
+    "message": "Descărcări"
+  },
+  "popup_tab_page": {
+    "message": "Această pagină"
+  },
+  "popup_tab_settings": {
+    "message": "Setări"
+  },
+  "popup_conn": {
+    "message": "Conectat · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Conectat"
+  },
+  "popup_conn_off": {
+    "message": "Nu este conectat"
+  },
+  "popup_conn_paused": {
+    "message": "În pauză"
+  },
+  "popup_conn_update": {
+    "message": "Actualizați Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Se trimite la $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Anulare"
+  },
+  "popup_page_none": {
+    "message": "Aceasta nu este o pagină web: nu este nimic de făcut aici."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Lăsat browserului printr-o regulă din Opțiuni"
+  },
+  "popup_dl_search": {
+    "message": "Căutați descărcări"
+  },
+  "popup_dl_filters": {
+    "message": "Afișați"
+  },
+  "popup_dl_all": {
+    "message": "Toate"
+  },
+  "popup_dl_running": {
+    "message": "În curs"
+  },
+  "popup_dl_done_filter": {
+    "message": "Finalizat"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Eșuat"
+  },
+  "popup_dl_clear": {
+    "message": "Ștergeți finalizate"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ se descarcă acum",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Acestea sunt descărcările aplicației Retriever de pe $server$. Deschideți fișierele acolo.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Se afișează cele mai noi $shown$ din $total$. Retriever le afișează pe toate.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ din $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "$time$ rămas",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Se pornește..."
+  },
+  "popup_dl_paused": {
+    "message": "În pauză"
+  },
+  "popup_dl_waiting": {
+    "message": "În așteptare"
+  },
+  "popup_dl_done": {
+    "message": "Finalizat"
+  },
+  "popup_dl_just_now": {
+    "message": "chiar acum"
+  },
+  "popup_dl_failed": {
+    "message": "Eșuat"
+  },
+  "popup_dl_failed_why": {
+    "message": "Eșuat: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Fișier șters sau mutat"
+  },
+  "popup_dl_loading": {
+    "message": "Se caută descărcări..."
+  },
+  "popup_dl_none": {
+    "message": "Nicio descărcare încă"
+  },
+  "popup_dl_none_text": {
+    "message": "Ceea ce descărcați cu Retriever apare aici."
+  },
+  "popup_dl_no_match": {
+    "message": "Nimic nu se potrivește"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Niciun nume sau adresă de descărcare nu conține „$words$”.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Afișați toate descărcările"
+  },
+  "popup_list_off": {
+    "message": "Retriever nu rulează"
+  },
+  "popup_list_off_text": {
+    "message": "Porniți-l pentru a vedea descărcările aici."
+  },
+  "popup_list_start": {
+    "message": "Porniți Retriever"
+  },
+  "popup_list_old": {
+    "message": "Actualizați Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Această versiune nu poate lista încă descărcările aici."
+  },
+  "popup_list_busy": {
+    "message": "Retriever este ocupat. Se încearcă din nou..."
+  },
+  "popup_list_unreached": {
+    "message": "Nu se poate accesa Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Nu se poate accesa Retriever la $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Verificați dacă rulează și dacă acest browser îi acceptă certificatul (Setări → Trimiteți descărcări către → Deschideți-l).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Deschideți"
+  },
+  "popup_act_open_named": {
+    "message": "Deschideți $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Afișați în dosar"
+  },
+  "popup_act_folder_named": {
+    "message": "Afișați $file$ în dosar",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Copiați fișierul"
+  },
+  "popup_act_share": {
+    "message": "Partajare..."
+  },
+  "popup_act_copy_link": {
+    "message": "Copiați linkul"
+  },
+  "popup_act_pause": {
+    "message": "Pauză"
+  },
+  "popup_act_pause_named": {
+    "message": "Puneți pe pauză $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Reluați"
+  },
+  "popup_act_resume_named": {
+    "message": "Reluați $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Descărcați din nou"
+  },
+  "popup_act_remove": {
+    "message": "Eliminați din listă"
+  },
+  "popup_act_delete": {
+    "message": "Șterge fișierul..."
+  },
+  "popup_act_more": {
+    "message": "Mai multe acțiuni"
+  },
+  "popup_act_more_named": {
+    "message": "Mai multe acțiuni pentru $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Ștergeți fișierul?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ va fi șters de pe computer și descărcarea va fi eliminată din listă. Această acțiune nu poate fi anulată.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Ștergeți"
+  },
+  "popup_ask_clear_title": {
+    "message": "Ștergeți descărcările finalizate?"
+  },
+  "popup_ask_clear": {
+    "message": "Cele $count$ descărcări finalizate vor fi eliminate din listă. Fișierele lor rămân unde sunt.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Ștergeți"
+  },
+  "popup_said_file": {
+    "message": "S-a copiat $file$. Lipiți-l într-un folder, un chat sau un mesaj.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Link copiat"
+  },
+  "popup_said_removed": {
+    "message": "$file$ eliminat din listă",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ șters",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Se descarcă din nou $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Descărcările finalizate au fost șterse"
+  },
+  "popup_act_gone": {
+    "message": "Descărcarea respectivă nu mai este în listă."
+  },
+  "popup_act_missing": {
+    "message": "Fișierul său nu mai este unde a fost salvat (mutat sau șters)."
+  },
+  "popup_act_running": {
+    "message": "Puneți-l mai întâi pe pauză."
+  },
+  "popup_act_cant": {
+    "message": "Acest lucru nu se poate face acum pentru această descărcare."
+  },
+  "popup_act_unsupported": {
+    "message": "Acest sistem nu poate face asta."
+  },
+  "popup_act_off": {
+    "message": "Retriever nu rulează."
+  },
+  "popup_act_busy": {
+    "message": "Retriever nu a răspuns la timp. Încercați din nou."
+  },
+  "popup_act_failed": {
+    "message": "Nu a funcționat. Încercați din nou."
+  },
+  "status_running": {
+    "message": "Se descarcă: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Deschideți pagina sa"
+  }
+}

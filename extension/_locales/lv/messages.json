@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Nodod lejupielādes no pārlūkprogrammas uz Retriever."
+  },
+  "menu": {
+    "message": "Lejupielādēt ar Retriever"
+  },
+  "video_download": {
+    "message": "Lejupielādēt video"
+  },
+  "video_more": {
+    "message": "Citas opcijas"
+  },
+  "video_hide_here": {
+    "message": "Paslēpt šajā video"
+  },
+  "video_never_site": {
+    "message": "Nekad vietnē $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Pogas iestatījumi..."
+  },
+  "video_sent": {
+    "message": "Nosūtīts uz Retriever"
+  },
+  "menu_selected": {
+    "message": "Lejupielādēt atlasītās saites ar Retriever"
+  },
+  "menu_all": {
+    "message": "Lejupielādēt visas saites ar Retriever"
+  },
+  "status_connected": {
+    "message": "Savienots ar Retriever"
+  },
+  "status_connected_version": {
+    "message": "Savienots ar Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Apturēts: lejupielādes paliek pārlūkprogrammā"
+  },
+  "status_not_installed": {
+    "message": "Retriever nav instalēts vai tā pārlūkprogrammas integrācija nav iestatīta"
+  },
+  "status_forbidden": {
+    "message": "Retriever nepieņem šo paplašinājuma kopiju"
+  },
+  "status_not_running": {
+    "message": "Retriever nesāka darboties laikā"
+  },
+  "status_host_failed": {
+    "message": "Savienojums ar Retriever neizdevās"
+  },
+  "status_too_large": {
+    "message": "Šīs lejupielādes detaļas bija pārāk lielas, lai tās nodotu"
+  },
+  "status_update_app": {
+    "message": "Atjauniniet Retriever, lai izmantotu visu, ko piedāvā šis paplašinājums"
+  },
+  "popup_take": {
+    "message": "Pārņemt lejupielādes no šīs pārlūkprogrammas"
+  },
+  "popup_proxy": {
+    "message": "Sūtīt lejupielādes, izmantojot šīs pārlūkprogrammas starpniekservera vai VPN paplašinājumu"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever pēc tam lejupielādē, izmantojot to pašu starpniekserveri, ko izmanto šī pārlūkprogramma. Pārlūkprogramma vienreiz lūgs jums to atļaut; izslēdzot šo opciju, atļauja tiks atsaukta."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever pēc tam lejupielādē, izmantojot to pašu starpniekserveri, ko izmanto šī pārlūkprogramma. Kad šī opcija ir izslēgta, paplašinājums nenolasa pārlūkprogrammas starpniekservera iestatījumus."
+  },
+  "popup_exclude_site": {
+    "message": "Nekad nepārņemt lejupielādes no $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Lejupielādes no $site$ paliek pārlūkprogrammā",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Atvērt Retriever"
+  },
+  "popup_options": {
+    "message": "Opcijas..."
+  },
+  "popup_help": {
+    "message": "Palīdzība"
+  },
+  "popup_support": {
+    "message": "Atbalstīt Retriever"
+  },
+  "popup_fix": {
+    "message": "Kā to labot"
+  },
+  "popup_by_hand": {
+    "message": "Šī kopija tika ielādēta manuāli un pati neatjaunināsies."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Šī kopija tika ielādēta manuāli: tā netiks atjaunināta automātiski, un pārlūkprogramma to noņems, kad tā tiks restartēta."
+  },
+  "popup_store_chrome": {
+    "message": "Pievienot no Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "Pievienot no addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Atstāts pārlūkprogrammai: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Pēdējā lejupielāde tika atstāta pārlūkprogrammai."
+  },
+  "declined_file_type": {
+    "message": "Tā tips nav sadaļā Opcijas → Failu tipi."
+  },
+  "declined_site": {
+    "message": "Tā vietne ir sadaļā Opcijas → Failu tipi, vietnes, kas atstātas pārlūkprogrammai."
+  },
+  "declined_address": {
+    "message": "Tā adrese ir sadaļā Opcijas → Failu tipi, adreses, kas atstātas pārlūkprogrammai."
+  },
+  "declined_small": {
+    "message": "Tas ir mazāks par minimālo lielumu sadaļā Opcijas → Failu tipi."
+  },
+  "declined_browser": {
+    "message": "Šī pārlūkprogramma nav atzīmēta sadaļā Opcijas → Vispārīgi."
+  },
+  "declined_integration_off": {
+    "message": "Opcijās → Vispārīgi ir izslēgta opcija Izmantot uzlabotu pārlūkprogrammas integrāciju."
+  },
+  "declined_torrents": {
+    "message": "Tas ir torrents, un opcija „Atvērt magnētsaites un .torrent failus ar Retriever“ ir izslēgta torrentu iestatījumos."
+  },
+  "declined_site_access": {
+    "message": "Paplašinājumam nav atļauts lasīt šo vietni (pārlūkprogrammas vietnes piekļuve)."
+  },
+  "popup_alt": {
+    "message": "Turiet nospiestu Alt un noklikšķiniet uz saites, lai ļautu pārlūkprogrammai to lejupielādēt."
+  },
+  "popup_media": {
+    "message": "Multivide šajā lapā"
+  },
+  "popup_media_none": {
+    "message": "Šajā lapā vēl nav atrasts neviens video vai skaņa. Atskaņojiet to, pēc tam atveriet to vēlreiz."
+  },
+  "popup_media_streamed": {
+    "message": "Šīs lapas atskaņotājs straumē video pa daļām, tāpēc nav faila, ko parādīt sarakstā. Norādiet uz video un izmantojiet tā pogu “Lejupielādēt video”."
+  },
+  "popup_media_store": {
+    "message": "Chrome interneta veikala noteikumi tur šo papildinājuma kopiju tālāk no šīs vietnes video. Sadaļā “Palīdzība” ir teikts, ko varat darīt."
+  },
+  "popup_media_download": {
+    "message": "Lejupielādēt"
+  },
+  "popup_media_protected": {
+    "message": "Aizsargāts"
+  },
+  "popup_media_live": {
+    "message": "Tiešraide"
+  },
+  "video_off": {
+    "message": "Izslēgts šajā vietnē"
+  },
+  "video_drm": {
+    "message": "Aizsargāts video"
+  },
+  "video_unnamed": {
+    "message": "Nevar noteikt, kurš video tas ir: atveriet tā lapu un mēģiniet tur"
+  },
+  "video_looking": {
+    "message": "Meklē kvalitātes…"
+  },
+  "video_no_choices": {
+    "message": "Šeit nav lejupielādējama video"
+  },
+  "video_playlist": {
+    "message": "Video saraksts: izvēlieties tos programmā Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Programmai Retriever šim video ir nepieciešams yt-dlp"
+  },
+  "video_too_long": {
+    "message": "Meklēšana ilga pārāk ilgi"
+  },
+  "video_busy": {
+    "message": "Retriever ir aizņemts ar citiem video"
+  },
+  "video_queued": {
+    "message": "Pievienots rindai"
+  },
+  "video_failed_lookup": {
+    "message": "Meklēšana neizdevās"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Atveriet ziņu, lai lejupielādētu"
+  },
+  "popup_send_to": {
+    "message": "Sūtīt lejupielādes uz"
+  },
+  "popup_send_here": {
+    "message": "Šis dators"
+  },
+  "popup_send_remote": {
+    "message": "Cits Retriever (serveris)"
+  },
+  "popup_remote_code": {
+    "message": "Savienošanas kods"
+  },
+  "popup_remote_open": {
+    "message": "Atvērt"
+  },
+  "popup_remote_pair": {
+    "message": "Savienot"
+  },
+  "popup_remote_help": {
+    "message": "Vienreiz atveriet tā adresi un pieņemiet tā sertifikātu, pēc tam ievadiet kodu no tā Iespējas, Attālināti, Savienot ierīci (vai retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Lejupielādes tiek sūtītas uz $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Ievadiet tā https:// adresi."
+  },
+  "remote_unreachable": {
+    "message": "Nav sasniegts. Vienreiz atveriet tā adresi šajā pārlūkprogrammā un pieņemiet tā sertifikātu, pēc tam mēģiniet vēlreiz."
+  },
+  "remote_wrong_code": {
+    "message": "Nepareizs kods."
+  },
+  "remote_no_code": {
+    "message": "Tas tagad nerāda kodu: vispirms noklikšķiniet tur uz Savienot ierīci."
+  },
+  "remote_too_soon": {
+    "message": "Pagaidiet brīdi, tad mēģiniet vēlreiz."
+  },
+  "remote_failed": {
+    "message": "Tas nedarbojās. Mēģiniet vēlreiz."
+  },
+  "remote_device_name": {
+    "message": "Pārlūkprogrammas paplašinājums"
+  },
+  "popup_media_title_name": {
+    "message": "Pievienot lapas nosaukumu multivides failu nosaukumu priekšā"
+  },
+  "video_cant_save": {
+    "message": "nevar saglabāt"
+  },
+  "video_open_post_button": {
+    "message": "Atvērt ziņu"
+  },
+  "video_drag_dots": {
+    "message": "Velciet punktus, lai pārvietotu to gar malu"
+  },
+  "video_tip": {
+    "message": "Lejupielādēt $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Lejupielādēt labāko kvalitāti"
+  },
+  "video_sending": {
+    "message": "Sūta uz Retriever..."
+  },
+  "video_added": {
+    "message": "Pievienots Retriever"
+  },
+  "video_show": {
+    "message": "Rādīt"
+  },
+  "video_no_answer": {
+    "message": "Retriever neatbildēja"
+  },
+  "video_get_mdm": {
+    "message": "Iegūt Retriever"
+  },
+  "video_retry": {
+    "message": "Mēģināt vēlreiz"
+  },
+  "video_turn_on": {
+    "message": "Ieslēgt"
+  },
+  "video_best": {
+    "message": "labākā"
+  },
+  "video_all_qualities": {
+    "message": "Lejupielādēt visās kvalitātēs un ar subtitriem..."
+  },
+  "video_part": {
+    "message": "Lejupielādēt daļu, sākot no šejienes..."
+  },
+  "video_failed": {
+    "message": "Retriever nav instalēts vai nav palaists"
+  },
+  "video_download_best": {
+    "message": "Lejupielādēt labāko kvalitāti"
+  },
+  "video_original": {
+    "message": "oriģināls"
+  },
+  "video_compatible": {
+    "message": "Vislabākā saderība"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Paslēpt lejupielādes pogu pilnekrāna režīmā"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Kamēr lapa ir pilnekrāna režīmā, tās videoklipiem netiek rādīta lejupielādes poga"
+  },
+  "popup_remote_forget": {
+    "message": "Aizmirst"
+  },
+  "popup_gear": {
+    "message": "Opcijas programmā Retriever"
+  },
+  "popup_tabs": {
+    "message": "Uznirstošā loga sadaļas"
+  },
+  "popup_tab_downloads": {
+    "message": "Lejupielādes"
+  },
+  "popup_tab_page": {
+    "message": "Šī lapa"
+  },
+  "popup_tab_settings": {
+    "message": "Iestatījumi"
+  },
+  "popup_conn": {
+    "message": "Savienots · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Savienots"
+  },
+  "popup_conn_off": {
+    "message": "Nav savienots"
+  },
+  "popup_conn_paused": {
+    "message": "Pauzēta"
+  },
+  "popup_conn_update": {
+    "message": "Atjaunināt Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Sūta uz $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Atcelt"
+  },
+  "popup_page_none": {
+    "message": "Šī nav tīmekļa lapa: šeit nav ko darīt."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Atstāts pārlūkprogrammai pēc noteikuma sadaļā Opcijas"
+  },
+  "popup_dl_search": {
+    "message": "Meklēt lejupielādes"
+  },
+  "popup_dl_filters": {
+    "message": "Rādīt"
+  },
+  "popup_dl_all": {
+    "message": "Visi"
+  },
+  "popup_dl_running": {
+    "message": "Notiek"
+  },
+  "popup_dl_done_filter": {
+    "message": "Pabeigts"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Neizdevās"
+  },
+  "popup_dl_clear": {
+    "message": "Notīrīt pabeigtās"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ lejupielādē pašlaik",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Šīs ir Retriever lejupielādes serverī $server$. Atveriet to failus tur.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Jaunākās $shown$ no $total$. Retriever uzskaita tās visas.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ no $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Atlicis $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Sākas..."
+  },
+  "popup_dl_paused": {
+    "message": "Pauzēta"
+  },
+  "popup_dl_waiting": {
+    "message": "Gaida"
+  },
+  "popup_dl_done": {
+    "message": "Pabeigts"
+  },
+  "popup_dl_just_now": {
+    "message": "tikko"
+  },
+  "popup_dl_failed": {
+    "message": "Neizdevās"
+  },
+  "popup_dl_failed_why": {
+    "message": "Neizdevās: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Fails dzēsts vai pārvietots"
+  },
+  "popup_dl_loading": {
+    "message": "Meklē lejupielādes..."
+  },
+  "popup_dl_none": {
+    "message": "Vēl nav lejupielāžu"
+  },
+  "popup_dl_none_text": {
+    "message": "Šeit parādās tas, ko lejupielādējat ar Retriever."
+  },
+  "popup_dl_no_match": {
+    "message": "Nekas neatbilst"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Nevienas lejupielādes nosaukumā vai adresē nav „$words$“.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Rādīt visas lejupielādes"
+  },
+  "popup_list_off": {
+    "message": "Retriever nedarbojas"
+  },
+  "popup_list_off_text": {
+    "message": "Palaidiet to, lai šeit redzētu savas lejupielādes."
+  },
+  "popup_list_start": {
+    "message": "Palaist Retriever"
+  },
+  "popup_list_old": {
+    "message": "Atjaunināt Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Šī versija vēl nevar uzskaitīt savas lejupielādes šeit."
+  },
+  "popup_list_busy": {
+    "message": "Retriever ir aizņemts. Mēģina vēlreiz..."
+  },
+  "popup_list_unreached": {
+    "message": "Nevar sasniegt Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Nevar sasniegt Retriever serverī $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Pārbaudiet, vai tas darbojas un vai šī pārlūkprogramma pieņem tā sertifikātu (Iestatījumi → Sūtīt lejupielādes uz → Atvērt to).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Atvērt"
+  },
+  "popup_act_open_named": {
+    "message": "Atvērt $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Rādīt mapē"
+  },
+  "popup_act_folder_named": {
+    "message": "Rādīt $file$ mapē",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Kopēt failu"
+  },
+  "popup_act_share": {
+    "message": "Kopīgot..."
+  },
+  "popup_act_copy_link": {
+    "message": "Kopēt saiti"
+  },
+  "popup_act_pause": {
+    "message": "Pauzēt"
+  },
+  "popup_act_pause_named": {
+    "message": "Pauzēt $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Atsākt"
+  },
+  "popup_act_resume_named": {
+    "message": "Atsākt $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Lejupielādēt vēlreiz"
+  },
+  "popup_act_remove": {
+    "message": "Noņemt no saraksta"
+  },
+  "popup_act_delete": {
+    "message": "Dzēst failu..."
+  },
+  "popup_act_more": {
+    "message": "Citas darbības"
+  },
+  "popup_act_more_named": {
+    "message": "Citas darbības failam $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Dzēst failu?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ tiks dzēsts no jūsu datora, un lejupielāde tiks noņemta no saraksta. To nevar atsaukt.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Dzēst"
+  },
+  "popup_ask_clear_title": {
+    "message": "Notīrīt pabeigtās lejupielādes?"
+  },
+  "popup_ask_clear": {
+    "message": "Pabeigtās $count$ lejupielādes tiks noņemtas no saraksta. To faili paliks savās vietās.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Notīrīt"
+  },
+  "popup_said_file": {
+    "message": "Nokopēts $file$. Ielīmējiet to mapē, tērzēšanā vai ziņojumā.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Saite nokopēta"
+  },
+  "popup_said_removed": {
+    "message": "$file$ noņemts no saraksta",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ dzēsts",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Notiek $file$ lejupielāde vēlreiz",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Pabeigtās lejupielādes notīrītas"
+  },
+  "popup_act_gone": {
+    "message": "Šī lejupielāde vairs nav sarakstā."
+  },
+  "popup_act_missing": {
+    "message": "Fails vairs neatrodas saglabāšanas vietā (pārvietots vai dzēsts)."
+  },
+  "popup_act_running": {
+    "message": "Vispirms pauzējiet."
+  },
+  "popup_act_cant": {
+    "message": "To pašlaik nevar izdarīt ar šo lejupielādi."
+  },
+  "popup_act_unsupported": {
+    "message": "Šī sistēma to nevar izdarīt."
+  },
+  "popup_act_off": {
+    "message": "Retriever nedarbojas."
+  },
+  "popup_act_busy": {
+    "message": "Retriever neatbildēja laikā. Mēģiniet vēlreiz."
+  },
+  "popup_act_failed": {
+    "message": "Neizdevās. Mēģiniet vēlreiz."
+  },
+  "status_running": {
+    "message": "Notiek lejupielāde: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Atvērt tā lapu"
+  }
+}

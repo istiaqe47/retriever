@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "ಬ್ರೌಸರ್‌ನಿಂದ Retriever ಗೆ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಹಸ್ತಾಂತರಿಸುತ್ತದೆ."
+  },
+  "menu": {
+    "message": "Retriever ನೊಂದಿಗೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_download": {
+    "message": "ವೀಡಿಯೊ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_more": {
+    "message": "ಹೆಚ್ಚಿನ ಆಯ್ಕೆಗಳು"
+  },
+  "video_hide_here": {
+    "message": "ಈ ವೀಡಿಯೊದಲ್ಲಿ ಮರೆಮಾಡಿ"
+  },
+  "video_never_site": {
+    "message": "$site$ ನಲ್ಲಿ ಎಂದಿಗೂ ಬೇಡ",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "ಬಟನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು..."
+  },
+  "video_sent": {
+    "message": "Retriever ಗೆ ಕಳುಹಿಸಲಾಗಿದೆ"
+  },
+  "menu_selected": {
+    "message": "Retriever ನೊಂದಿಗೆ ಆಯ್ದ ಲಿಂಕ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "menu_all": {
+    "message": "Retriever ನೊಂದಿಗೆ ಎಲ್ಲಾ ಲಿಂಕ್‌ಗಳನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "status_connected": {
+    "message": "Retriever ಗೆ ಸಂಪರ್ಕಿಸಲಾಗಿದೆ"
+  },
+  "status_connected_version": {
+    "message": "Retriever $version$ ಗೆ ಸಂಪರ್ಕಿಸಲಾಗಿದೆ",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ: ಡೌನ್‌ಲೋಡ್‌ಗಳು ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಉಳಿಯುತ್ತವೆ"
+  },
+  "status_not_installed": {
+    "message": "Retriever ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ, ಅಥವಾ ಅದರ ಬ್ರೌಸರ್ ಏಕೀಕರಣವನ್ನು ಹೊಂದಿಸಲಾಗಿಲ್ಲ"
+  },
+  "status_forbidden": {
+    "message": "Retriever ವಿಸ್ತರಣೆಯ ಈ ನಕಲನ್ನು ಸ್ವೀಕರಿಸುವುದಿಲ್ಲ"
+  },
+  "status_not_running": {
+    "message": "Retriever ಸಮಯಕ್ಕೆ ಪ್ರಾರಂಭವಾಗಲಿಲ್ಲ"
+  },
+  "status_host_failed": {
+    "message": "Retriever ಗೆ ಸಂಪರ್ಕ ವಿಫಲವಾಗಿದೆ"
+  },
+  "status_too_large": {
+    "message": "ಈ ಡೌನ್‌ಲೋಡ್‌ನ ವಿವರಗಳು ಹಸ್ತಾಂತರಿಸಲು ತುಂಬಾ ದೊಡ್ಡದಾಗಿದೆ"
+  },
+  "status_update_app": {
+    "message": "ಈ ವಿಸ್ತರಣೆಯು ನೀಡುವ ಎಲ್ಲವನ್ನೂ ಬಳಸಲು Retriever ಅನ್ನು ನವೀಕರಿಸಿ"
+  },
+  "popup_take": {
+    "message": "ಈ ಬ್ರೌಸರ್‌ನಿಂದ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಿ"
+  },
+  "popup_proxy": {
+    "message": "ಈ ಬ್ರೌಸರ್‌ನ ಪ್ರಾಕ್ಸಿ ಅಥವಾ VPN ವಿಸ್ತರಣೆಯ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಕಳುಹಿಸಿ"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever ನಂತರ ಈ ಬ್ರೌಸರ್‌ನಂತೆಯೇ ಅದೇ ಪ್ರಾಕ್ಸಿ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತದೆ. ಅದನ್ನು ಅನುಮತಿಸಲು ಬ್ರೌಸರ್ ಒಮ್ಮೆ ನಿಮ್ಮನ್ನು ಕೇಳುತ್ತದೆ; ಇದನ್ನು ಆಫ್ ಮಾಡುವುದರಿಂದ ಅದನ್ನು ಹಿಂಪಡೆಯುತ್ತದೆ."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever ನಂತರ ಈ ಬ್ರೌಸರ್‌ನಂತೆಯೇ ಅದೇ ಪ್ರಾಕ್ಸಿ ಮೂಲಕ ಡೌನ್‌ಲೋಡ್ ಮಾಡುತ್ತದೆ. ಇದು ಆಫ್ ಆಗಿರುವಾಗ, ವಿಸ್ತರಣೆಯು ಬ್ರೌಸರ್‌ನ ಪ್ರಾಕ್ಸಿಯನ್ನು ಓದುವುದಿಲ್ಲ."
+  },
+  "popup_exclude_site": {
+    "message": "$site$ ನಿಂದ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಎಂದಿಗೂ ತೆಗೆದುಕೊಳ್ಳಬೇಡಿ",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "$site$ ನಿಂದ ಡೌನ್‌ಲೋಡ್‌ಗಳು ಬ್ರೌಸರ್‌ನಲ್ಲೇ ಉಳಿಯುತ್ತವೆ",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Retriever ತೆರೆಯಿರಿ"
+  },
+  "popup_options": {
+    "message": "ಆಯ್ಕೆಗಳು..."
+  },
+  "popup_help": {
+    "message": "ಸಹಾಯ"
+  },
+  "popup_support": {
+    "message": "Retriever ಅನ್ನು ಬೆಂಬಲಿಸಿ"
+  },
+  "popup_fix": {
+    "message": "ಅದನ್ನು ಹೇಗೆ ಸರಿಪಡಿಸುವುದು"
+  },
+  "popup_by_hand": {
+    "message": "ಈ ನಕಲನ್ನು ಕೈಯಾರೆ ಲೋಡ್ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ಸ್ವತಃ ಅಪ್‌ಡೇಟ್ ಆಗುವುದಿಲ್ಲ."
+  },
+  "popup_by_hand_firefox": {
+    "message": "ಈ ನಕಲನ್ನು ಕೈಯಾರೆ ಲೋಡ್ ಮಾಡಲಾಗಿದೆ: ಇದು ಸ್ವತಃ ಅಪ್‌ಡೇಟ್ ಆಗುವುದಿಲ್ಲ, ಮತ್ತು ಬ್ರೌಸರ್ ಮರುಪ್ರಾರಂಭಿಸಿದಾಗ ಅದನ್ನು ತೆಗೆದುಹಾಕುತ್ತದೆ."
+  },
+  "popup_store_chrome": {
+    "message": "Chrome Web Store ನಿಂದ ಸೇರಿಸಿ"
+  },
+  "popup_store_firefox": {
+    "message": "addons.mozilla.org ನಿಂದ ಸೇರಿಸಿ"
+  },
+  "popup_declined": {
+    "message": "ಬ್ರೌಸರ್‌ಗೆ ಬಿಡಲಾಗಿದೆ: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "ಕೊನೆಯ ಡೌನ್‌ಲೋಡ್ ಅನ್ನು ಬ್ರೌಸರ್‌ಗೆ ಬಿಡಲಾಗಿದೆ."
+  },
+  "declined_file_type": {
+    "message": "ಅದರ ಪ್ರಕಾರವು ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳಲ್ಲಿಲ್ಲ."
+  },
+  "declined_site": {
+    "message": "ಅದರ ಸೈಟ್ ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳು, ಬ್ರೌಸರ್‌ಗೆ ಬಿಟ್ಟ ಸೈಟ್‌ಗಳಲ್ಲಿದೆ."
+  },
+  "declined_address": {
+    "message": "ಅದರ ವಿಳಾಸವು ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳು, ಬ್ರೌಸರ್‌ಗೆ ಬಿಟ್ಟ ವಿಳಾಸಗಳಲ್ಲಿದೆ."
+  },
+  "declined_small": {
+    "message": "ಇದು ಆಯ್ಕೆಗಳು → ಫೈಲ್ ಪ್ರಕಾರಗಳಲ್ಲಿನ ಕನಿಷ್ಠ ಗಾತ್ರಕ್ಕಿಂತ ಚಿಕ್ಕದಾಗಿದೆ."
+  },
+  "declined_browser": {
+    "message": "ಈ ಬ್ರೌಸರ್ ಅನ್ನು ಆಯ್ಕೆಗಳು → ಸಾಮಾನ್ಯದಲ್ಲಿ ಗುರುತಿಸಲಾಗಿಲ್ಲ."
+  },
+  "declined_integration_off": {
+    "message": "ಆಯ್ಕೆಗಳು → ಸಾಮಾನ್ಯದಲ್ಲಿ ಸುಧಾರಿತ ಬ್ರೌಸರ್ ಇಂಟಿಗ್ರೇಷನ್ ಬಳಸಿ ಆಫ್ ಆಗಿದೆ."
+  },
+  "declined_torrents": {
+    "message": "ಇದು ಟೊರೆಂಟ್ ಆಗಿದೆ, ಮತ್ತು ಟೊರೆಂಟ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ Retriever ನೊಂದಿಗೆ ಮ್ಯಾಗ್ನೆಟ್ ಲಿಂಕ್‌ಗಳು ಮತ್ತು .torrent ಫೈಲ್‌ಗಳನ್ನು ತೆರೆಯಿರಿ ಆಫ್ ಆಗಿದೆ."
+  },
+  "declined_site_access": {
+    "message": "ಈ ಸೈಟ್ ಅನ್ನು ಓದಲು ವಿಸ್ತರಣೆಗೆ ಅನುಮತಿ ಇಲ್ಲ (ಬ್ರೌಸರ್‌ನ ಸೈಟ್ ಪ್ರವೇಶ)."
+  },
+  "popup_alt": {
+    "message": "ಬ್ರೌಸರ್ ಅದನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು, ಲಿಂಕ್ ಕ್ಲಿಕ್ ಮಾಡುವಾಗ Alt ಕೀಲಿಯನ್ನು ಒತ್ತಿಹಿಡಿಯಿರಿ."
+  },
+  "popup_media": {
+    "message": "ಈ ಪುಟದಲ್ಲಿರುವ ಮಾಧ್ಯಮ"
+  },
+  "popup_media_none": {
+    "message": "ಈ ಪುಟದಲ್ಲಿ ಯಾವುದೇ ವೀಡಿಯೊ ಅಥವಾ ಧ್ವನಿ ಇನ್ನೂ ಕಂಡುಬಂದಿಲ್ಲ. ಅದನ್ನು ಪ್ಲೇ ಮಾಡಿ, ನಂತರ ಇದನ್ನು ಮತ್ತೆ ತೆರೆಯಿರಿ."
+  },
+  "popup_media_streamed": {
+    "message": "ಈ ಪುಟದ ಪ್ಲೇಯರ್ ವೀಡಿಯೊವನ್ನು ತುಂಡುಗಳಲ್ಲಿ ಸ್ಟ್ರೀಮ್ ಮಾಡುತ್ತದೆ, ಆದ್ದರಿಂದ ಪಟ್ಟಿ ಮಾಡಲು ಯಾವುದೇ ಫೈಲ್ ಇಲ್ಲ. ವೀಡಿಯೊದ ಮೇಲೆ ಪಾಯಿಂಟರ್ ಇರಿಸಿ ಅದರ «ವೀಡಿಯೊ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ» ಬಟನ್ ಬಳಸಿ."
+  },
+  "popup_media_store": {
+    "message": "Chrome Web Store ನಿಯಮಗಳು ಆಡ್-ಆನ್‌ನ ಈ ಪ್ರತಿಯನ್ನು ಈ ಸೈಟ್‌ನ ವೀಡಿಯೊಗಳಿಂದ ದೂರ ಇಡುತ್ತವೆ. ನೀವು ಏನು ಮಾಡಬಹುದು ಎಂಬುದನ್ನು «ಸಹಾಯ» ತಿಳಿಸುತ್ತದೆ."
+  },
+  "popup_media_download": {
+    "message": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "popup_media_protected": {
+    "message": "ರಕ್ಷಿಸಲಾಗಿದೆ"
+  },
+  "popup_media_live": {
+    "message": "ಲೈವ್"
+  },
+  "video_off": {
+    "message": "ಈ ಸೈಟ್‌ನಲ್ಲಿ ಆಫ್ ಆಗಿದೆ"
+  },
+  "video_drm": {
+    "message": "ರಕ್ಷಿತ ವೀಡಿಯೊ"
+  },
+  "video_unnamed": {
+    "message": "ಇದು ಯಾವ ವೀಡಿಯೊ ಎಂದು ತಿಳಿಯುತ್ತಿಲ್ಲ: ಅದರ ಸ್ವಂತ ಪುಟವನ್ನು ತೆರೆದು ಅಲ್ಲಿ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "video_looking": {
+    "message": "ಗುಣಮಟ್ಟಗಳನ್ನು ಹುಡುಕಲಾಗುತ್ತಿದೆ…"
+  },
+  "video_no_choices": {
+    "message": "ಇಲ್ಲಿ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ವೀಡಿಯೊ ಇಲ್ಲ"
+  },
+  "video_playlist": {
+    "message": "ವೀಡಿಯೊಗಳ ಪಟ್ಟಿ: ಅವುಗಳನ್ನು Retriever ನಲ್ಲಿ ಆಯ್ಕೆಮಾಡಿ"
+  },
+  "video_no_ytdlp": {
+    "message": "ಈ ವೀಡಿಯೊಗೆ Retriever ಗೆ yt-dlp ಬೇಕು"
+  },
+  "video_too_long": {
+    "message": "ಹುಡುಕಲು ತುಂಬಾ ಸಮಯ ತೆಗೆದುಕೊಂಡಿತು"
+  },
+  "video_busy": {
+    "message": "Retriever ಇತರ ವೀಡಿಯೊಗಳಲ್ಲಿ ನಿರತವಾಗಿದೆ"
+  },
+  "video_queued": {
+    "message": "ಕ್ಯೂಗೆ ಸೇರಿಸಲಾಗಿದೆ"
+  },
+  "video_failed_lookup": {
+    "message": "ಹುಡುಕಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"
+  },
+  "video_tab_video": {
+    "message": "ವೀಡಿಯೊ"
+  },
+  "video_tab_audio": {
+    "message": "ಆಡಿಯೊ"
+  },
+  "video_open_post": {
+    "message": "ಡೌನ್‌ಲೋಡ್ ಮಾಡಲು ಪೋಸ್ಟ್ ತೆರೆಯಿರಿ"
+  },
+  "popup_send_to": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಇಲ್ಲಿಗೆ ಕಳುಹಿಸಿ"
+  },
+  "popup_send_here": {
+    "message": "ಈ ಕಂಪ್ಯೂಟರ್"
+  },
+  "popup_send_remote": {
+    "message": "ಇನ್ನೊಂದು Retriever (ಸರ್ವರ್)"
+  },
+  "popup_remote_code": {
+    "message": "ಜೋಡಿಸುವ ಕೋಡ್"
+  },
+  "popup_remote_open": {
+    "message": "ಅದನ್ನು ತೆರೆಯಿರಿ"
+  },
+  "popup_remote_pair": {
+    "message": "ಜೋಡಿಸಿ"
+  },
+  "popup_remote_help": {
+    "message": "ಅದರ ವಿಳಾಸವನ್ನು ಒಮ್ಮೆ ತೆರೆಯಿರಿ ಮತ್ತು ಅದರ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸ್ವೀಕರಿಸಿ, ನಂತರ ಅದರ ಆಯ್ಕೆಗಳು, ರಿಮೋಟ್, ಸಾಧನವನ್ನು ಜೋಡಿಸಿ (ಅಥವಾ retriever-cli pair) ನಿಂದ ಕೋಡ್ ಅನ್ನು ನಮೂದಿಸಿ."
+  },
+  "status_remote": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳು $address$ ಗೆ ಹೋಗುತ್ತವೆ",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "ಅದರ https:// ವಿಳಾಸವನ್ನು ನಮೂದಿಸಿ."
+  },
+  "remote_unreachable": {
+    "message": "ತಲುಪಿಲ್ಲ. ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಅದರ ವಿಳಾಸವನ್ನು ಒಮ್ಮೆ ತೆರೆಯಿರಿ ಮತ್ತು ಅದರ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸ್ವೀಕರಿಸಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "remote_wrong_code": {
+    "message": "ತಪ್ಪಾದ ಕೋಡ್."
+  },
+  "remote_no_code": {
+    "message": "ಇದು ಈಗ ಯಾವುದೇ ಕೋಡ್ ಅನ್ನು ತೋರಿಸುವುದಿಲ್ಲ: ಮೊದಲು ಅಲ್ಲಿ ಸಾಧನವನ್ನು ಜೋಡಿಸಿ ಕ್ಲಿಕ್ ಮಾಡಿ."
+  },
+  "remote_too_soon": {
+    "message": "ಒಂದು ಕ್ಷಣ ನಿರೀಕ್ಷಿಸಿ, ನಂತರ ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "remote_failed": {
+    "message": "ಇದು ಕಾರ್ಯನಿರ್ವಹಿಸಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "remote_device_name": {
+    "message": "ಬ್ರೌಸರ್ ವಿಸ್ತರಣೆ"
+  },
+  "popup_media_title_name": {
+    "message": "ಮಾಧ್ಯಮ ಫೈಲ್ ಹೆಸರುಗಳ ಮುಂದೆ ಪುಟದ ಶೀರ್ಷಿಕೆಯನ್ನು ಸೇರಿಸಿ"
+  },
+  "video_cant_save": {
+    "message": "ಉಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ"
+  },
+  "video_open_post_button": {
+    "message": "ಪೋಸ್ಟ್ ತೆರೆಯಿರಿ"
+  },
+  "video_drag_dots": {
+    "message": "ಅಂಚಿನಲ್ಲಿ ಸರಿಸಲು ಚುಕ್ಕೆಗಳನ್ನು ಎಳೆಯಿರಿ"
+  },
+  "video_tip": {
+    "message": "$what$ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "ಉತ್ತಮ ಗುಣಮಟ್ಟವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_sending": {
+    "message": "Retriever ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ..."
+  },
+  "video_added": {
+    "message": "Retriever ಗೆ ಸೇರಿಸಲಾಗಿದೆ"
+  },
+  "video_show": {
+    "message": "ತೋರಿಸಿ"
+  },
+  "video_no_answer": {
+    "message": "Retriever ಪ್ರತಿಕ್ರಿಯಿಸಲಿಲ್ಲ"
+  },
+  "video_get_mdm": {
+    "message": "Retriever ಪಡೆಯಿರಿ"
+  },
+  "video_retry": {
+    "message": "ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ"
+  },
+  "video_turn_on": {
+    "message": "ಆನ್ ಮಾಡಿ"
+  },
+  "video_best": {
+    "message": "ಉತ್ತಮ"
+  },
+  "video_all_qualities": {
+    "message": "ಎಲ್ಲಾ ಗುಣಮಟ್ಟಗಳು ಮತ್ತು ಉಪಶೀರ್ಷಿಕೆಗಳು..."
+  },
+  "video_part": {
+    "message": "ಇಲ್ಲಿಂದ ಒಂದು ಭಾಗವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ..."
+  },
+  "video_failed": {
+    "message": "Retriever ಅನ್ನು ಸ್ಥಾಪಿಸಲಾಗಿಲ್ಲ ಅಥವಾ ಪ್ರಾರಂಭವಾಗಲಿಲ್ಲ"
+  },
+  "video_download_best": {
+    "message": "ಉತ್ತಮ ಗುಣಮಟ್ಟವನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "video_original": {
+    "message": "ಮೂಲ"
+  },
+  "video_compatible": {
+    "message": "ಹೆಚ್ಚು ಹೊಂದಾಣಿಕೆಯಾಗುವ"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "ಪೂರ್ಣ ಪರದೆಯಲ್ಲಿರುವಾಗ ಡೌನ್‌ಲೋಡ್ ಬಟನ್ ಮರೆಮಾಡಿ"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "ಪುಟವು ಪೂರ್ಣ ಪರದೆಯಲ್ಲಿರುವಾಗ, ಅದರ ವೀಡಿಯೊಗಳು ಡೌನ್‌ಲೋಡ್ ವೀಡಿಯೊ ಬಟನ್ ಅನ್ನು ತೋರಿಸುವುದಿಲ್ಲ"
+  },
+  "popup_remote_forget": {
+    "message": "ಮರೆತುಬಿಡಿ"
+  },
+  "popup_gear": {
+    "message": "Retriever ನಲ್ಲಿ ಆಯ್ಕೆಗಳು"
+  },
+  "popup_tabs": {
+    "message": "ಪಾಪ್‌ಅಪ್ ವಿಭಾಗಗಳು"
+  },
+  "popup_tab_downloads": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳು"
+  },
+  "popup_tab_page": {
+    "message": "ಈ ಪುಟ"
+  },
+  "popup_tab_settings": {
+    "message": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು"
+  },
+  "popup_conn": {
+    "message": "ಸಂಪರ್ಕಿಸಲಾಗಿದೆ · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "ಸಂಪರ್ಕಿಸಲಾಗಿದೆ"
+  },
+  "popup_conn_off": {
+    "message": "ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ"
+  },
+  "popup_conn_paused": {
+    "message": "ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ"
+  },
+  "popup_conn_update": {
+    "message": "Retriever ನವೀಕರಿಸಿ"
+  },
+  "popup_conn_remote": {
+    "message": "$server$ ಗೆ ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "ರದ್ದುಮಾಡಿ"
+  },
+  "popup_page_none": {
+    "message": "ಇದು ವೆಬ್ ಪುಟವಲ್ಲ: ಇಲ್ಲಿ ಏನೂ ಮಾಡಲು ಇಲ್ಲ."
+  },
+  "popup_exclude_by_rule": {
+    "message": "ಆಯ್ಕೆಗಳಲ್ಲಿನ ನಿಯಮದಿಂದ ಬ್ರೌಸರ್‌ಗೆ ಬಿಡಲಾಗಿದೆ"
+  },
+  "popup_dl_search": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಹುಡುಕಿ"
+  },
+  "popup_dl_filters": {
+    "message": "ತೋರಿಸಿ"
+  },
+  "popup_dl_all": {
+    "message": "ಎಲ್ಲಾ"
+  },
+  "popup_dl_running": {
+    "message": "ಚಾಲನೆಯಲ್ಲಿದೆ"
+  },
+  "popup_dl_done_filter": {
+    "message": "ಮುಗಿದಿದೆ"
+  },
+  "popup_dl_failed_filter": {
+    "message": "ವಿಫಲವಾಗಿದೆ"
+  },
+  "popup_dl_clear": {
+    "message": "ಪೂರ್ಣಗೊಂಡವುಗಳನ್ನು ತೆರವುಗೊಳಿಸಿ"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ ಈಗ ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "ಇವು $server$ ನಲ್ಲಿರುವ Retriever ನ ಡೌನ್‌ಲೋಡ್‌ಗಳು. ಅವುಗಳ ಫೈಲ್‌ಗಳನ್ನು ಅಲ್ಲಿ ತೆರೆಯಿರಿ.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "$total$ ರಲ್ಲಿ ಹೊಸ $shown$. Retriever ಎಲ್ಲವನ್ನೂ ಪಟ್ಟಿ ಮಾಡುತ್ತದೆ.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$size$ ರಲ್ಲಿ $done$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "$time$ ಉಳಿದಿದೆ",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "ಪ್ರಾರಂಭಿಸಲಾಗುತ್ತಿದೆ..."
+  },
+  "popup_dl_paused": {
+    "message": "ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ"
+  },
+  "popup_dl_waiting": {
+    "message": "ಕಾಯಲಾಗುತ್ತಿದೆ"
+  },
+  "popup_dl_done": {
+    "message": "ಮುಗಿದಿದೆ"
+  },
+  "popup_dl_just_now": {
+    "message": "ಈಗಷ್ಟೇ"
+  },
+  "popup_dl_failed": {
+    "message": "ವಿಫಲವಾಗಿದೆ"
+  },
+  "popup_dl_failed_why": {
+    "message": "ವಿಫಲವಾಗಿದೆ: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "ಫೈಲ್ ಅಳಿಸಲಾಗಿದೆ ಅಥವಾ ಸರಿಸಲಾಗಿದೆ"
+  },
+  "popup_dl_loading": {
+    "message": "ಡೌನ್‌ಲೋಡ್‌ಗಳಿಗಾಗಿ ಹುಡುಕಲಾಗುತ್ತಿದೆ..."
+  },
+  "popup_dl_none": {
+    "message": "ಇನ್ನೂ ಯಾವುದೇ ಡೌನ್‌ಲೋಡ್‌ಗಳಿಲ್ಲ"
+  },
+  "popup_dl_none_text": {
+    "message": "Retriever ನೊಂದಿಗೆ ನೀವು ಡೌನ್‌ಲೋಡ್ ಮಾಡುವುದು ಇಲ್ಲಿ ಕಾಣಿಸುತ್ತದೆ."
+  },
+  "popup_dl_no_match": {
+    "message": "ಯಾವುದೂ ಹೊಂದಿಕೆಯಾಗುವುದಿಲ್ಲ"
+  },
+  "popup_dl_no_match_text": {
+    "message": "ಯಾವುದೇ ಡೌನ್‌ಲೋಡ್‌ನ ಹೆಸರು ಅಥವಾ ವಿಳಾಸದಲ್ಲಿ “$words$” ಇಲ್ಲ.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "ಎಲ್ಲಾ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ತೋರಿಸಿ"
+  },
+  "popup_list_off": {
+    "message": "Retriever ಚಾಲನೆಯಲ್ಲಿಲ್ಲ"
+  },
+  "popup_list_off_text": {
+    "message": "ನಿಮ್ಮ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಇಲ್ಲಿ ನೋಡಲು ಅದನ್ನು ಪ್ರಾರಂಭಿಸಿ."
+  },
+  "popup_list_start": {
+    "message": "Retriever ಪ್ರಾರಂಭಿಸಿ"
+  },
+  "popup_list_old": {
+    "message": "Retriever ನವೀಕರಿಸಿ"
+  },
+  "popup_list_old_text": {
+    "message": "ಈ ಆವೃತ್ತಿಯು ತನ್ನ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಇಲ್ಲಿ ಪಟ್ಟಿ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "popup_list_busy": {
+    "message": "Retriever ಕಾರ್ಯನಿರತವಾಗಿದೆ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಲಾಗುತ್ತಿದೆ..."
+  },
+  "popup_list_unreached": {
+    "message": "Retriever ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಿಲ್ಲ"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "$server$ ನಲ್ಲಿರುವ Retriever ಅನ್ನು ತಲುಪಲು ಸಾಧ್ಯವಿಲ್ಲ",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "ಇದು ಚಾಲನೆಯಲ್ಲಿದೆ ಮತ್ತು ಈ ಬ್ರೌಸರ್ ಅದರ ಪ್ರಮಾಣಪತ್ರವನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ ಎಂದು ಪರಿಶೀಲಿಸಿ (ಸೆಟ್ಟಿಂಗ್‌ಗಳು → ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಇಲ್ಲಿಗೆ ಕಳುಹಿಸಿ → ಅದನ್ನು ತೆರೆಯಿರಿ).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "ತೆರೆಯಿರಿ"
+  },
+  "popup_act_open_named": {
+    "message": "$file$ ತೆರೆಯಿರಿ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ತೋರಿಸಿ"
+  },
+  "popup_act_folder_named": {
+    "message": "$file$ ಅನ್ನು ಫೋಲ್ಡರ್‌ನಲ್ಲಿ ತೋರಿಸಿ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "ಫೈಲ್ ನಕಲಿಸಿ"
+  },
+  "popup_act_share": {
+    "message": "ಹಂಚಿಕೊಳ್ಳಿ..."
+  },
+  "popup_act_copy_link": {
+    "message": "ಲಿಂಕ್ ನಕಲಿಸಿ"
+  },
+  "popup_act_pause": {
+    "message": "ವಿರಾಮಗೊಳಿಸಿ"
+  },
+  "popup_act_pause_named": {
+    "message": "$file$ ವಿರಾಮಗೊಳಿಸಿ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "ಮರುಪ್ರಾರಂಭಿಸಿ"
+  },
+  "popup_act_resume_named": {
+    "message": "$file$ ಮರುಪ್ರಾರಂಭಿಸಿ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "ಮತ್ತೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಿ"
+  },
+  "popup_act_remove": {
+    "message": "ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಿ"
+  },
+  "popup_act_delete": {
+    "message": "ಫೈಲ್ ಅಳಿಸಿ..."
+  },
+  "popup_act_more": {
+    "message": "ಹೆಚ್ಚಿನ ಕ್ರಿಯೆಗಳು"
+  },
+  "popup_act_more_named": {
+    "message": "$file$ ಗಾಗಿ ಹೆಚ್ಚಿನ ಕ್ರಿಯೆಗಳು",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "ಫೈಲ್ ಅಳಿಸಬೇಕೇ?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ ಅನ್ನು ನಿಮ್ಮ ಕಂಪ್ಯೂಟರ್‌ನಿಂದ ಅಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ಡೌನ್‌ಲೋಡ್ ಅನ್ನು ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಲಾಗುತ್ತದೆ. ಇದನ್ನು ರದ್ದುಗೊಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "ಅಳಿಸಿ"
+  },
+  "popup_ask_clear_title": {
+    "message": "ಪೂರ್ಣಗೊಂಡ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಪಟ್ಟಿಯಿಂದ ತೆರವುಗೊಳಿಸಬೇಕೇ?"
+  },
+  "popup_ask_clear": {
+    "message": "$count$ ಪೂರ್ಣಗೊಂಡ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಬೇಕೇ? ಅವುಗಳ ಫೈಲ್‌ಗಳು ಅವು ಇರುವಲ್ಲೇ ಇರುತ್ತವೆ.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "ತೆರವುಗೊಳಿಸಿ"
+  },
+  "popup_said_file": {
+    "message": "$file$ ಅನ್ನು ನಕಲಿಸಲಾಗಿದೆ. ಅದನ್ನು ಫೋಲ್ಡರ್, ಚಾಟ್ ಅಥವಾ ಸಂದೇಶಕ್ಕೆ ಅಂಟಿಸಿ.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "ಲಿಂಕ್ ನಕಲಿಸಲಾಗಿದೆ"
+  },
+  "popup_said_removed": {
+    "message": "$file$ ಅನ್ನು ಪಟ್ಟಿಯಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ ಅಳಿಸಲಾಗಿದೆ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "$file$ ಅನ್ನು ಮತ್ತೆ ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "ಪೂರ್ಣಗೊಂಡ ಡೌನ್‌ಲೋಡ್‌ಗಳನ್ನು ತೆರವುಗೊಳಿಸಲಾಗಿದೆ"
+  },
+  "popup_act_gone": {
+    "message": "ಆ ಡೌನ್‌ಲೋಡ್ ಇನ್ನು ಪಟ್ಟಿಯಲ್ಲಿಲ್ಲ."
+  },
+  "popup_act_missing": {
+    "message": "ಅದರ ಫೈಲ್ ಅನ್ನು ಉಳಿಸಿದ ಸ್ಥಳದಲ್ಲಿಲ್ಲ (ಸರಿಸಲಾಗಿದೆ ಅಥವಾ ಅಳಿಸಲಾಗಿದೆ)."
+  },
+  "popup_act_running": {
+    "message": "ಮೊದಲು ಅದನ್ನು ವಿರಾಮಗೊಳಿಸಿ."
+  },
+  "popup_act_cant": {
+    "message": "ಈ ಡೌನ್‌ಲೋಡ್‌ಗೆ ಈಗ ಅದನ್ನು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "popup_act_unsupported": {
+    "message": "ಈ ಸಿಸ್ಟಮ್ ಅದನ್ನು ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ."
+  },
+  "popup_act_off": {
+    "message": "Retriever ಚಾಲನೆಯಲ್ಲಿಲ್ಲ."
+  },
+  "popup_act_busy": {
+    "message": "Retriever ಸಮಯಕ್ಕೆ ಉತ್ತರಿಸಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "popup_act_failed": {
+    "message": "ಅದು ಕೆಲಸ ಮಾಡಲಿಲ್ಲ. ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+  },
+  "status_running": {
+    "message": "ಡೌನ್‌ಲೋಡ್ ಆಗುತ್ತಿದೆ: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "ಅದರ ಪುಟವನ್ನು ತೆರೆಯಿರಿ"
+  }
+}

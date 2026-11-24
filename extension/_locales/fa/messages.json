@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "دانلودها را از مرورگر به Retriever منتقل می‌کند."
+  },
+  "menu": {
+    "message": "دانلود با Retriever"
+  },
+  "video_download": {
+    "message": "دانلود ویدیو"
+  },
+  "video_more": {
+    "message": "گزینه‌های بیشتر"
+  },
+  "video_hide_here": {
+    "message": "پنهان کردن در این ویدیو"
+  },
+  "video_never_site": {
+    "message": "هرگز در $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "تنظیمات دکمه..."
+  },
+  "video_sent": {
+    "message": "به Retriever ارسال شد"
+  },
+  "menu_selected": {
+    "message": "پیوندهای انتخاب شده را با Retriever بارگیری کن"
+  },
+  "menu_all": {
+    "message": "همه پیوندها را با Retriever بارگیری کن"
+  },
+  "status_connected": {
+    "message": "به Retriever متصل شد"
+  },
+  "status_connected_version": {
+    "message": "به Retriever $version$ متصل شد",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "متوقف شد: بارگیری‌ها در مرورگر می‌مانند"
+  },
+  "status_not_installed": {
+    "message": "Retriever نصب نشده است یا یکپارچه‌سازی آن با مرورگر تنظیم نشده است"
+  },
+  "status_forbidden": {
+    "message": "Retriever این نسخه از افزونه را نمی‌پذیرد"
+  },
+  "status_not_running": {
+    "message": "Retriever به موقع شروع نشد"
+  },
+  "status_host_failed": {
+    "message": "اتصال به Retriever برقرار نشد"
+  },
+  "status_too_large": {
+    "message": "جزئیات این بارگیری برای واگذاری بیش از حد بزرگ بود"
+  },
+  "status_update_app": {
+    "message": "Retriever را به‌روزرسانی کنید تا از همه قابلیت‌های این افزونه استفاده کنید"
+  },
+  "popup_take": {
+    "message": "دریافت بارگیری‌ها از این مرورگر"
+  },
+  "popup_proxy": {
+    "message": "بارگیری‌ها از طریق پروکسی یا افزونه VPN این مرورگر ارسال شوند"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever سپس از طریق همان پروکسی این مرورگر بارگیری می‌کند. مرورگر یک‌بار از شما اجازه می‌گیرد؛ با خاموش کردن این گزینه، اجازه لغو می‌شود."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever از طریق همان پراکسی این مرورگر بارگیری می‌کند. وقتی این گزینه خاموش باشد، افزونه پراکسی مرورگر را نمی‌خواند."
+  },
+  "popup_exclude_site": {
+    "message": "هرگز بارگیری‌های $site$ را دریافت نکنید",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "دانلودها از $site$ در مرورگر می‌مانند",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "باز کردن Retriever"
+  },
+  "popup_options": {
+    "message": "گزینه‌ها..."
+  },
+  "popup_help": {
+    "message": "راهنما"
+  },
+  "popup_support": {
+    "message": "پشتیبانی از Retriever"
+  },
+  "popup_fix": {
+    "message": "چگونه آن را رفع کنیم"
+  },
+  "popup_by_hand": {
+    "message": "این نسخه به‌صورت دستی بارگذاری شده و خودبه‌خود به‌روزرسانی نمی‌شود."
+  },
+  "popup_by_hand_firefox": {
+    "message": "این نسخه به‌صورت دستی بارگیری شده است: خودکار به‌روزرسانی نمی‌شود و مرورگر هنگام راه‌اندازی مجدد آن را حذف می‌کند."
+  },
+  "popup_store_chrome": {
+    "message": "آن را از Chrome Web Store اضافه کنید"
+  },
+  "popup_store_firefox": {
+    "message": "آن را از addons.mozilla.org اضافه کنید"
+  },
+  "popup_declined": {
+    "message": "واگذارشده به مرورگر: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "آخرین دانلود به مرورگر واگذار شد."
+  },
+  "declined_file_type": {
+    "message": "نوع آن در گزینه‌ها ← انواع فایل نیست."
+  },
+  "declined_site": {
+    "message": "سایت آن در گزینه‌ها ← انواع فایل، سایت‌های واگذارشده به مرورگر است."
+  },
+  "declined_address": {
+    "message": "آدرس آن در گزینه‌ها ← انواع فایل، آدرس‌های واگذارشده به مرورگر است."
+  },
+  "declined_small": {
+    "message": "اندازه‌اش از حداقل اندازه در گزینه‌ها ← انواع فایل کوچک‌تر است."
+  },
+  "declined_browser": {
+    "message": "این مرورگر در گزینه‌ها ← عمومی علامت نخورده است."
+  },
+  "declined_integration_off": {
+    "message": "«استفاده از یکپارچه‌سازی پیشرفته مرورگر» در گزینه‌ها ← عمومی خاموش است."
+  },
+  "declined_torrents": {
+    "message": "این یک تورنت است و «باز کردن پیوندهای مگنت و فایل‌های .torrent با Retriever» در تنظیمات تورنت خاموش است."
+  },
+  "declined_site_access": {
+    "message": "افزونه اجازه خواندن این سایت را ندارد (دسترسی سایت مرورگر)."
+  },
+  "popup_alt": {
+    "message": "هنگام کلیک روی پیوند، کلید Alt را نگه دارید تا مرورگر آن را بارگیری کند."
+  },
+  "popup_media": {
+    "message": "رسانه‌های این صفحه"
+  },
+  "popup_media_none": {
+    "message": "هنوز ویدیو یا صدایی در این صفحه پیدا نشده است. آن را پخش کنید و سپس این پنجره را دوباره باز کنید."
+  },
+  "popup_media_streamed": {
+    "message": "پخش‌کننده این صفحه ویدیو را به صورت قطعه‌ای پخش می‌کند، بنابراین فایلی برای فهرست کردن وجود ندارد. روی ویدیو اشاره کنید و از دکمه «بارگیری ویدیو» آن استفاده کنید."
+  },
+  "popup_media_store": {
+    "message": "قوانین Chrome Web Store این نسخه از افزونه را از ویدیوهای این سایت دور نگه می‌دارد. «راهنما» می‌گوید چه کاری می‌توانید بکنید."
+  },
+  "popup_media_download": {
+    "message": "دانلود"
+  },
+  "popup_media_protected": {
+    "message": "محافظت‌شده"
+  },
+  "popup_media_live": {
+    "message": "زنده"
+  },
+  "video_off": {
+    "message": "در این سایت غیرفعال است"
+  },
+  "video_drm": {
+    "message": "ویدیوی محافظت‌شده"
+  },
+  "video_unnamed": {
+    "message": "نمی‌توان تشخیص داد این چه ویدیویی است: صفحه خودش را باز کنید و آنجا امتحان کنید"
+  },
+  "video_looking": {
+    "message": "در حال جست‌وجوی کیفیت‌ها…"
+  },
+  "video_no_choices": {
+    "message": "ویدیویی برای دانلود در اینجا نیست"
+  },
+  "video_playlist": {
+    "message": "فهرستی از ویدیوها: آن‌ها را در Retriever انتخاب کنید"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever برای این ویدیو به yt-dlp نیاز دارد"
+  },
+  "video_too_long": {
+    "message": "جست‌وجو بیش از حد طول کشید"
+  },
+  "video_busy": {
+    "message": "Retriever با ویدیوهای دیگر مشغول است"
+  },
+  "video_queued": {
+    "message": "به صف اضافه شد"
+  },
+  "video_failed_lookup": {
+    "message": "جست‌وجو انجام نشد"
+  },
+  "video_tab_video": {
+    "message": "ویدیو"
+  },
+  "video_tab_audio": {
+    "message": "صدا"
+  },
+  "video_open_post": {
+    "message": "برای بارگیری، پست را باز کنید"
+  },
+  "popup_send_to": {
+    "message": "ارسال دانلودها به"
+  },
+  "popup_send_here": {
+    "message": "این رایانه"
+  },
+  "popup_send_remote": {
+    "message": "یک Retriever دیگر (یک سرور)"
+  },
+  "popup_remote_code": {
+    "message": "کد جفت‌سازی"
+  },
+  "popup_remote_open": {
+    "message": "باز کردن آن"
+  },
+  "popup_remote_pair": {
+    "message": "جفت کردن"
+  },
+  "popup_remote_help": {
+    "message": "یک بار آدرس آن را باز کنید و گواهی آن را بپذیرید، سپس کدی را از گزینه‌ها، از راه دور، جفت کردن دستگاه (یا retriever-cli pair) وارد کنید."
+  },
+  "status_remote": {
+    "message": "دانلودها به $address$ می‌روند",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "آدرس https:// آن را وارد کنید."
+  },
+  "remote_unreachable": {
+    "message": "قابل دسترسی نیست. یک بار آدرس آن را در این مرورگر باز کنید و گواهی آن را بپذیرید، سپس دوباره امتحان کنید."
+  },
+  "remote_wrong_code": {
+    "message": "کد اشتباه است."
+  },
+  "remote_no_code": {
+    "message": "اکنون کدی نشان نمی‌دهد: ابتدا روی «جفت کردن دستگاه» در آنجا کلیک کنید."
+  },
+  "remote_too_soon": {
+    "message": "لحظه‌ای صبر کنید، سپس دوباره امتحان کنید."
+  },
+  "remote_failed": {
+    "message": "کار نکرد. دوباره امتحان کنید."
+  },
+  "remote_device_name": {
+    "message": "افزونه مرورگر"
+  },
+  "popup_media_title_name": {
+    "message": "افزودن عنوان صفحه پیش از نام فایل رسانه"
+  },
+  "video_cant_save": {
+    "message": "امکان ذخیره‌سازی ندارد"
+  },
+  "video_open_post_button": {
+    "message": "باز کردن پست"
+  },
+  "video_drag_dots": {
+    "message": "نقطه‌ها را بکشید تا در امتداد لبه حرکت کند"
+  },
+  "video_tip": {
+    "message": "بارگیری $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "بارگیری بهترین کیفیت"
+  },
+  "video_sending": {
+    "message": "در حال ارسال به Retriever..."
+  },
+  "video_added": {
+    "message": "به Retriever اضافه شد"
+  },
+  "video_show": {
+    "message": "نمایش"
+  },
+  "video_no_answer": {
+    "message": "Retriever پاسخ نداد"
+  },
+  "video_get_mdm": {
+    "message": "دریافت Retriever"
+  },
+  "video_retry": {
+    "message": "تلاش مجدد"
+  },
+  "video_turn_on": {
+    "message": "فعال کردن"
+  },
+  "video_best": {
+    "message": "بهترین"
+  },
+  "video_all_qualities": {
+    "message": "همه کیفیت‌ها و زیرنویس‌ها..."
+  },
+  "video_part": {
+    "message": "بارگیری یک بخش از اینجا..."
+  },
+  "video_failed": {
+    "message": "Retriever نصب نشده است یا اجرا نشد"
+  },
+  "video_download_best": {
+    "message": "بارگیری بهترین کیفیت"
+  },
+  "video_original": {
+    "message": "اصلی"
+  },
+  "video_compatible": {
+    "message": "سازگارترین"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "پنهان کردن دکمه بارگیری در حالت تمام‌صفحه"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "در حالی که صفحه در حالت تمام‌صفحه است، ویدیوهای آن دکمه «بارگیری ویدیو» را نشان نمی‌دهند"
+  },
+  "popup_remote_forget": {
+    "message": "فراموش کردن"
+  },
+  "popup_gear": {
+    "message": "گزینه‌ها در Retriever"
+  },
+  "popup_tabs": {
+    "message": "بخش‌های بازشو"
+  },
+  "popup_tab_downloads": {
+    "message": "بارگیری‌ها"
+  },
+  "popup_tab_page": {
+    "message": "این صفحه"
+  },
+  "popup_tab_settings": {
+    "message": "تنظیمات"
+  },
+  "popup_conn": {
+    "message": "متصل · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "متصل"
+  },
+  "popup_conn_off": {
+    "message": "متصل نیست"
+  },
+  "popup_conn_paused": {
+    "message": "مکث شد"
+  },
+  "popup_conn_update": {
+    "message": "به‌روزرسانی Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "در حال ارسال به $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "لغو"
+  },
+  "popup_page_none": {
+    "message": "این یک صفحه وب نیست: کاری برای انجام دادن اینجا وجود ندارد."
+  },
+  "popup_exclude_by_rule": {
+    "message": "توسط یک قانون در تنظیمات به مرورگر واگذار شده است"
+  },
+  "popup_dl_search": {
+    "message": "جستجوی بارگیری‌ها"
+  },
+  "popup_dl_filters": {
+    "message": "نمایش"
+  },
+  "popup_dl_all": {
+    "message": "همه"
+  },
+  "popup_dl_running": {
+    "message": "در حال اجرا"
+  },
+  "popup_dl_done_filter": {
+    "message": "انجام شد"
+  },
+  "popup_dl_failed_filter": {
+    "message": "ناموفق"
+  },
+  "popup_dl_clear": {
+    "message": "پاک کردن موارد تکمیل‌شده"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ مورد در حال بارگیری",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "این‌ها بارگیری‌های Retriever در $server$ هستند. فایل‌هایشان را آنجا باز کنید.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "جدیدترین $shown$ از $total$. Retriever همه آن‌ها را فهرست می‌کند.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ از $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "$time$ باقی مانده",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "در حال شروع..."
+  },
+  "popup_dl_paused": {
+    "message": "مکث شد"
+  },
+  "popup_dl_waiting": {
+    "message": "در انتظار"
+  },
+  "popup_dl_done": {
+    "message": "انجام شد"
+  },
+  "popup_dl_just_now": {
+    "message": "همین حالا"
+  },
+  "popup_dl_failed": {
+    "message": "ناموفق"
+  },
+  "popup_dl_failed_why": {
+    "message": "ناموفق: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "فایل حذف یا منتقل شده است"
+  },
+  "popup_dl_loading": {
+    "message": "در حال جستجوی بارگیری‌ها..."
+  },
+  "popup_dl_none": {
+    "message": "هنوز بارگیری‌ای وجود ندارد"
+  },
+  "popup_dl_none_text": {
+    "message": "آنچه با Retriever بارگیری می‌کنید، اینجا نمایش داده می‌شود."
+  },
+  "popup_dl_no_match": {
+    "message": "هیچ موردی مطابقت ندارد"
+  },
+  "popup_dl_no_match_text": {
+    "message": "هیچ نام یا آدرس بارگیری‌ای شامل «$words$» نیست.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "نمایش همه بارگیری‌ها"
+  },
+  "popup_list_off": {
+    "message": "Retriever در حال اجرا نیست"
+  },
+  "popup_list_off_text": {
+    "message": "آن را اجرا کنید تا بارگیری‌هایتان را اینجا ببینید."
+  },
+  "popup_list_start": {
+    "message": "اجرای Retriever"
+  },
+  "popup_list_old": {
+    "message": "به‌روزرسانی Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "این نسخه هنوز نمی‌تواند بارگیری‌هایش را اینجا فهرست کند."
+  },
+  "popup_list_busy": {
+    "message": "Retriever مشغول است. در حال تلاش مجدد..."
+  },
+  "popup_list_unreached": {
+    "message": "امکان دسترسی به Retriever وجود ندارد"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "امکان دسترسی به Retriever در $server$ وجود ندارد",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "بررسی کنید که در حال اجرا باشد و این مرورگر گواهی آن را بپذیرد (تنظیمات ← ارسال بارگیری‌ها به ← باز کردن آن).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "باز کردن"
+  },
+  "popup_act_open_named": {
+    "message": "باز کردن $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "نمایش در پوشه"
+  },
+  "popup_act_folder_named": {
+    "message": "نمایش $file$ در پوشه",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "کپی کردن فایل"
+  },
+  "popup_act_share": {
+    "message": "اشتراک‌گذاری..."
+  },
+  "popup_act_copy_link": {
+    "message": "کپی کردن پیوند"
+  },
+  "popup_act_pause": {
+    "message": "مکث"
+  },
+  "popup_act_pause_named": {
+    "message": "توقف $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "ادامه"
+  },
+  "popup_act_resume_named": {
+    "message": "ادامه $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "بارگیری دوباره"
+  },
+  "popup_act_remove": {
+    "message": "حذف از فهرست"
+  },
+  "popup_act_delete": {
+    "message": "حذف فایل..."
+  },
+  "popup_act_more": {
+    "message": "اقدامات بیشتر"
+  },
+  "popup_act_more_named": {
+    "message": "اقدامات بیشتر برای $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "فایل حذف شود؟"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ از رایانه شما حذف می‌شود و از فهرست بارگیری‌ها برداشته خواهد شد. این عمل قابل بازگردانی نیست.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "حذف"
+  },
+  "popup_ask_clear_title": {
+    "message": "بارگیری‌های تکمیل‌شده پاک شوند؟"
+  },
+  "popup_ask_clear": {
+    "message": "آیا $count$ بارگیری تکمیل‌شده از فهرست حذف شوند؟ فایل‌هایشان در جای خود باقی می‌مانند.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "پاک کردن"
+  },
+  "popup_said_file": {
+    "message": "$file$ کپی شد. آن را در یک پوشه، چت یا پیام جای‌گذاری کنید.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "پیوند کپی شد"
+  },
+  "popup_said_removed": {
+    "message": "$file$ از فهرست حذف شد",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ حذف شد",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "در حال بارگیری دوباره $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "بارگیری‌های تکمیل‌شده پاک شدند"
+  },
+  "popup_act_gone": {
+    "message": "این بارگیری دیگر در فهرست نیست."
+  },
+  "popup_act_missing": {
+    "message": "فایل آن دیگر در محل ذخیره شده نیست (منتقل یا حذف شده است)."
+  },
+  "popup_act_running": {
+    "message": "ابتدا آن را متوقف کنید."
+  },
+  "popup_act_cant": {
+    "message": "این کار را نمی‌توان اکنون برای این بارگیری انجام داد."
+  },
+  "popup_act_unsupported": {
+    "message": "این سیستم نمی‌تواند این کار را انجام دهد."
+  },
+  "popup_act_off": {
+    "message": "Retriever در حال اجرا نیست."
+  },
+  "popup_act_busy": {
+    "message": "Retriever به‌موقع پاسخ نداد. دوباره امتحان کنید."
+  },
+  "popup_act_failed": {
+    "message": "این کار انجام نشد. دوباره امتحان کنید."
+  },
+  "status_running": {
+    "message": "در حال بارگیری: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "باز کردن صفحه‌اش"
+  }
+}

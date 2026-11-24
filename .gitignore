@@ -1,0 +1,7 @@
+/target/
+/src/
+/pkg/
+*.pkg.tar.*
+*.xpi
+*.tar.gz
+web-ext-artifacts/

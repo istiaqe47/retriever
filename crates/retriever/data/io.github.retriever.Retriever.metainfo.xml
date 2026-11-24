@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.retriever.Retriever</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>Retriever</name>
+  <developer id="io.github.retriever">
+    <name>Retriever contributors</name>
+  </developer>
+  <summary>Fast downloads with a native GNOME interface</summary>
+  <description>
+    <p>A download manager for GNOME: many connections per
+    file, pause and resume, automatic retries, a queue and a scheduler, videos from web pages,
+    torrents, link grabbing, archive extraction and browser integration.</p>
+  </description>
+  <launchable type="desktop-id">io.github.retriever.Retriever.desktop</launchable>
+  <content_rating type="oars-1.1"/>
+  <branding>
+    <color type="primary" scheme_preference="light">#99c1f1</color>
+    <color type="primary" scheme_preference="dark">#1a5fb4</color>
+  </branding>
+  <requires>
+    <display_length compare="ge">360</display_length>
+  </requires>
+  <supports>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+  </supports>
+  <releases>
+    <release version="1.0.0" date="2026-11-23"/>
+  </releases>
+</component>

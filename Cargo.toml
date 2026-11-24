@@ -1,0 +1,94 @@
+# Retriever: a download manager for GNOME (GTK 4 + libadwaita).
+[workspace]
+resolver = "3"
+members = ["crates/engine", "crates/ipc", "crates/nmhost", "crates/torrent", "crates/tools", "crates/extract", "crates/retriever"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.95"
+license = "GPL-3.0-or-later"
+authors = ["Ahmed Nefzaoui", "Retriever contributors"]
+publish = false
+
+[workspace.dependencies]
+mdm-engine = { path = "crates/engine" }
+mdm-ipc = { path = "crates/ipc" }
+mdm-torrent = { path = "crates/torrent" }
+mdm-tools = { path = "crates/tools" }
+mdm-extract = { path = "crates/extract" }
+anyhow = "1.0.104"
+tracing = "0.1.44"
+flate2 = "1.1.10"
+aws-lc-rs = { version = "1.19.0", default-features = false, features = ["aws-lc-sys", "prebuilt-nasm"] }
+chrono = { version = "0.4.45", default-features = false, features = ["clock"] }
+schemars = "1.2.3"
+base64 = "0.23.1"
+bytes = "1.12.1"
+craft-atomic = { git = "https://github.com/storytold/craft-libs", rev = "1a11a4897865f7410c40d25ca6e452ce399a1a2c" }
+crc32fast = "1.5.3"
+dirs = "7.0.0"
+futures = "0.3.34"
+hex = "0.4.3"
+hickory-resolver = { version = "0.26.3", default-features = false, features = ["tokio", "tls-aws-lc-rs", "https-aws-lc-rs", "rustls-platform-verifier"] }
+httpdate = "1.0.3"
+hyper-util = { version = "0.1.21", default-features = false, features = ["client-proxy-system"] }
+md-5 = "0.11.0"
+network-interface = "2.0.5"
+percent-encoding = "2.3.2"
+reqwest = { version = "0.13.5", default-features = false, features = ["rustls", "stream", "system-proxy", "socks"] }
+rustls = { version = "0.23.46", default-features = false, features = ["aws-lc-rs", "std", "tls12", "logging"] }
+rustls-native-certs = "0.8.5"
+rustls-platform-verifier = "0.7.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.154"
+sha1 = "0.11.0"
+sha2 = "0.11.1"
+socket2 = { version = "0.6.5", features = ["all"] }
+suppaftp = { version = "12.2.1", default-features = false, features = ["tokio-rustls-aws-lc-rs", "deprecated"] }
+thiserror = "2.0.21"
+tokio = { version = "1.54.1", features = ["full"] }
+tokio-rustls = { version = "0.26.6", default-features = false, features = ["aws-lc-rs", "tls12", "logging"] }
+tokio-socks = "0.5.3"
+tokio-util = "0.7.20"
+url = { version = "2.5.8", features = ["serde"] }
+webpki-root-certs = "1.0.11"
+webpki-roots = "1.0.12"
+wreq = { version = "=0.16.3", default-features = false, features = ["webpki-roots", "tokio-rt", "socks", "stream", "gzip", "brotli", "zstd", "deflate"] }
+wreq-util = { version = "=0.2.1", default-features = false, features = ["emulation", "emulation-compression"] }
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+debug = "line-tables-only"
+opt-level = "s"
+
+[profile.dev.package.sha2]
+opt-level = 3
+[profile.dev.package.sha1]
+opt-level = 3
+[profile.dev.package.md-5]
+opt-level = 3
+[profile.dev.package.crc32fast]
+opt-level = 3
+
+# librqbit with MDM's changes (see the original workspace), until upstream has them.
+[patch.crates-io]
+librqbit = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-bencode = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-buffers = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-clone-to-owned = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-core = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-dht = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-lsd = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-peer-protocol = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-sha1-wrapper = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-tracker-comms = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-upnp = { git = "https://github.com/anefzaoui/rqbit.git", rev = "c99ca4b4602e586437912bc9adecbe1111f1ee25" }
+librqbit-utp = { git = "https://github.com/ikatson/librqbit-utp.git", rev = "06e1c53c8df6edb2830d6aab64a6d4bed8479908" }

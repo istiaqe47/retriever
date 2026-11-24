@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Transfère les téléchargements du navigateur vers Retriever."
+  },
+  "menu": {
+    "message": "Télécharger avec Retriever"
+  },
+  "video_download": {
+    "message": "Télécharger la vidéo"
+  },
+  "video_more": {
+    "message": "Plus d’options"
+  },
+  "video_hide_here": {
+    "message": "Masquer sur cette vidéo"
+  },
+  "video_never_site": {
+    "message": "Jamais sur $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Paramètres du bouton..."
+  },
+  "video_sent": {
+    "message": "Envoyé à Retriever"
+  },
+  "menu_selected": {
+    "message": "Télécharger les liens sélectionnés avec Retriever"
+  },
+  "menu_all": {
+    "message": "Télécharger tous les liens avec Retriever"
+  },
+  "status_connected": {
+    "message": "Connecté à Retriever"
+  },
+  "status_connected_version": {
+    "message": "Connecté à Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "En pause : les téléchargements restent dans le navigateur"
+  },
+  "status_not_installed": {
+    "message": "Retriever n’est pas installé, ou son intégration au navigateur n’est pas configurée"
+  },
+  "status_forbidden": {
+    "message": "Retriever n’accepte pas cette copie de l’extension"
+  },
+  "status_not_running": {
+    "message": "Retriever n’a pas démarré à temps"
+  },
+  "status_host_failed": {
+    "message": "La connexion à Retriever a échoué"
+  },
+  "status_too_large": {
+    "message": "Les détails de ce téléchargement étaient trop volumineux pour être transférés"
+  },
+  "status_update_app": {
+    "message": "Mettez à jour Retriever pour utiliser toutes les fonctionnalités de cette extension"
+  },
+  "popup_take": {
+    "message": "Prendre les téléchargements de ce navigateur"
+  },
+  "popup_proxy": {
+    "message": "Envoyer les téléchargements via le proxy ou l’extension VPN de ce navigateur"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever télécharge alors via le même proxy que ce navigateur. Le navigateur vous demande une fois de l’autoriser ; la désactivation de cette option annule cette autorisation."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever télécharge alors via le même proxy que ce navigateur. Lorsque cette option est désactivée, l’extension ne lit pas le proxy du navigateur."
+  },
+  "popup_exclude_site": {
+    "message": "Ne plus prendre les téléchargements de $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Les téléchargements de $site$ restent avec le navigateur",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Ouvrir Retriever"
+  },
+  "popup_options": {
+    "message": "Options..."
+  },
+  "popup_help": {
+    "message": "Aide"
+  },
+  "popup_support": {
+    "message": "Soutenir Retriever"
+  },
+  "popup_fix": {
+    "message": "Comment le résoudre"
+  },
+  "popup_by_hand": {
+    "message": "Cette copie a été chargée manuellement et ne se mettra pas à jour."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Cette copie a été chargée manuellement : elle ne se mettra pas à jour et le navigateur la supprimera au redémarrage."
+  },
+  "popup_store_chrome": {
+    "message": "L’ajouter depuis le Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "L’ajouter depuis addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Laissé au navigateur : $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Le dernier téléchargement a été laissé au navigateur."
+  },
+  "declined_file_type": {
+    "message": "Son type ne figure pas dans Options → Types de fichiers."
+  },
+  "declined_site": {
+    "message": "Son site se trouve dans Options → Types de fichiers, sites laissés au navigateur."
+  },
+  "declined_address": {
+    "message": "Son adresse se trouve dans Options → Types de fichiers, adresses laissées au navigateur."
+  },
+  "declined_small": {
+    "message": "La taille est inférieure à la taille minimale dans Options → Types de fichiers."
+  },
+  "declined_browser": {
+    "message": "Ce navigateur n’est pas coché dans Options → Général."
+  },
+  "declined_integration_off": {
+    "message": "L’option « Utiliser l’intégration avancée du navigateur » est désactivée dans Options → Général."
+  },
+  "declined_torrents": {
+    "message": "C’est un torrent, et « Ouvrir les liens magnet et les fichiers .torrent avec Retriever » est désactivé dans les paramètres Torrent."
+  },
+  "declined_site_access": {
+    "message": "L’extension n’est pas autorisée à lire ce site (accès au site du navigateur)."
+  },
+  "popup_alt": {
+    "message": "Maintenez la touche Alt enfoncée en cliquant sur un lien pour laisser le navigateur le télécharger."
+  },
+  "popup_media": {
+    "message": "Contenu multimédia sur cette page"
+  },
+  "popup_media_none": {
+    "message": "Aucune vidéo ni aucun son n’a encore été détecté sur cette page. Lancez la lecture, puis rouvrez cette fenêtre."
+  },
+  "popup_media_streamed": {
+    "message": "Le lecteur de cette page diffuse la vidéo par morceaux : il n'y a donc aucun fichier à lister. Pointez la vidéo et utilisez son bouton « Télécharger la vidéo »."
+  },
+  "popup_media_store": {
+    "message": "Les règles du Chrome Web Store tiennent cette copie du module à l'écart des vidéos de ce site. L'aide indique ce que vous pouvez faire."
+  },
+  "popup_media_download": {
+    "message": "Télécharger"
+  },
+  "popup_media_protected": {
+    "message": "Protégé"
+  },
+  "popup_media_live": {
+    "message": "En direct"
+  },
+  "video_off": {
+    "message": "Désactivé sur ce site"
+  },
+  "video_drm": {
+    "message": "Vidéo protégée"
+  },
+  "video_unnamed": {
+    "message": "Impossible de savoir de quelle vidéo il s'agit : ouvrez sa propre page et réessayez"
+  },
+  "video_looking": {
+    "message": "Recherche des qualités…"
+  },
+  "video_no_choices": {
+    "message": "Aucune vidéo à télécharger ici"
+  },
+  "video_playlist": {
+    "message": "Une liste de vidéos : choisissez-les dans Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever a besoin de yt-dlp pour cette vidéo"
+  },
+  "video_too_long": {
+    "message": "La recherche a pris trop de temps"
+  },
+  "video_busy": {
+    "message": "Retriever est occupé avec d’autres vidéos"
+  },
+  "video_queued": {
+    "message": "Ajouté à la file d’attente"
+  },
+  "video_failed_lookup": {
+    "message": "Recherche impossible"
+  },
+  "video_tab_video": {
+    "message": "Vidéo"
+  },
+  "video_tab_audio": {
+    "message": "Audio"
+  },
+  "video_open_post": {
+    "message": "Ouvrez la publication pour la télécharger"
+  },
+  "popup_send_to": {
+    "message": "Envoyer les téléchargements vers"
+  },
+  "popup_send_here": {
+    "message": "Cet ordinateur"
+  },
+  "popup_send_remote": {
+    "message": "Un autre Retriever (un serveur)"
+  },
+  "popup_remote_code": {
+    "message": "Code de jumelage"
+  },
+  "popup_remote_open": {
+    "message": "Ouvrir"
+  },
+  "popup_remote_pair": {
+    "message": "Jumeler"
+  },
+  "popup_remote_help": {
+    "message": "Ouvrez son adresse une fois et acceptez son certificat, puis entrez un code depuis ses Options, Distant, Jumeler un appareil (ou retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Les téléchargements vont vers $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Entrez son adresse https://."
+  },
+  "remote_unreachable": {
+    "message": "Non atteint. Ouvrez son adresse une fois dans ce navigateur et acceptez son certificat, puis réessayez."
+  },
+  "remote_wrong_code": {
+    "message": "Code incorrect."
+  },
+  "remote_no_code": {
+    "message": "Il n’affiche aucun code pour l’instant : cliquez d’abord sur Jumeler un appareil."
+  },
+  "remote_too_soon": {
+    "message": "Attendez un instant, puis réessayez."
+  },
+  "remote_failed": {
+    "message": "Échec. Réessayez."
+  },
+  "remote_device_name": {
+    "message": "Extension de navigateur"
+  },
+  "popup_media_title_name": {
+    "message": "Ajouter le titre de la page devant les noms des fichiers multimédias"
+  },
+  "video_cant_save": {
+    "message": "ne peut pas être enregistré"
+  },
+  "video_open_post_button": {
+    "message": "Ouvrir la publication"
+  },
+  "video_drag_dots": {
+    "message": "Faites glisser les points pour le déplacer le long du bord"
+  },
+  "video_tip": {
+    "message": "Télécharger $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Télécharger la meilleure qualité"
+  },
+  "video_sending": {
+    "message": "Envoi vers Retriever..."
+  },
+  "video_added": {
+    "message": "Ajouté à Retriever"
+  },
+  "video_show": {
+    "message": "Afficher"
+  },
+  "video_no_answer": {
+    "message": "Retriever n’a pas répondu"
+  },
+  "video_get_mdm": {
+    "message": "Obtenir Retriever"
+  },
+  "video_retry": {
+    "message": "Réessayer"
+  },
+  "video_turn_on": {
+    "message": "Activer"
+  },
+  "video_best": {
+    "message": "meilleure"
+  },
+  "video_all_qualities": {
+    "message": "Toutes les qualités et les sous-titres..."
+  },
+  "video_part": {
+    "message": "Télécharger une partie à partir d’ici..."
+  },
+  "video_failed": {
+    "message": "Retriever n’est pas installé ou n’a pas démarré"
+  },
+  "video_download_best": {
+    "message": "Télécharger la meilleure qualité"
+  },
+  "video_original": {
+    "message": "original"
+  },
+  "video_compatible": {
+    "message": "Plus compatible"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Masquer le bouton de téléchargement en plein écran"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Lorsque la page est en plein écran, ses vidéos n’affichent pas de bouton Télécharger la vidéo"
+  },
+  "popup_remote_forget": {
+    "message": "Oublier"
+  },
+  "popup_gear": {
+    "message": "Options dans Retriever"
+  },
+  "popup_tabs": {
+    "message": "Sections de la fenêtre contextuelle"
+  },
+  "popup_tab_downloads": {
+    "message": "Téléchargements"
+  },
+  "popup_tab_page": {
+    "message": "Cette page"
+  },
+  "popup_tab_settings": {
+    "message": "Paramètres"
+  },
+  "popup_conn": {
+    "message": "Connecté · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Connecté"
+  },
+  "popup_conn_off": {
+    "message": "Non connecté"
+  },
+  "popup_conn_paused": {
+    "message": "En pause"
+  },
+  "popup_conn_update": {
+    "message": "Mettre à jour Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Envoi à $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Annuler"
+  },
+  "popup_page_none": {
+    "message": "Ce n’est pas une page web : il n’y a rien à faire ici."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Laissé au navigateur par une règle dans les Options"
+  },
+  "popup_dl_search": {
+    "message": "Rechercher des téléchargements"
+  },
+  "popup_dl_filters": {
+    "message": "Afficher"
+  },
+  "popup_dl_all": {
+    "message": "Tous"
+  },
+  "popup_dl_running": {
+    "message": "En cours"
+  },
+  "popup_dl_done_filter": {
+    "message": "Terminé"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Échec"
+  },
+  "popup_dl_clear": {
+    "message": "Effacer les terminés"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ téléchargements en cours",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Ce sont les téléchargements de Retriever sur $server$. Ouvrez leurs fichiers là-bas.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Les $shown$ plus récents sur $total$. Retriever les liste tous.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ sur $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "$time$ restant",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Démarrage..."
+  },
+  "popup_dl_paused": {
+    "message": "En pause"
+  },
+  "popup_dl_waiting": {
+    "message": "En attente"
+  },
+  "popup_dl_done": {
+    "message": "Terminé"
+  },
+  "popup_dl_just_now": {
+    "message": "à l’instant"
+  },
+  "popup_dl_failed": {
+    "message": "Échec"
+  },
+  "popup_dl_failed_why": {
+    "message": "Échec : $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Fichier supprimé ou déplacé"
+  },
+  "popup_dl_loading": {
+    "message": "Recherche de téléchargements..."
+  },
+  "popup_dl_none": {
+    "message": "Aucun téléchargement pour l’instant"
+  },
+  "popup_dl_none_text": {
+    "message": "Ce que vous téléchargez avec Retriever s’affiche ici."
+  },
+  "popup_dl_no_match": {
+    "message": "Aucun résultat"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Aucun nom ou adresse de téléchargement ne contient « $words$ ».",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Afficher tous les téléchargements"
+  },
+  "popup_list_off": {
+    "message": "Retriever n’est pas en cours d’exécution"
+  },
+  "popup_list_off_text": {
+    "message": "Démarrez-le pour voir vos téléchargements ici."
+  },
+  "popup_list_start": {
+    "message": "Démarrer Retriever"
+  },
+  "popup_list_old": {
+    "message": "Mettre à jour Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Cette version ne peut pas encore lister ses téléchargements ici."
+  },
+  "popup_list_busy": {
+    "message": "L’application Retriever est occupée. Nouvelle tentative..."
+  },
+  "popup_list_unreached": {
+    "message": "Impossible de joindre Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Impossible de joindre le Retriever sur $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Vérifiez qu’il est en cours d’exécution et que ce navigateur accepte son certificat (Paramètres → Envoyer les téléchargements à → Ouvrir).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Ouvrir"
+  },
+  "popup_act_open_named": {
+    "message": "Ouvrir $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Afficher dans le dossier"
+  },
+  "popup_act_folder_named": {
+    "message": "Afficher $file$ dans le dossier",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Copier le fichier"
+  },
+  "popup_act_share": {
+    "message": "Partager..."
+  },
+  "popup_act_copy_link": {
+    "message": "Copier le lien"
+  },
+  "popup_act_pause": {
+    "message": "Mettre en pause"
+  },
+  "popup_act_pause_named": {
+    "message": "Mettre en pause $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Reprendre"
+  },
+  "popup_act_resume_named": {
+    "message": "Reprendre $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Télécharger de nouveau"
+  },
+  "popup_act_remove": {
+    "message": "Retirer de la liste"
+  },
+  "popup_act_delete": {
+    "message": "Supprimer le fichier..."
+  },
+  "popup_act_more": {
+    "message": "Plus d’actions"
+  },
+  "popup_act_more_named": {
+    "message": "Plus d’actions pour $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Voulez-vous supprimer le fichier ?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ sera supprimé de votre ordinateur et le téléchargement retiré de la liste. Cette action est irréversible.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Supprimer"
+  },
+  "popup_ask_clear_title": {
+    "message": "Voulez-vous effacer les téléchargements terminés ?"
+  },
+  "popup_ask_clear": {
+    "message": "Les $count$ téléchargements terminés sont retirés de la liste. Leurs fichiers restent à leur emplacement.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Effacer"
+  },
+  "popup_said_file": {
+    "message": "Fichier $file$ copié. Collez-le dans un dossier, un chat ou un message.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Lien copié"
+  },
+  "popup_said_removed": {
+    "message": "$file$ retiré de la liste",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ supprimé",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Téléchargement de $file$ de nouveau",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Téléchargements terminés effacés"
+  },
+  "popup_act_gone": {
+    "message": "Ce téléchargement n’est plus dans la liste."
+  },
+  "popup_act_missing": {
+    "message": "Son fichier n’est plus à l’emplacement où il a été enregistré (déplacé ou supprimé)."
+  },
+  "popup_act_running": {
+    "message": "Mettez-le en pause d’abord."
+  },
+  "popup_act_cant": {
+    "message": "Impossible d’effectuer cette action sur ce téléchargement maintenant."
+  },
+  "popup_act_unsupported": {
+    "message": "Ce système ne peut pas faire ça."
+  },
+  "popup_act_off": {
+    "message": "Retriever n’est pas en cours d’exécution."
+  },
+  "popup_act_busy": {
+    "message": "Retriever n’a pas répondu à temps. Réessayez."
+  },
+  "popup_act_failed": {
+    "message": "L’opération a échoué. Réessayez."
+  },
+  "status_running": {
+    "message": "Téléchargements en cours : $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Ouvrir sa page"
+  }
+}

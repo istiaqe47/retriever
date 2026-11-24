@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Παραδίδει λήψεις από το πρόγραμμα περιήγησης στο Retriever."
+  },
+  "menu": {
+    "message": "Λήψη με το Retriever"
+  },
+  "video_download": {
+    "message": "Λήψη βίντεο"
+  },
+  "video_more": {
+    "message": "Περισσότερες επιλογές"
+  },
+  "video_hide_here": {
+    "message": "Απόκρυψη μόνο σε αυτό το βίντεο"
+  },
+  "video_never_site": {
+    "message": "Ποτέ στο $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Ρυθμίσεις κουμπιού..."
+  },
+  "video_sent": {
+    "message": "Στάλθηκε στο Retriever"
+  },
+  "menu_selected": {
+    "message": "Λήψη επιλεγμένων συνδέσμων με το Retriever"
+  },
+  "menu_all": {
+    "message": "Λήψη όλων των συνδέσμων με το Retriever"
+  },
+  "status_connected": {
+    "message": "Συνδεδεμένο στο Retriever"
+  },
+  "status_connected_version": {
+    "message": "Συνδεδεμένο στο Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Σε παύση: οι λήψεις παραμένουν στο πρόγραμμα περιήγησης"
+  },
+  "status_not_installed": {
+    "message": "Το Retriever δεν είναι εγκατεστημένο ή η ενσωμάτωση του προγράμματος περιήγησης δεν έχει ρυθμιστεί"
+  },
+  "status_forbidden": {
+    "message": "Το Retriever δεν δέχεται αυτό το αντίγραφο της επέκτασης"
+  },
+  "status_not_running": {
+    "message": "Το Retriever δεν ξεκίνησε εγκαίρως"
+  },
+  "status_host_failed": {
+    "message": "Η σύνδεση με το Retriever απέτυχε"
+  },
+  "status_too_large": {
+    "message": "Οι λεπτομέρειες αυτής της λήψης ήταν πολύ μεγάλες για να παραδοθούν"
+  },
+  "status_update_app": {
+    "message": "Ενημερώστε το Retriever για να χρησιμοποιήσετε όλα όσα προσφέρει αυτή η επέκταση"
+  },
+  "popup_take": {
+    "message": "Λήψη λήψεων από αυτό το πρόγραμμα περιήγησης"
+  },
+  "popup_proxy": {
+    "message": "Αποστολή λήψεων μέσω του διακομιστή μεσολάβησης ή της επέκτασης VPN αυτού του προγράμματος περιήγησης"
+  },
+  "popup_proxy_title": {
+    "message": "Στη συνέχεια, το Retriever πραγματοποιεί λήψεις μέσω του ίδιου διακομιστή μεσολάβησης με αυτό το πρόγραμμα περιήγησης. Το πρόγραμμα περιήγησης θα σας ζητήσει μία φορά να το επιτρέψετε. Η απενεργοποίηση αυτής της ρύθμισης ανακαλεί την άδεια."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Στη συνέχεια, το Retriever πραγματοποιεί λήψεις μέσω του ίδιου διακομιστή μεσολάβησης με αυτό το πρόγραμμα περιήγησης. Όταν αυτή η επιλογή είναι απενεργοποιημένη, η επέκταση δεν διαβάζει τον διακομιστή μεσολάβησης του προγράμματος περιήγησης."
+  },
+  "popup_exclude_site": {
+    "message": "Να μην λαμβάνονται ποτέ λήψεις από το $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Οι λήψεις από το $site$ παραμένουν στο πρόγραμμα περιήγησης",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Άνοιγμα Retriever"
+  },
+  "popup_options": {
+    "message": "Επιλογές..."
+  },
+  "popup_help": {
+    "message": "Βοήθεια"
+  },
+  "popup_support": {
+    "message": "Υποστηρίξτε το Retriever"
+  },
+  "popup_fix": {
+    "message": "Πώς να το διορθώσετε"
+  },
+  "popup_by_hand": {
+    "message": "Αυτό το αντίγραφο φορτώθηκε χειροκίνητα και δεν θα ενημερωθεί αυτόματα."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Αυτό το αντίγραφο φορτώθηκε χειροκίνητα: δεν θα ενημερωθεί αυτόματα και το πρόγραμμα περιήγησης το αφαιρεί όταν επανεκκινεί."
+  },
+  "popup_store_chrome": {
+    "message": "Προσθήκη από το Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "Προσθήκη από το addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Παραμένει στο πρόγραμμα περιήγησης: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Η τελευταία λήψη παρέμεινε στο πρόγραμμα περιήγησης."
+  },
+  "declined_file_type": {
+    "message": "Ο τύπος του δεν βρίσκεται στις Επιλογές → Τύποι αρχείων."
+  },
+  "declined_site": {
+    "message": "Ο ιστότοπός του βρίσκεται στις Επιλογές → Τύποι αρχείων, ιστότοποι που παραμένουν στο πρόγραμμα περιήγησης."
+  },
+  "declined_address": {
+    "message": "Η διεύθυνσή του βρίσκεται στις Επιλογές → Τύποι αρχείων, διευθύνσεις που παραμένουν στο πρόγραμμα περιήγησης."
+  },
+  "declined_small": {
+    "message": "Είναι μικρότερο από το ελάχιστο μέγεθος στις Επιλογές → Τύποι αρχείων."
+  },
+  "declined_browser": {
+    "message": "Αυτό το πρόγραμμα περιήγησης δεν είναι επιλεγμένο στις Επιλογές → Γενικά."
+  },
+  "declined_integration_off": {
+    "message": "Η επιλογή «Χρήση προηγμένης ενσωμάτωσης προγράμματος περιήγησης» είναι απενεργοποιημένη στις Επιλογές → Γενικά."
+  },
+  "declined_torrents": {
+    "message": "Είναι ένα torrent και η επιλογή Άνοιγμα συνδέσμων magnet και αρχείων .torrent με Retriever είναι απενεργοποιημένη στις ρυθμίσεις Torrent."
+  },
+  "declined_site_access": {
+    "message": "Η επέκταση δεν επιτρέπεται να διαβάσει αυτόν τον ιστότοπο (πρόσβαση στον ιστότοπο του προγράμματος περιήγησης)."
+  },
+  "popup_alt": {
+    "message": "Κρατήστε πατημένο το Alt ενώ κάνετε κλικ σε μια σύνδεση για να την κατεβάσει το πρόγραμμα περιήγησης."
+  },
+  "popup_media": {
+    "message": "Πολυμέσα σε αυτήν τη σελίδα"
+  },
+  "popup_media_none": {
+    "message": "Δεν βρέθηκε ακόμα βίντεο ή ήχος σε αυτήν τη σελίδα. Αναπαραγάγετε το και, στη συνέχεια, ανοίξτε ξανά αυτό."
+  },
+  "popup_media_streamed": {
+    "message": "Το πρόγραμμα αναπαραγωγής αυτής της σελίδας μεταδίδει το βίντεο σε κομμάτια, οπότε δεν υπάρχει αρχείο για εμφάνιση. Δείξτε το βίντεο και χρησιμοποιήστε το κουμπί του «Λήψη βίντεο»."
+  },
+  "popup_media_store": {
+    "message": "Οι κανόνες του Chrome Web Store κρατούν αυτό το αντίγραφο του πρόσθετου μακριά από τα βίντεο αυτού του ιστότοπου. Η «Βοήθεια» εξηγεί τι μπορείτε να κάνετε."
+  },
+  "popup_media_download": {
+    "message": "Λήψη"
+  },
+  "popup_media_protected": {
+    "message": "Προστατευμένο"
+  },
+  "popup_media_live": {
+    "message": "Ζωντανά"
+  },
+  "video_off": {
+    "message": "Ανενεργό σε αυτήν την τοποθεσία"
+  },
+  "video_drm": {
+    "message": "Προστατευμένο βίντεο"
+  },
+  "video_unnamed": {
+    "message": "Δεν είναι σαφές ποιο βίντεο είναι αυτό: ανοίξτε τη δική του σελίδα και δοκιμάστε εκεί"
+  },
+  "video_looking": {
+    "message": "Αναζήτηση ποιοτήτων…"
+  },
+  "video_no_choices": {
+    "message": "Δεν υπάρχει βίντεο για λήψη εδώ"
+  },
+  "video_playlist": {
+    "message": "Μια λίστα βίντεο: επιλέξτε τα στο Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Το Retriever χρειάζεται το yt-dlp για αυτό το βίντεο"
+  },
+  "video_too_long": {
+    "message": "Η αναζήτηση άργησε υπερβολικά"
+  },
+  "video_busy": {
+    "message": "Το Retriever είναι απασχολημένο με άλλα βίντεο"
+  },
+  "video_queued": {
+    "message": "Προστέθηκε στην ουρά"
+  },
+  "video_failed_lookup": {
+    "message": "Η αναζήτηση απέτυχε"
+  },
+  "video_tab_video": {
+    "message": "Βίντεο"
+  },
+  "video_tab_audio": {
+    "message": "Ήχος"
+  },
+  "video_open_post": {
+    "message": "Ανοίξτε την ανάρτηση για λήψη"
+  },
+  "popup_send_to": {
+    "message": "Αποστολή λήψεων σε"
+  },
+  "popup_send_here": {
+    "message": "Αυτός ο υπολογιστής"
+  },
+  "popup_send_remote": {
+    "message": "Άλλο Retriever (διακομιστής)"
+  },
+  "popup_remote_code": {
+    "message": "Κωδικός σύζευξης"
+  },
+  "popup_remote_open": {
+    "message": "Άνοιγμα"
+  },
+  "popup_remote_pair": {
+    "message": "Σύζευξη"
+  },
+  "popup_remote_help": {
+    "message": "Ανοίξτε τη διεύθυνσή του μία φορά και αποδεχτείτε το πιστοποιητικό του, μετά εισαγάγετε έναν κωδικό από τις επιλογές του, Απομακρυσμένη, Σύζευξη συσκευής (ή retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Οι λήψεις μεταβαίνουν στη διεύθυνση $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Εισαγάγετε τη διεύθυνση https://."
+  },
+  "remote_unreachable": {
+    "message": "Δεν είναι προσβάσιμο. Ανοίξτε τη διεύθυνσή του μία φορά σε αυτό το πρόγραμμα περιήγησης και αποδεχτείτε το πιστοποιητικό του, μετά δοκιμάστε ξανά."
+  },
+  "remote_wrong_code": {
+    "message": "Λανθασμένος κωδικός."
+  },
+  "remote_no_code": {
+    "message": "Δεν εμφανίζει κωδικό τώρα: κάντε κλικ πρώτα στην επιλογή Σύζευξη συσκευής εκεί."
+  },
+  "remote_too_soon": {
+    "message": "Περιμένετε λίγο, μετά δοκιμάστε ξανά."
+  },
+  "remote_failed": {
+    "message": "Δεν λειτούργησε. Δοκιμάστε ξανά."
+  },
+  "remote_device_name": {
+    "message": "Επέκταση προγράμματος περιήγησης"
+  },
+  "popup_media_title_name": {
+    "message": "Προσθήκη του τίτλου της σελίδας πριν από τα ονόματα των αρχείων πολυμέσων"
+  },
+  "video_cant_save": {
+    "message": "δεν μπορεί να αποθηκευτεί"
+  },
+  "video_open_post_button": {
+    "message": "Άνοιγμα ανάρτησης"
+  },
+  "video_drag_dots": {
+    "message": "Σύρετε τις τελείες για να το μετακινήσετε κατά μήκος της άκρης"
+  },
+  "video_tip": {
+    "message": "Λήψη $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Λήψη της καλύτερης ποιότητας"
+  },
+  "video_sending": {
+    "message": "Αποστολή στο Retriever..."
+  },
+  "video_added": {
+    "message": "Προστέθηκε στο Retriever"
+  },
+  "video_show": {
+    "message": "Εμφάνιση"
+  },
+  "video_no_answer": {
+    "message": "Το Retriever δεν απάντησε"
+  },
+  "video_get_mdm": {
+    "message": "Λήψη Retriever"
+  },
+  "video_retry": {
+    "message": "Επανάληψη"
+  },
+  "video_turn_on": {
+    "message": "Ενεργοποίηση"
+  },
+  "video_best": {
+    "message": "καλύτερη"
+  },
+  "video_all_qualities": {
+    "message": "Όλες οι ποιότητες και οι υπότιτλοι..."
+  },
+  "video_part": {
+    "message": "Λήψη ενός τμήματος από εδώ..."
+  },
+  "video_failed": {
+    "message": "Το Retriever δεν είναι εγκατεστημένο ή δεν ξεκίνησε"
+  },
+  "video_download_best": {
+    "message": "Λήψη καλύτερης"
+  },
+  "video_original": {
+    "message": "πρωτότυπο"
+  },
+  "video_compatible": {
+    "message": "Πιο συμβατό"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Απόκρυψη του κουμπιού λήψης σε πλήρη οθόνη"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Όταν η σελίδα είναι σε πλήρη οθόνη, τα βίντεό της δεν εμφανίζουν το κουμπί «Λήψη βίντεο»"
+  },
+  "popup_remote_forget": {
+    "message": "Ξεχάστε"
+  },
+  "popup_gear": {
+    "message": "Επιλογές στο Retriever"
+  },
+  "popup_tabs": {
+    "message": "Ενότητες αναδυόμενου παραθύρου"
+  },
+  "popup_tab_downloads": {
+    "message": "Λήψεις"
+  },
+  "popup_tab_page": {
+    "message": "Αυτή η σελίδα"
+  },
+  "popup_tab_settings": {
+    "message": "Ρυθμίσεις"
+  },
+  "popup_conn": {
+    "message": "Συνδεδεμένο · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Συνδεδεμένο"
+  },
+  "popup_conn_off": {
+    "message": "Δεν είναι συνδεδεμένο"
+  },
+  "popup_conn_paused": {
+    "message": "Σε παύση"
+  },
+  "popup_conn_update": {
+    "message": "Ενημέρωση Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Αποστολή σε $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Ακύρωση"
+  },
+  "popup_page_none": {
+    "message": "Αυτή δεν είναι ιστοσελίδα: δεν υπάρχει τίποτα να κάνετε εδώ."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Αφέθηκε στο πρόγραμμα περιήγησης από έναν κανόνα στις Επιλογές"
+  },
+  "popup_dl_search": {
+    "message": "Αναζήτηση λήψεων"
+  },
+  "popup_dl_filters": {
+    "message": "Εμφάνιση"
+  },
+  "popup_dl_all": {
+    "message": "Όλες"
+  },
+  "popup_dl_running": {
+    "message": "Σε εξέλιξη"
+  },
+  "popup_dl_done_filter": {
+    "message": "Ολοκληρώθηκε"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Απέτυχε"
+  },
+  "popup_dl_clear": {
+    "message": "Εκκαθάριση ολοκληρωμένων"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ λήψεις σε εξέλιξη τώρα",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Αυτές είναι οι λήψεις του Retriever στο $server$. Ανοίξτε τα αρχεία τους εκεί.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Οι νεότερες $shown$ από $total$. Το Retriever τις παραθέτει όλες.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ από $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Απομένουν $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Εκκίνηση..."
+  },
+  "popup_dl_paused": {
+    "message": "Σε παύση"
+  },
+  "popup_dl_waiting": {
+    "message": "Σε αναμονή"
+  },
+  "popup_dl_done": {
+    "message": "Ολοκληρώθηκε"
+  },
+  "popup_dl_just_now": {
+    "message": "μόλις τώρα"
+  },
+  "popup_dl_failed": {
+    "message": "Απέτυχε"
+  },
+  "popup_dl_failed_why": {
+    "message": "Απέτυχε: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Το αρχείο διαγράφηκε ή μετακινήθηκε"
+  },
+  "popup_dl_loading": {
+    "message": "Αναζήτηση λήψεων..."
+  },
+  "popup_dl_none": {
+    "message": "Δεν υπάρχουν λήψεις ακόμα"
+  },
+  "popup_dl_none_text": {
+    "message": "Ό,τι κατεβάζετε με το Retriever εμφανίζεται εδώ."
+  },
+  "popup_dl_no_match": {
+    "message": "Τίποτα δεν ταιριάζει"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Κανένα όνομα ή διεύθυνση λήψης δεν περιέχει «$words$».",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Εμφάνιση όλων των λήψεων"
+  },
+  "popup_list_off": {
+    "message": "Το Retriever δεν εκτελείται"
+  },
+  "popup_list_off_text": {
+    "message": "Εκκινήστε το για να δείτε τις λήψεις σας εδώ."
+  },
+  "popup_list_start": {
+    "message": "Εκκίνηση Retriever"
+  },
+  "popup_list_old": {
+    "message": "Ενημέρωση Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Αυτή η έκδοση δεν μπορεί να παραθέσει τις λήψεις της εδώ ακόμα."
+  },
+  "popup_list_busy": {
+    "message": "Το Retriever είναι απασχολημένο. Γίνεται νέα προσπάθεια..."
+  },
+  "popup_list_unreached": {
+    "message": "Δεν είναι δυνατή η σύνδεση με το Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Δεν είναι δυνατή η σύνδεση με το Retriever στον διακομιστή $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Βεβαιωθείτε ότι εκτελείται και ότι αυτό το πρόγραμμα περιήγησης εμπιστεύεται το πιστοποιητικό του (Ρυθμίσεις → Αποστολή λήψεων σε → Άνοιγμα).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Άνοιγμα"
+  },
+  "popup_act_open_named": {
+    "message": "Άνοιγμα $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Εμφάνιση στον φάκελο"
+  },
+  "popup_act_folder_named": {
+    "message": "Εμφάνιση του $file$ στον φάκελο",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Αντιγραφή αρχείου"
+  },
+  "popup_act_share": {
+    "message": "Κοινή χρήση..."
+  },
+  "popup_act_copy_link": {
+    "message": "Αντιγραφή συνδέσμου"
+  },
+  "popup_act_pause": {
+    "message": "Παύση"
+  },
+  "popup_act_pause_named": {
+    "message": "Παύση $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Συνέχιση"
+  },
+  "popup_act_resume_named": {
+    "message": "Συνέχιση $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Λήψη ξανά"
+  },
+  "popup_act_remove": {
+    "message": "Κατάργηση από τη λίστα"
+  },
+  "popup_act_delete": {
+    "message": "Διαγραφή αρχείου..."
+  },
+  "popup_act_more": {
+    "message": "Περισσότερες ενέργειες"
+  },
+  "popup_act_more_named": {
+    "message": "Περισσότερες ενέργειες για το $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Διαγραφή του αρχείου;"
+  },
+  "popup_ask_delete": {
+    "message": "Το $file$ θα διαγραφεί από τον υπολογιστή σας και η λήψη θα αφαιρεθεί από τη λίστα. Αυτό δεν μπορεί να αναιρεθεί.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Διαγραφή"
+  },
+  "popup_ask_clear_title": {
+    "message": "Εκκαθάριση ολοκληρωμένων λήψεων;"
+  },
+  "popup_ask_clear": {
+    "message": "Θέλετε να αφαιρεθούν οι $count$ ολοκληρωμένες λήψεις από τη λίστα; Τα αρχεία τους θα παραμείνουν εκεί που είναι.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Εκκαθάριση"
+  },
+  "popup_said_file": {
+    "message": "Αντιγράφηκε το $file$. Επικολλήστε το σε έναν φάκελο, μια συνομιλία ή ένα μήνυμα.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Ο σύνδεσμος αντιγράφηκε"
+  },
+  "popup_said_removed": {
+    "message": "Το $file$ καταργήθηκε από τη λίστα",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "Το $file$ διαγράφηκε",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Γίνεται λήψη του $file$ ξανά",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Οι ολοκληρωμένες λήψεις εκκαθαρίστηκαν"
+  },
+  "popup_act_gone": {
+    "message": "Αυτή η λήψη δεν βρίσκεται πλέον στη λίστα."
+  },
+  "popup_act_missing": {
+    "message": "Το αρχείο του δεν βρίσκεται πλέον εκεί που αποθηκεύτηκε (μετακινήθηκε ή διαγράφηκε)."
+  },
+  "popup_act_running": {
+    "message": "Κάντε πρώτα παύση."
+  },
+  "popup_act_cant": {
+    "message": "Αυτό δεν μπορεί να γίνει σε αυτήν τη λήψη τώρα."
+  },
+  "popup_act_unsupported": {
+    "message": "Αυτό το σύστημα δεν μπορεί να το κάνει."
+  },
+  "popup_act_off": {
+    "message": "Το Retriever δεν εκτελείται."
+  },
+  "popup_act_busy": {
+    "message": "Το Retriever δεν απάντησε εγκαίρως. Δοκιμάστε ξανά."
+  },
+  "popup_act_failed": {
+    "message": "Αυτό δεν λειτούργησε. Δοκιμάστε ξανά."
+  },
+  "status_running": {
+    "message": "Γίνεται λήψη: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Άνοιγμα της σελίδας του"
+  }
+}

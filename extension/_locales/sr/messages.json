@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Предаје преузимања из прегледача програму Retriever."
+  },
+  "menu": {
+    "message": "Преузми помоћу Retriever"
+  },
+  "video_download": {
+    "message": "Преузми видео"
+  },
+  "video_more": {
+    "message": "Више опција"
+  },
+  "video_hide_here": {
+    "message": "Сакриј на овом видео снимку"
+  },
+  "video_never_site": {
+    "message": "Никада на $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Подешавања дугмета..."
+  },
+  "video_sent": {
+    "message": "Послато апликацији Retriever"
+  },
+  "menu_selected": {
+    "message": "Преузми изабране везе помоћу Retriever"
+  },
+  "menu_all": {
+    "message": "Преузми све везе помоћу Retriever"
+  },
+  "status_connected": {
+    "message": "Повезано са Retriever"
+  },
+  "status_connected_version": {
+    "message": "Повезано са Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Паузирано: преузимања остају у прегледачу"
+  },
+  "status_not_installed": {
+    "message": "Retriever није инсталиран, или његова интеграција прегледача није подешена"
+  },
+  "status_forbidden": {
+    "message": "Retriever не прихвата ову копију проширења"
+  },
+  "status_not_running": {
+    "message": "Retriever није покренут на време"
+  },
+  "status_host_failed": {
+    "message": "Веза са апликацијом Retriever није успела"
+  },
+  "status_too_large": {
+    "message": "Детаљи овог преузимања били су превелики за прослеђивање"
+  },
+  "status_update_app": {
+    "message": "Ажурирајте Retriever да бисте користили све што ова екстензија нуди"
+  },
+  "popup_take": {
+    "message": "Преузимајте помоћу ове апликације"
+  },
+  "popup_proxy": {
+    "message": "Шаљите преузимања преко проксија или VPN проширења овог прегледача"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever затим преузима датотеке преко истог проксија као и овај прегледач. Прегледач ће вас једном питати да ли то дозвољавате; искључивањем ове опције повлачите дозволу."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever тада преузима преко истог проксија као и овај прегледач. Док је ово искључено, проширење не чита прокси прегледача."
+  },
+  "popup_exclude_site": {
+    "message": "Никада не преузимај са $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Преузимања са $site$ остају у прегледачу",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Отвори Retriever"
+  },
+  "popup_options": {
+    "message": "Опције..."
+  },
+  "popup_help": {
+    "message": "Помоћ"
+  },
+  "popup_support": {
+    "message": "Подржите Retriever"
+  },
+  "popup_fix": {
+    "message": "Како да решите проблем"
+  },
+  "popup_by_hand": {
+    "message": "Ова копија је ручно учитана и неће се сама ажурирати."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Ова копија је ручно учитана: неће се сама ажурирати, а прегледач ће је уклонити при поновном покретању."
+  },
+  "popup_store_chrome": {
+    "message": "Додајте га из Chrome Web Store-а"
+  },
+  "popup_store_firefox": {
+    "message": "Додајте га са addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Остављено прегледачу: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Последње преузимање је остављено прегледачу."
+  },
+  "declined_file_type": {
+    "message": "Његов тип није у Опцијама → Типови датотека."
+  },
+  "declined_site": {
+    "message": "Његов сајт је у Опцијама → Типови датотека, сајтови остављени прегледачу."
+  },
+  "declined_address": {
+    "message": "Његова адреса је у Опцијама → Типови датотека, адресе остављене прегледачу."
+  },
+  "declined_small": {
+    "message": "Мање је од минималне величине у Опцијама → Типови датотека."
+  },
+  "declined_browser": {
+    "message": "Овај прегледач није означен у Опцијама → Опште."
+  },
+  "declined_integration_off": {
+    "message": "Користи напредну интеграцију прегледача је искључено у Опцијама → Опште."
+  },
+  "declined_torrents": {
+    "message": "То је торент, а опција „Отвори магнетне везе и .torrent датотеке помоћу Retriever“ је искључена у подешавањима торената."
+  },
+  "declined_site_access": {
+    "message": "Проширењу није дозвољено да чита овај сајт (приступ сајту прегледача)."
+  },
+  "popup_alt": {
+    "message": "Држите Alt док кликћете на везу да би је прегледач преузео."
+  },
+  "popup_media": {
+    "message": "Медији на овој страници"
+  },
+  "popup_media_none": {
+    "message": "На овој страници још увек није пронађен видео или звук. Пустите га, па поново отворите ово."
+  },
+  "popup_media_streamed": {
+    "message": "Плејер ове странице емитује видео у деловима, па нема датотеке за приказ. Покажите на видео и користите његово дугме „Преузми видео“."
+  },
+  "popup_media_store": {
+    "message": "Правила Chrome веб-продавнице држе ову копију додатка даље од видео-снимака овог сајта. У „Помоћи“ пише шта можете да урадите."
+  },
+  "popup_media_download": {
+    "message": "Преузми"
+  },
+  "popup_media_protected": {
+    "message": "Заштићено"
+  },
+  "popup_media_live": {
+    "message": "Уживо"
+  },
+  "video_off": {
+    "message": "Искључено на овом сајту"
+  },
+  "video_drm": {
+    "message": "Заштићен видео"
+  },
+  "video_unnamed": {
+    "message": "Не може да се утврди који је ово видео: отворите његову страницу и покушајте тамо"
+  },
+  "video_looking": {
+    "message": "Тражење квалитета…"
+  },
+  "video_no_choices": {
+    "message": "Овде нема видео снимка за преузимање"
+  },
+  "video_playlist": {
+    "message": "Листа видео снимака: изаберите их у Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever треба yt-dlp за овај видео снимак"
+  },
+  "video_too_long": {
+    "message": "Тражење је трајало предуго"
+  },
+  "video_busy": {
+    "message": "Retriever је заузет другим видео снимцима"
+  },
+  "video_queued": {
+    "message": "Додато у ред"
+  },
+  "video_failed_lookup": {
+    "message": "Тражење није успело"
+  },
+  "video_tab_video": {
+    "message": "Видео"
+  },
+  "video_tab_audio": {
+    "message": "Аудио"
+  },
+  "video_open_post": {
+    "message": "Отворите објаву да бисте је преузели"
+  },
+  "popup_send_to": {
+    "message": "Шаљи преузимања на"
+  },
+  "popup_send_here": {
+    "message": "Овај рачунар"
+  },
+  "popup_send_remote": {
+    "message": "Други Retriever (сервер)"
+  },
+  "popup_remote_code": {
+    "message": "Кôд за упаривање"
+  },
+  "popup_remote_open": {
+    "message": "Отвори"
+  },
+  "popup_remote_pair": {
+    "message": "Упари"
+  },
+  "popup_remote_help": {
+    "message": "Отворите његову адресу једном и прихватите његов сертификат, па унесите кôд из његових Опција, Удаљено, Упари уређај (или retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Преузимања иду на $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Унесите његову https:// адресу."
+  },
+  "remote_unreachable": {
+    "message": "Није достигнуто. Отворите његову адресу једном у овом прегледачу и прихватите његов сертификат, па покушајте поново."
+  },
+  "remote_wrong_code": {
+    "message": "Погрешан кôд."
+  },
+  "remote_no_code": {
+    "message": "Сада не приказује кôд: прво кликните на Упари уређај тамо."
+  },
+  "remote_too_soon": {
+    "message": "Сачекајте тренутак, па покушајте поново."
+  },
+  "remote_failed": {
+    "message": "Није успело. Покушајте поново."
+  },
+  "remote_device_name": {
+    "message": "Проширење прегледача"
+  },
+  "popup_media_title_name": {
+    "message": "Додај наслов странице испред назива медијских датотека"
+  },
+  "video_cant_save": {
+    "message": "не може да се сачува"
+  },
+  "video_open_post_button": {
+    "message": "Отвори објаву"
+  },
+  "video_drag_dots": {
+    "message": "Превуците тачкице да бисте померили дугме дуж ивице"
+  },
+  "video_tip": {
+    "message": "Преузми $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Преузми најбољи квалитет"
+  },
+  "video_sending": {
+    "message": "Шаље се у Retriever..."
+  },
+  "video_added": {
+    "message": "Додато у Retriever"
+  },
+  "video_show": {
+    "message": "Прикажи"
+  },
+  "video_no_answer": {
+    "message": "Retriever није одговорио"
+  },
+  "video_get_mdm": {
+    "message": "Преузми Retriever"
+  },
+  "video_retry": {
+    "message": "Покушај поново"
+  },
+  "video_turn_on": {
+    "message": "Укључи"
+  },
+  "video_best": {
+    "message": "најбољи"
+  },
+  "video_all_qualities": {
+    "message": "Сви квалитети и преводи..."
+  },
+  "video_part": {
+    "message": "Преузми део одавде..."
+  },
+  "video_failed": {
+    "message": "Retriever није инсталиран или није покренут"
+  },
+  "video_download_best": {
+    "message": "Преузми најбоље"
+  },
+  "video_original": {
+    "message": "оригинал"
+  },
+  "video_compatible": {
+    "message": "Најкомпатибилније"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Сакриј дугме за преузимање у режиму целог екрана"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Док је страница у режиму целог екрана, на њеним видео-снимцима не приказује се дугме „Преузми видео“"
+  },
+  "popup_remote_forget": {
+    "message": "Заборави"
+  },
+  "popup_gear": {
+    "message": "Опције у програму Retriever"
+  },
+  "popup_tabs": {
+    "message": "Одељци искачућег прозора"
+  },
+  "popup_tab_downloads": {
+    "message": "Преузимања"
+  },
+  "popup_tab_page": {
+    "message": "Ова страница"
+  },
+  "popup_tab_settings": {
+    "message": "Подешавања"
+  },
+  "popup_conn": {
+    "message": "Повезано · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Повезано"
+  },
+  "popup_conn_off": {
+    "message": "Није повезано"
+  },
+  "popup_conn_paused": {
+    "message": "Паузирано"
+  },
+  "popup_conn_update": {
+    "message": "Ажурирај Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Шаље се на $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Откажи"
+  },
+  "popup_page_none": {
+    "message": "Ово није веб-страница: овде нема шта да се ради."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Препуштено прегледачу правилом у опцијама"
+  },
+  "popup_dl_search": {
+    "message": "Претражи преузимања"
+  },
+  "popup_dl_filters": {
+    "message": "Прикажи"
+  },
+  "popup_dl_all": {
+    "message": "Све"
+  },
+  "popup_dl_running": {
+    "message": "У току"
+  },
+  "popup_dl_done_filter": {
+    "message": "Завршено"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Неуспело"
+  },
+  "popup_dl_clear": {
+    "message": "Обриши завршене"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ се тренутно преузима",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Ово су преузимања програма Retriever на $server$. Отворите њихове датотеке тамо.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Најновијих $shown$ од $total$. Retriever их све наводи.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ од $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Преостало $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Покретање..."
+  },
+  "popup_dl_paused": {
+    "message": "Паузирано"
+  },
+  "popup_dl_waiting": {
+    "message": "Чекање"
+  },
+  "popup_dl_done": {
+    "message": "Завршено"
+  },
+  "popup_dl_just_now": {
+    "message": "управо сада"
+  },
+  "popup_dl_failed": {
+    "message": "Неуспело"
+  },
+  "popup_dl_failed_why": {
+    "message": "Преузимање није успело: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Датотека је избрисана или премештена"
+  },
+  "popup_dl_loading": {
+    "message": "Тражење преузимања..."
+  },
+  "popup_dl_none": {
+    "message": "Још нема преузимања"
+  },
+  "popup_dl_none_text": {
+    "message": "Овде се приказује оно што преузмете помоћу програма Retriever."
+  },
+  "popup_dl_no_match": {
+    "message": "Ништа се не подудара"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Ниједно преузимање нема назив или адресу која садржи „$words$“.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Прикажи сва преузимања"
+  },
+  "popup_list_off": {
+    "message": "Retriever није покренут"
+  },
+  "popup_list_off_text": {
+    "message": "Покрените га да бисте овде видели своја преузимања."
+  },
+  "popup_list_start": {
+    "message": "Покрени Retriever"
+  },
+  "popup_list_old": {
+    "message": "Ажурирај Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Ова верзија још не може да прикаже своја преузимања овде."
+  },
+  "popup_list_busy": {
+    "message": "Retriever је заузет. Покушавам поново..."
+  },
+  "popup_list_unreached": {
+    "message": "Није могуће досегнути Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Није могуће досегнути Retriever на $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Проверите да ли је покренут и да ли овај прегледач прихвата његов сертификат (Подешавања → Шаљи преузимања у → Отвори).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Отвори"
+  },
+  "popup_act_open_named": {
+    "message": "Отвори „$file$“",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Прикажи у фасцикли"
+  },
+  "popup_act_folder_named": {
+    "message": "Прикажи „$file$“ у фасцикли",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Копирај датотеку"
+  },
+  "popup_act_share": {
+    "message": "Дели..."
+  },
+  "popup_act_copy_link": {
+    "message": "Копирај везу"
+  },
+  "popup_act_pause": {
+    "message": "Паузирај"
+  },
+  "popup_act_pause_named": {
+    "message": "Паузирај „$file$“",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Настави"
+  },
+  "popup_act_resume_named": {
+    "message": "Настави „$file$“",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Преузми поново"
+  },
+  "popup_act_remove": {
+    "message": "Уклони са списка"
+  },
+  "popup_act_delete": {
+    "message": "Избриши датотеку..."
+  },
+  "popup_act_more": {
+    "message": "Још радњи"
+  },
+  "popup_act_more_named": {
+    "message": "Још радњи за $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Желите ли да избришете датотеку?"
+  },
+  "popup_ask_delete": {
+    "message": "Датотека „$file$“ ће бити избрисана са вашег рачунара, а преузимање уклоњено са списка. Ово се не може опозвати.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Избриши"
+  },
+  "popup_ask_clear_title": {
+    "message": "Желите ли да уклоните завршена преузимања са списка?"
+  },
+  "popup_ask_clear": {
+    "message": "Завршена преузимања ($count$) биће уклоњена са списка. Њихове датотеке остају тамо где јесу.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Обриши"
+  },
+  "popup_said_file": {
+    "message": "Копирано $file$. Налепите у фасциклу, ћаскање или поруку.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Веза копирана"
+  },
+  "popup_said_removed": {
+    "message": "Датотека „$file$“ је уклоњена са списка",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "Датотека „$file$“ је избрисана",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Поново се преузима датотека $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Завршена преузимања уклоњена"
+  },
+  "popup_act_gone": {
+    "message": "То преузимање више није на списку."
+  },
+  "popup_act_missing": {
+    "message": "Датотека више није на месту где је сачувана (премештена је или избрисана)."
+  },
+  "popup_act_running": {
+    "message": "Прво паузирајте."
+  },
+  "popup_act_cant": {
+    "message": "То сада није могуће урадити са овим преузимањем."
+  },
+  "popup_act_unsupported": {
+    "message": "Овај систем то не може да уради."
+  },
+  "popup_act_off": {
+    "message": "Retriever није покренут."
+  },
+  "popup_act_busy": {
+    "message": "Retriever није одговорио на време. Покушајте поново."
+  },
+  "popup_act_failed": {
+    "message": "То није успело. Покушајте поново."
+  },
+  "status_running": {
+    "message": "Преузимање: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Отвори његову страницу"
+  }
+}

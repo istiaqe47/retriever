@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Chuyển các bản tải xuống từ trình duyệt sang Retriever."
+  },
+  "menu": {
+    "message": "Tải xuống bằng Retriever"
+  },
+  "video_download": {
+    "message": "Tải xuống video"
+  },
+  "video_more": {
+    "message": "Tùy chọn khác"
+  },
+  "video_hide_here": {
+    "message": "Ẩn trên video này"
+  },
+  "video_never_site": {
+    "message": "Không hiển thị trên $site$ nữa",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Cài đặt nút..."
+  },
+  "video_sent": {
+    "message": "Đã gửi đến Retriever"
+  },
+  "menu_selected": {
+    "message": "Tải xuống các liên kết đã chọn bằng Retriever"
+  },
+  "menu_all": {
+    "message": "Tải xuống tất cả liên kết bằng Retriever"
+  },
+  "status_connected": {
+    "message": "Đã kết nối với Retriever"
+  },
+  "status_connected_version": {
+    "message": "Đã kết nối với Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Đã tạm dừng: các bản tải xuống vẫn ở trong trình duyệt"
+  },
+  "status_not_installed": {
+    "message": "Retriever chưa được cài đặt hoặc tích hợp trình duyệt chưa được thiết lập"
+  },
+  "status_forbidden": {
+    "message": "Retriever không chấp nhận bản sao tiện ích mở rộng này"
+  },
+  "status_not_running": {
+    "message": "Retriever chưa khởi động kịp"
+  },
+  "status_host_failed": {
+    "message": "Kết nối với Retriever không thành công"
+  },
+  "status_too_large": {
+    "message": "Thông tin của lượt tải xuống này quá lớn để chuyển giao"
+  },
+  "status_update_app": {
+    "message": "Cập nhật Retriever để sử dụng mọi tính năng mà tiện ích mở rộng này cung cấp"
+  },
+  "popup_take": {
+    "message": "Nhận tải xuống từ trình duyệt này"
+  },
+  "popup_proxy": {
+    "message": "Gửi các bản tải xuống qua proxy hoặc tiện ích VPN của trình duyệt này"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever sau đó tải xuống thông qua cùng một proxy với trình duyệt này. Trình duyệt sẽ hỏi bạn một lần để cho phép; tắt tùy chọn này sẽ thu hồi quyền đó."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever sau đó tải xuống qua cùng một proxy với trình duyệt này. Khi tắt tùy chọn này, tiện ích sẽ không đọc proxy của trình duyệt."
+  },
+  "popup_exclude_site": {
+    "message": "Không nhận tải xuống từ $site$ nữa",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Tải xuống từ $site$ vẫn ở lại trình duyệt",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Mở Retriever"
+  },
+  "popup_options": {
+    "message": "Tùy chọn..."
+  },
+  "popup_help": {
+    "message": "Trợ giúp"
+  },
+  "popup_support": {
+    "message": "Hỗ trợ Retriever"
+  },
+  "popup_fix": {
+    "message": "Cách khắc phục"
+  },
+  "popup_by_hand": {
+    "message": "Bản sao này được tải thủ công và sẽ không tự cập nhật."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Bản sao này được tải thủ công: nó sẽ không tự cập nhật và trình duyệt sẽ xóa nó khi khởi động lại."
+  },
+  "popup_store_chrome": {
+    "message": "Thêm từ Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "Thêm từ addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Để lại cho trình duyệt: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Bản tải xuống cuối cùng đã được để lại cho trình duyệt."
+  },
+  "declined_file_type": {
+    "message": "Loại tệp không có trong Tùy chọn → Loại tệp."
+  },
+  "declined_site": {
+    "message": "Trang web của tệp nằm trong Tùy chọn → Loại tệp, trang web để lại cho trình duyệt."
+  },
+  "declined_address": {
+    "message": "Địa chỉ của tệp nằm trong Tùy chọn → Loại tệp, địa chỉ để lại cho trình duyệt."
+  },
+  "declined_small": {
+    "message": "Tệp nhỏ hơn kích thước tối thiểu trong Tùy chọn → Loại tệp."
+  },
+  "declined_browser": {
+    "message": "Trình duyệt này không được chọn trong Tùy chọn → Chung."
+  },
+  "declined_integration_off": {
+    "message": "Tích hợp trình duyệt nâng cao đang tắt trong Tùy chọn → Chung."
+  },
+  "declined_torrents": {
+    "message": "Đây là torrent, và tùy chọn Mở liên kết magnet và tệp .torrent bằng Retriever đang tắt trong cài đặt Torrent."
+  },
+  "declined_site_access": {
+    "message": "Tiện ích không được phép đọc trang web này (quyền truy cập trang web của trình duyệt)."
+  },
+  "popup_alt": {
+    "message": "Giữ phím Alt trong khi nhấp vào liên kết để trình duyệt tải xuống."
+  },
+  "popup_media": {
+    "message": "Nội dung đa phương tiện trên trang này"
+  },
+  "popup_media_none": {
+    "message": "Chưa tìm thấy video hoặc âm thanh nào trên trang này. Hãy phát rồi mở lại."
+  },
+  "popup_media_streamed": {
+    "message": "Trình phát của trang này truyền video theo từng phần nên không có tệp nào để liệt kê. Trỏ vào video và dùng nút Tải xuống video của nó."
+  },
+  "popup_media_store": {
+    "message": "Quy tắc của Cửa hàng Chrome trực tuyến giữ bản sao tiện ích này tránh xa video của trang web này. Mục Trợ giúp cho biết bạn có thể làm gì."
+  },
+  "popup_media_download": {
+    "message": "Tải xuống"
+  },
+  "popup_media_protected": {
+    "message": "Được bảo vệ"
+  },
+  "popup_media_live": {
+    "message": "Trực tiếp"
+  },
+  "video_off": {
+    "message": "Tắt trên trang này"
+  },
+  "video_drm": {
+    "message": "Video được bảo vệ"
+  },
+  "video_unnamed": {
+    "message": "Không xác định được đây là video nào: hãy mở trang riêng của video và thử ở đó"
+  },
+  "video_looking": {
+    "message": "Đang tìm các chất lượng…"
+  },
+  "video_no_choices": {
+    "message": "Không có video nào để tải xuống ở đây"
+  },
+  "video_playlist": {
+    "message": "Danh sách video: hãy chọn chúng trong Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever cần yt-dlp cho video này"
+  },
+  "video_too_long": {
+    "message": "Việc tìm kiếm mất quá nhiều thời gian"
+  },
+  "video_busy": {
+    "message": "Retriever đang bận với các video khác"
+  },
+  "video_queued": {
+    "message": "Đã thêm vào hàng đợi"
+  },
+  "video_failed_lookup": {
+    "message": "Không thể tìm kiếm"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Âm thanh"
+  },
+  "video_open_post": {
+    "message": "Mở bài đăng để tải xuống"
+  },
+  "popup_send_to": {
+    "message": "Gửi tải xuống đến"
+  },
+  "popup_send_here": {
+    "message": "Máy tính này"
+  },
+  "popup_send_remote": {
+    "message": "Một Retriever khác (máy chủ)"
+  },
+  "popup_remote_code": {
+    "message": "Mã ghép nối"
+  },
+  "popup_remote_open": {
+    "message": "Mở"
+  },
+  "popup_remote_pair": {
+    "message": "Ghép nối"
+  },
+  "popup_remote_help": {
+    "message": "Mở địa chỉ của nó một lần và chấp nhận chứng chỉ của nó, sau đó nhập mã từ Tùy chọn, Từ xa, Ghép nối thiết bị (hoặc retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Tải xuống chuyển đến $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Nhập địa chỉ https:// của nó."
+  },
+  "remote_unreachable": {
+    "message": "Không thể truy cập. Mở địa chỉ của nó một lần trong trình duyệt này và chấp nhận chứng chỉ của nó, sau đó thử lại."
+  },
+  "remote_wrong_code": {
+    "message": "Sai mã."
+  },
+  "remote_no_code": {
+    "message": "Hiện không có mã: trước tiên hãy nhấp vào Ghép nối thiết bị ở đó."
+  },
+  "remote_too_soon": {
+    "message": "Đợi một lát, sau đó thử lại."
+  },
+  "remote_failed": {
+    "message": "Không thành công. Thử lại."
+  },
+  "remote_device_name": {
+    "message": "Tiện ích mở rộng trình duyệt"
+  },
+  "popup_media_title_name": {
+    "message": "Thêm tiêu đề trang vào trước tên tệp phương tiện"
+  },
+  "video_cant_save": {
+    "message": "không thể lưu"
+  },
+  "video_open_post_button": {
+    "message": "Mở bài đăng"
+  },
+  "video_drag_dots": {
+    "message": "Kéo các chấm để di chuyển nút dọc theo cạnh"
+  },
+  "video_tip": {
+    "message": "Tải xuống $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Tải xuống chất lượng tốt nhất"
+  },
+  "video_sending": {
+    "message": "Đang gửi đến Retriever..."
+  },
+  "video_added": {
+    "message": "Đã thêm vào Retriever"
+  },
+  "video_show": {
+    "message": "Hiển thị"
+  },
+  "video_no_answer": {
+    "message": "Retriever không phản hồi"
+  },
+  "video_get_mdm": {
+    "message": "Tải Retriever"
+  },
+  "video_retry": {
+    "message": "Thử lại"
+  },
+  "video_turn_on": {
+    "message": "Bật"
+  },
+  "video_best": {
+    "message": "tốt nhất"
+  },
+  "video_all_qualities": {
+    "message": "Tất cả chất lượng và phụ đề..."
+  },
+  "video_part": {
+    "message": "Tải xuống một phần từ đây..."
+  },
+  "video_failed": {
+    "message": "Retriever chưa được cài đặt hoặc chưa khởi động"
+  },
+  "video_download_best": {
+    "message": "Tải xuống chất lượng tốt nhất"
+  },
+  "video_original": {
+    "message": "gốc"
+  },
+  "video_compatible": {
+    "message": "Tương thích nhất"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Ẩn nút tải xuống ở chế độ toàn màn hình"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Khi trang ở chế độ toàn màn hình, video của trang sẽ không hiển thị nút Tải xuống video"
+  },
+  "popup_remote_forget": {
+    "message": "Quên"
+  },
+  "popup_gear": {
+    "message": "Tùy chọn trong Retriever"
+  },
+  "popup_tabs": {
+    "message": "Các phần trong cửa sổ bật lên"
+  },
+  "popup_tab_downloads": {
+    "message": "Tải xuống"
+  },
+  "popup_tab_page": {
+    "message": "Trang này"
+  },
+  "popup_tab_settings": {
+    "message": "Cài đặt"
+  },
+  "popup_conn": {
+    "message": "Đã kết nối · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Đã kết nối"
+  },
+  "popup_conn_off": {
+    "message": "Không kết nối"
+  },
+  "popup_conn_paused": {
+    "message": "Đã tạm dừng"
+  },
+  "popup_conn_update": {
+    "message": "Cập nhật Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Đang gửi đến $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Hủy"
+  },
+  "popup_page_none": {
+    "message": "Đây không phải là trang web: không có gì để làm ở đây."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Đã để trình duyệt xử lý theo quy tắc trong Tùy chọn"
+  },
+  "popup_dl_search": {
+    "message": "Tìm kiếm các bản tải xuống"
+  },
+  "popup_dl_filters": {
+    "message": "Hiển thị"
+  },
+  "popup_dl_all": {
+    "message": "Tất cả"
+  },
+  "popup_dl_running": {
+    "message": "Đang tải xuống"
+  },
+  "popup_dl_done_filter": {
+    "message": "Hoàn tất"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Thất bại"
+  },
+  "popup_dl_clear": {
+    "message": "Xóa các mục đã hoàn tất"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ lượt tải xuống đang diễn ra",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Đây là các bản tải xuống của Retriever tại $server$. Hãy mở các tệp của chúng ở đó.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "$shown$ bản mới nhất trong số $total$. Retriever liệt kê tất cả.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ trong $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Còn $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Đang bắt đầu..."
+  },
+  "popup_dl_paused": {
+    "message": "Đã tạm dừng"
+  },
+  "popup_dl_waiting": {
+    "message": "Đang chờ"
+  },
+  "popup_dl_done": {
+    "message": "Hoàn tất"
+  },
+  "popup_dl_just_now": {
+    "message": "vừa xong"
+  },
+  "popup_dl_failed": {
+    "message": "Thất bại"
+  },
+  "popup_dl_failed_why": {
+    "message": "Thất bại: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Tệp đã bị xóa hoặc di chuyển"
+  },
+  "popup_dl_loading": {
+    "message": "Đang tìm bản tải xuống..."
+  },
+  "popup_dl_none": {
+    "message": "Chưa có mục tải xuống nào"
+  },
+  "popup_dl_none_text": {
+    "message": "Những gì bạn tải xuống bằng Retriever sẽ hiển thị ở đây."
+  },
+  "popup_dl_no_match": {
+    "message": "Không có kết quả phù hợp"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Không có tên hoặc địa chỉ tải xuống nào chứa “$words$”.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Hiển thị tất cả các bản tải xuống"
+  },
+  "popup_list_off": {
+    "message": "Retriever không chạy"
+  },
+  "popup_list_off_text": {
+    "message": "Hãy khởi động để xem các bản tải xuống của bạn tại đây."
+  },
+  "popup_list_start": {
+    "message": "Khởi động Retriever"
+  },
+  "popup_list_old": {
+    "message": "Cập nhật Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Phiên bản này chưa thể liệt kê các bản tải xuống của nó ở đây."
+  },
+  "popup_list_busy": {
+    "message": "Retriever đang bận. Đang thử lại..."
+  },
+  "popup_list_unreached": {
+    "message": "Không thể kết nối với Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Không thể kết nối với Retriever tại $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Kiểm tra xem ứng dụng có đang chạy không và trình duyệt này có chấp nhận chứng chỉ của ứng dụng không (Cài đặt → Gửi tải xuống đến → Mở).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Mở"
+  },
+  "popup_act_open_named": {
+    "message": "Mở $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Hiển thị trong thư mục"
+  },
+  "popup_act_folder_named": {
+    "message": "Hiển thị $file$ trong thư mục",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Sao chép tệp"
+  },
+  "popup_act_share": {
+    "message": "Chia sẻ..."
+  },
+  "popup_act_copy_link": {
+    "message": "Sao chép liên kết"
+  },
+  "popup_act_pause": {
+    "message": "Tạm dừng"
+  },
+  "popup_act_pause_named": {
+    "message": "Tạm dừng $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Tiếp tục"
+  },
+  "popup_act_resume_named": {
+    "message": "Tiếp tục $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Tải xuống lại"
+  },
+  "popup_act_remove": {
+    "message": "Xóa khỏi danh sách"
+  },
+  "popup_act_delete": {
+    "message": "Xóa tệp..."
+  },
+  "popup_act_more": {
+    "message": "Thao tác khác"
+  },
+  "popup_act_more_named": {
+    "message": "Thao tác khác cho $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Xóa tệp?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ sẽ bị xóa khỏi máy tính của bạn và bản tải xuống sẽ bị xóa khỏi danh sách. Thao tác này không thể hoàn tác.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Xóa"
+  },
+  "popup_ask_clear_title": {
+    "message": "Xóa các mục tải xuống đã hoàn tất?"
+  },
+  "popup_ask_clear": {
+    "message": "$count$ bản tải xuống đã hoàn tất sẽ bị xóa khỏi danh sách. Các tệp của chúng vẫn ở nguyên vị trí.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Xóa"
+  },
+  "popup_said_file": {
+    "message": "Đã sao chép $file$. Dán vào thư mục, cuộc trò chuyện hoặc tin nhắn.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Đã sao chép liên kết"
+  },
+  "popup_said_removed": {
+    "message": "Đã xóa $file$ khỏi danh sách",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "Đã xóa $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Đang tải lại $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Đã xóa các mục tải xuống đã hoàn tất"
+  },
+  "popup_act_gone": {
+    "message": "Bản tải xuống đó không còn trong danh sách."
+  },
+  "popup_act_missing": {
+    "message": "Tệp không còn ở vị trí đã lưu (đã bị di chuyển hoặc xóa)."
+  },
+  "popup_act_running": {
+    "message": "Hãy tạm dừng trước."
+  },
+  "popup_act_cant": {
+    "message": "Không thể thực hiện điều đó với bản tải xuống này ngay bây giờ."
+  },
+  "popup_act_unsupported": {
+    "message": "Hệ thống này không thể làm điều đó."
+  },
+  "popup_act_off": {
+    "message": "Retriever không chạy."
+  },
+  "popup_act_busy": {
+    "message": "Retriever không phản hồi kịp thời. Thử lại."
+  },
+  "popup_act_failed": {
+    "message": "Thao tác đó không thành công. Hãy thử lại."
+  },
+  "status_running": {
+    "message": "Đang tải xuống: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Mở trang của nó"
+  }
+}

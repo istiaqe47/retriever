@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "브라우저에서 Retriever으로 다운로드를 전달합니다."
+  },
+  "menu": {
+    "message": "Retriever으로 다운로드"
+  },
+  "video_download": {
+    "message": "비디오 다운로드"
+  },
+  "video_more": {
+    "message": "추가 옵션"
+  },
+  "video_hide_here": {
+    "message": "이 비디오에서 숨기기"
+  },
+  "video_never_site": {
+    "message": "$site$에서는 다시 표시 안 함",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "단추 설정..."
+  },
+  "video_sent": {
+    "message": "Retriever으로 보냄"
+  },
+  "menu_selected": {
+    "message": "Retriever으로 선택한 링크 다운로드"
+  },
+  "menu_all": {
+    "message": "Retriever으로 모든 링크 다운로드"
+  },
+  "status_connected": {
+    "message": "Retriever에 연결됨"
+  },
+  "status_connected_version": {
+    "message": "Retriever $version$에 연결됨",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "일시 중지됨: 다운로드는 브라우저에 남아 있습니다."
+  },
+  "status_not_installed": {
+    "message": "Retriever이(가) 설치되지 않았거나 브라우저 통합이 설정되지 않았습니다."
+  },
+  "status_forbidden": {
+    "message": "Retriever이(가) 이 확장 프로그램 복사본을 허용하지 않습니다."
+  },
+  "status_not_running": {
+    "message": "Retriever이(가) 제시간에 시작되지 않았습니다."
+  },
+  "status_host_failed": {
+    "message": "Retriever에 대한 연결에 실패했습니다."
+  },
+  "status_too_large": {
+    "message": "이 다운로드의 세부 정보가 너무 커서 전달할 수 없습니다."
+  },
+  "status_update_app": {
+    "message": "이 확장에서 제공하는 모든 기능을 사용하려면 Retriever을(를) 업데이트하세요."
+  },
+  "popup_take": {
+    "message": "이 브라우저에서 다운로드 가져오기"
+  },
+  "popup_proxy": {
+    "message": "이 브라우저의 프록시 또는 VPN 확장을 통해 다운로드 보내기"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever이 이 브라우저와 동일한 프록시를 통해 다운로드합니다. 브라우저에서 한 번 허용할지 묻습니다. 이 기능을 끄면 해당 권한이 취소됩니다."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever이(가) 이 브라우저와 동일한 프록시를 통해 다운로드합니다. 이 옵션이 꺼져 있으면 확장 프로그램이 브라우저의 프록시를 읽지 않습니다."
+  },
+  "popup_exclude_site": {
+    "message": "$site$에서 다운로드하지 않음",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "$site$에서 다운로드한 파일은 브라우저에 남아 있습니다.",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Retriever 열기"
+  },
+  "popup_options": {
+    "message": "옵션..."
+  },
+  "popup_help": {
+    "message": "도움말"
+  },
+  "popup_support": {
+    "message": "Retriever 지원"
+  },
+  "popup_fix": {
+    "message": "해결 방법"
+  },
+  "popup_by_hand": {
+    "message": "이 복사본은 수동으로 로드되었으며 자동으로 업데이트되지 않습니다."
+  },
+  "popup_by_hand_firefox": {
+    "message": "이 복사본은 수동으로 로드되었습니다. 자동으로 업데이트되지 않으며 브라우저를 다시 시작하면 제거됩니다."
+  },
+  "popup_store_chrome": {
+    "message": "Chrome 웹 스토어에서 추가"
+  },
+  "popup_store_firefox": {
+    "message": "addons.mozilla.org에서 추가"
+  },
+  "popup_declined": {
+    "message": "브라우저에 남겨짐: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "마지막 다운로드는 브라우저에 남겨졌습니다."
+  },
+  "declined_file_type": {
+    "message": "옵션 → 파일 형식에 해당 형식이 없습니다."
+  },
+  "declined_site": {
+    "message": "옵션 → 파일 형식, 브라우저에 남겨진 사이트에 해당 사이트가 있습니다."
+  },
+  "declined_address": {
+    "message": "옵션 → 파일 형식, 브라우저에 남겨진 주소에 해당 주소가 있습니다."
+  },
+  "declined_small": {
+    "message": "옵션 → 파일 형식에서 최소 크기보다 작습니다."
+  },
+  "declined_browser": {
+    "message": "옵션 → 일반에서 이 브라우저가 선택되지 않았습니다."
+  },
+  "declined_integration_off": {
+    "message": "옵션 → 일반에서 고급 브라우저 통합 사용이 꺼져 있습니다."
+  },
+  "declined_torrents": {
+    "message": "토렌트이며, 토렌트 설정에서 Retriever으로 마그넷 링크 및 .torrent 파일 열기가 꺼져 있습니다."
+  },
+  "declined_site_access": {
+    "message": "확장 프로그램이 이 사이트를 읽을 수 없습니다(브라우저의 사이트 액세스)."
+  },
+  "popup_alt": {
+    "message": "Alt 키를 누른 채 링크를 클릭하면 브라우저가 다운로드합니다."
+  },
+  "popup_media": {
+    "message": "이 페이지의 미디어"
+  },
+  "popup_media_none": {
+    "message": "이 페이지에서 아직 비디오나 오디오를 찾을 수 없습니다. 재생한 다음 다시 여세요."
+  },
+  "popup_media_streamed": {
+    "message": "이 페이지의 플레이어는 비디오를 조각으로 스트리밍하므로 목록에 표시할 파일이 없습니다. 비디오를 가리킨 다음 '비디오 다운로드' 버튼을 사용하세요."
+  },
+  "popup_media_store": {
+    "message": "Chrome 웹 스토어 규칙에 따라 이 부가 기능 사본은 이 사이트의 비디오에서 작동하지 않습니다. 할 수 있는 방법은 도움말을 참조하세요."
+  },
+  "popup_media_download": {
+    "message": "다운로드"
+  },
+  "popup_media_protected": {
+    "message": "보호됨"
+  },
+  "popup_media_live": {
+    "message": "라이브"
+  },
+  "video_off": {
+    "message": "이 사이트에서 해제됨"
+  },
+  "video_drm": {
+    "message": "보호된 동영상"
+  },
+  "video_unnamed": {
+    "message": "어떤 비디오인지 알 수 없습니다. 비디오 자체 페이지를 열어 다시 시도하세요"
+  },
+  "video_looking": {
+    "message": "화질을 찾는 중…"
+  },
+  "video_no_choices": {
+    "message": "여기에는 다운로드할 비디오가 없습니다"
+  },
+  "video_playlist": {
+    "message": "비디오 목록: Retriever에서 선택하세요"
+  },
+  "video_no_ytdlp": {
+    "message": "이 비디오에는 Retriever에 yt-dlp가 필요합니다"
+  },
+  "video_too_long": {
+    "message": "찾는 데 시간이 너무 오래 걸렸습니다"
+  },
+  "video_busy": {
+    "message": "Retriever가 다른 비디오를 처리하는 중입니다"
+  },
+  "video_queued": {
+    "message": "대기열에 추가되었습니다"
+  },
+  "video_failed_lookup": {
+    "message": "찾지 못했습니다"
+  },
+  "video_tab_video": {
+    "message": "비디오"
+  },
+  "video_tab_audio": {
+    "message": "오디오"
+  },
+  "video_open_post": {
+    "message": "게시물을 열어 다운로드"
+  },
+  "popup_send_to": {
+    "message": "다운로드 보낼 위치"
+  },
+  "popup_send_here": {
+    "message": "이 컴퓨터"
+  },
+  "popup_send_remote": {
+    "message": "다른 Retriever (서버)"
+  },
+  "popup_remote_code": {
+    "message": "페어링 코드"
+  },
+  "popup_remote_open": {
+    "message": "열기"
+  },
+  "popup_remote_pair": {
+    "message": "페어링"
+  },
+  "popup_remote_help": {
+    "message": "해당 주소를 한 번 열고 인증서를 수락한 다음, 옵션, 원격, 장치 페어링(또는 retriever-cli pair)에서 코드를 입력하세요."
+  },
+  "status_remote": {
+    "message": "$address$으로 다운로드",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "https:// 주소를 입력하세요."
+  },
+  "remote_unreachable": {
+    "message": "연결할 수 없습니다. 이 브라우저에서 해당 주소를 한 번 열고 인증서를 수락한 다음 다시 시도하세요."
+  },
+  "remote_wrong_code": {
+    "message": "잘못된 코드입니다."
+  },
+  "remote_no_code": {
+    "message": "지금 코드가 표시되지 않습니다. 먼저 거기에서 장치 페어링을 클릭하세요."
+  },
+  "remote_too_soon": {
+    "message": "잠시 기다린 다음 다시 시도하세요."
+  },
+  "remote_failed": {
+    "message": "작동하지 않았습니다. 다시 시도하세요."
+  },
+  "remote_device_name": {
+    "message": "브라우저 확장"
+  },
+  "popup_media_title_name": {
+    "message": "미디어 파일 이름 앞에 페이지 제목 추가"
+  },
+  "video_cant_save": {
+    "message": "저장할 수 없음"
+  },
+  "video_open_post_button": {
+    "message": "게시물 열기"
+  },
+  "video_drag_dots": {
+    "message": "점을 끌어 가장자리를 따라 이동"
+  },
+  "video_tip": {
+    "message": "$what$ 다운로드",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "최고 화질 다운로드"
+  },
+  "video_sending": {
+    "message": "Retriever로 보내는 중..."
+  },
+  "video_added": {
+    "message": "Retriever에 추가됨"
+  },
+  "video_show": {
+    "message": "표시"
+  },
+  "video_no_answer": {
+    "message": "Retriever가 응답하지 않음"
+  },
+  "video_get_mdm": {
+    "message": "Retriever 받기"
+  },
+  "video_retry": {
+    "message": "다시 시도"
+  },
+  "video_turn_on": {
+    "message": "켜기"
+  },
+  "video_best": {
+    "message": "최고"
+  },
+  "video_all_qualities": {
+    "message": "모든 화질 및 자막..."
+  },
+  "video_part": {
+    "message": "여기부터 일부 다운로드..."
+  },
+  "video_failed": {
+    "message": "Retriever이(가) 설치되지 않았거나 시작되지 않았습니다."
+  },
+  "video_download_best": {
+    "message": "최고 품질 다운로드"
+  },
+  "video_original": {
+    "message": "원본"
+  },
+  "video_compatible": {
+    "message": "최대 호환"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "전체 화면에서 다운로드 버튼 숨기기"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "페이지가 전체 화면일 때 동영상에 다운로드 버튼이 표시되지 않습니다."
+  },
+  "popup_remote_forget": {
+    "message": "삭제"
+  },
+  "popup_gear": {
+    "message": "Retriever 옵션"
+  },
+  "popup_tabs": {
+    "message": "팝업 섹션"
+  },
+  "popup_tab_downloads": {
+    "message": "다운로드"
+  },
+  "popup_tab_page": {
+    "message": "이 페이지"
+  },
+  "popup_tab_settings": {
+    "message": "설정"
+  },
+  "popup_conn": {
+    "message": "연결됨 · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "연결됨"
+  },
+  "popup_conn_off": {
+    "message": "연결되지 않음"
+  },
+  "popup_conn_paused": {
+    "message": "일시 중지됨"
+  },
+  "popup_conn_update": {
+    "message": "Retriever 업데이트"
+  },
+  "popup_conn_remote": {
+    "message": "$server$(으)로 전송 중",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "취소"
+  },
+  "popup_page_none": {
+    "message": "웹 페이지가 아닙니다. 여기서는 할 일이 없습니다."
+  },
+  "popup_exclude_by_rule": {
+    "message": "옵션의 규칙에 따라 브라우저에 남겨짐"
+  },
+  "popup_dl_search": {
+    "message": "다운로드 검색"
+  },
+  "popup_dl_filters": {
+    "message": "표시"
+  },
+  "popup_dl_all": {
+    "message": "모두"
+  },
+  "popup_dl_running": {
+    "message": "실행 중"
+  },
+  "popup_dl_done_filter": {
+    "message": "완료됨"
+  },
+  "popup_dl_failed_filter": {
+    "message": "실패함"
+  },
+  "popup_dl_clear": {
+    "message": "완료된 항목 지우기"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$개 다운로드 중",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "이것은 $server$에 있는 Retriever의 다운로드입니다. 거기에서 파일을 여세요.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "$total$개 중 최신 $shown$개입니다. Retriever에 모두 나열됩니다.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$size$ 중 $done$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "$time$ 남음",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "시작 중..."
+  },
+  "popup_dl_paused": {
+    "message": "일시 중지됨"
+  },
+  "popup_dl_waiting": {
+    "message": "대기 중"
+  },
+  "popup_dl_done": {
+    "message": "완료됨"
+  },
+  "popup_dl_just_now": {
+    "message": "방금"
+  },
+  "popup_dl_failed": {
+    "message": "실패함"
+  },
+  "popup_dl_failed_why": {
+    "message": "실패함: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "파일이 삭제되었거나 이동됨"
+  },
+  "popup_dl_loading": {
+    "message": "다운로드 찾는 중..."
+  },
+  "popup_dl_none": {
+    "message": "아직 다운로드 없음"
+  },
+  "popup_dl_none_text": {
+    "message": "Retriever으로 다운로드한 항목이 여기에 표시됩니다."
+  },
+  "popup_dl_no_match": {
+    "message": "일치하는 항목 없음"
+  },
+  "popup_dl_no_match_text": {
+    "message": "다운로드 이름이나 주소에 “$words$”이(가) 없습니다.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "모든 다운로드 표시"
+  },
+  "popup_list_off": {
+    "message": "Retriever이(가) 실행 중이 아님"
+  },
+  "popup_list_off_text": {
+    "message": "여기에서 다운로드를 보려면 시작하세요."
+  },
+  "popup_list_start": {
+    "message": "Retriever 시작"
+  },
+  "popup_list_old": {
+    "message": "Retriever 업데이트"
+  },
+  "popup_list_old_text": {
+    "message": "이 버전은 아직 여기에서 다운로드를 나열할 수 없습니다."
+  },
+  "popup_list_busy": {
+    "message": "Retriever이(가) 사용 중입니다. 다시 시도하는 중..."
+  },
+  "popup_list_unreached": {
+    "message": "Retriever에 연결할 수 없음"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "$server$의 Retriever에 연결할 수 없음",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "실행 중인지, 그리고 이 브라우저가 해당 인증서를 신뢰하는지 확인하세요(설정 → 다운로드 전송 → 열기).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "열기"
+  },
+  "popup_act_open_named": {
+    "message": "$file$ 열기",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "폴더에 표시"
+  },
+  "popup_act_folder_named": {
+    "message": "폴더에 $file$ 표시",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "파일 복사"
+  },
+  "popup_act_share": {
+    "message": "공유..."
+  },
+  "popup_act_copy_link": {
+    "message": "링크 복사"
+  },
+  "popup_act_pause": {
+    "message": "일시 중지"
+  },
+  "popup_act_pause_named": {
+    "message": "$file$ 일시 중지",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "다시 시작"
+  },
+  "popup_act_resume_named": {
+    "message": "$file$ 다시 시작",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "다시 다운로드"
+  },
+  "popup_act_remove": {
+    "message": "목록에서 제거"
+  },
+  "popup_act_delete": {
+    "message": "파일 삭제..."
+  },
+  "popup_act_more": {
+    "message": "추가 작업"
+  },
+  "popup_act_more_named": {
+    "message": "$file$에 대한 추가 작업",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "파일을 삭제하시겠습니까?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$이(가) 컴퓨터에서 삭제되고 다운로드가 목록에서 제거됩니다. 이 작업은 취소할 수 없습니다.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "삭제"
+  },
+  "popup_ask_clear_title": {
+    "message": "완료된 다운로드를 지우시겠습니까?"
+  },
+  "popup_ask_clear": {
+    "message": "완료된 다운로드 $count$개를 목록에서 제거하시겠습니까? 파일은 그대로 유지됩니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "지우기"
+  },
+  "popup_said_file": {
+    "message": "$file$을(를) 복사했습니다. 폴더, 채팅 또는 메시지에 붙여넣으세요.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "링크 복사됨"
+  },
+  "popup_said_removed": {
+    "message": "$file$이(가) 목록에서 제거됨",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ 삭제됨",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "$file$을(를) 다시 다운로드 중",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "완료된 다운로드 지움"
+  },
+  "popup_act_gone": {
+    "message": "해당 다운로드가 더 이상 목록에 없습니다."
+  },
+  "popup_act_missing": {
+    "message": "파일이 저장된 위치에 더 이상 없습니다(이동되었거나 삭제됨)."
+  },
+  "popup_act_running": {
+    "message": "먼저 일시 중지하세요."
+  },
+  "popup_act_cant": {
+    "message": "이 다운로드에는 지금 이 작업을 수행할 수 없습니다."
+  },
+  "popup_act_unsupported": {
+    "message": "이 시스템에서는 이 작업을 수행할 수 없습니다."
+  },
+  "popup_act_off": {
+    "message": "Retriever이(가) 실행 중이 아닙니다."
+  },
+  "popup_act_busy": {
+    "message": "Retriever이(가) 제때 응답하지 않았습니다. 다시 시도하세요."
+  },
+  "popup_act_failed": {
+    "message": "작업이 실패했습니다. 다시 시도하세요."
+  },
+  "status_running": {
+    "message": "다운로드 중: $count$개",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "페이지 열기"
+  }
+}

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Name=Retriever
+GenericName=Download Manager
+Comment=Download files, videos and torrents, with pause, resume and many connections
+Exec=retriever %U
+Icon=io.github.retriever.Retriever
+Terminal=false
+Categories=Network;FileTransfer;GTK;GNOME;
+Keywords=download;downloader;idm;accelerator;http;ftp;torrent;magnet;video;youtube;yt-dlp;
+StartupNotify=true
+SingleMainWindow=true
+MimeType=x-scheme-handler/magnet;application/x-bittorrent;

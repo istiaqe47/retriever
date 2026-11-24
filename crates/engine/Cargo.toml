@@ -1,0 +1,67 @@
+[package]
+name = "mdm-engine"
+description = "MDM download engine: dynamic segmentation, workers, resume"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+publish.workspace = true
+
+[features]
+default = ["browser-connection"]
+# The browser-like connection for sites whose bot check refuses MDM's own (#668,
+# src/browserlike.rs). Without it a bot check's refusal stands (the browser takes the download).
+browser-connection = ["dep:wreq", "dep:wreq-util", "dep:rustls-native-certs"]
+
+[dependencies]
+wreq = { workspace = true, optional = true }
+wreq-util = { workspace = true, optional = true }
+rustls-native-certs = { workspace = true, optional = true }
+webpki-root-certs.workspace = true
+# Mozilla's name constraints, which webpki-root-certs' plain certificates don't carry (tls.rs).
+webpki-roots.workspace = true
+bytes.workspace = true
+craft-atomic.workspace = true
+serde_json.workspace = true
+futures.workspace = true
+percent-encoding.workspace = true
+reqwest.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+url.workspace = true
+httpdate.workspace = true
+sha2.workspace = true
+md-5.workspace = true
+sha1.workspace = true
+crc32fast.workspace = true
+base64.workspace = true
+hex.workspace = true
+# Proxy auto-config scripts (src/pac.rs): QuickJS, built from C (no bindgen: its bindings come
+# with it). Only the language: no module loader, no file or OS access.
+rquickjs = { version = "0.14.0", default-features = false, features = ["std"] }
+suppaftp.workspace = true
+tokio-socks.workspace = true
+hickory-resolver.workspace = true
+socket2.workspace = true
+network-interface.workspace = true
+hyper-util.workspace = true
+# The client's connector timed, a layer around it (src/server.rs; already in the tree).
+tower-layer = "0.3.3"
+tower-service = "0.3.3"
+# A name shortened to fit a path is cut between characters as they show (#1102; already in the tree).
+unicode-segmentation = "1.13.3"
+# hyper-util's proxy matcher takes an http::Uri (already in the tree through reqwest).
+http = "1.5.0"
+rustls.workspace = true
+rustls-platform-verifier.workspace = true
+tokio-rustls.workspace = true
+
+[target.'cfg(unix)'.dependencies]
+# The free-space probe (src/disk.rs): statvfs and statfs, safely (already in the tree).
+rustix = { version = "1.1.6", features = ["fs"] }
+
+[lints]
+workspace = true

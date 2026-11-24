@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "Odovzdá sťahovanie z prehliadača do Retriever."
+  },
+  "menu": {
+    "message": "Stiahnuť pomocou Retriever"
+  },
+  "video_download": {
+    "message": "Stiahnuť video"
+  },
+  "video_more": {
+    "message": "Ďalšie možnosti"
+  },
+  "video_hide_here": {
+    "message": "Skryť pri tomto videu"
+  },
+  "video_never_site": {
+    "message": "Nikdy na $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "Nastavenia tlačidla..."
+  },
+  "video_sent": {
+    "message": "Odoslané do Retriever"
+  },
+  "menu_selected": {
+    "message": "Stiahnuť vybrané odkazy pomocou Retriever"
+  },
+  "menu_all": {
+    "message": "Stiahnuť všetky odkazy pomocou Retriever"
+  },
+  "status_connected": {
+    "message": "Pripojené k Retriever"
+  },
+  "status_connected_version": {
+    "message": "Pripojené k Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "Pozastavené: sťahovania zostávajú v prehliadači"
+  },
+  "status_not_installed": {
+    "message": "Retriever nie je nainštalovaný alebo jeho integrácia prehliadača nie je nastavená"
+  },
+  "status_forbidden": {
+    "message": "Retriever neprijíma túto kópiu rozšírenia"
+  },
+  "status_not_running": {
+    "message": "Retriever sa nespustil včas"
+  },
+  "status_host_failed": {
+    "message": "Pripojenie k aplikácii Retriever zlyhalo"
+  },
+  "status_too_large": {
+    "message": "Podrobnosti tohto sťahovania boli príliš veľké na odovzdanie"
+  },
+  "status_update_app": {
+    "message": "Aktualizujte aplikáciu Retriever, aby ste mohli používať všetko, čo toto rozšírenie ponúka"
+  },
+  "popup_take": {
+    "message": "Preberať sťahovania z tohto prehliadača"
+  },
+  "popup_proxy": {
+    "message": "Odosielať sťahovania cez proxy alebo rozšírenie VPN tohto prehliadača"
+  },
+  "popup_proxy_title": {
+    "message": "Aplikácia Retriever potom sťahuje cez rovnaký server proxy ako tento prehliadač. Prehliadač vás raz požiada o povolenie; vypnutím tejto možnosti sa povolenie odoberie."
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever potom sťahuje cez rovnaký server proxy ako tento prehliadač. Keď je táto možnosť vypnutá, rozšírenie nečíta server proxy prehliadača."
+  },
+  "popup_exclude_site": {
+    "message": "Nikdy nepreberať sťahovania z webu $site$",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "Stiahnutia z $site$ zostávajú v prehliadači",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "Otvoriť Retriever"
+  },
+  "popup_options": {
+    "message": "Možnosti..."
+  },
+  "popup_help": {
+    "message": "Pomocník"
+  },
+  "popup_support": {
+    "message": "Podporte Retriever"
+  },
+  "popup_fix": {
+    "message": "Ako to opraviť"
+  },
+  "popup_by_hand": {
+    "message": "Táto kópia bola načítaná ručne a nebude sa sama aktualizovať."
+  },
+  "popup_by_hand_firefox": {
+    "message": "Táto kópia bola načítaná ručne: nebude sa sama aktualizovať a prehliadač ju po reštarte odstráni."
+  },
+  "popup_store_chrome": {
+    "message": "Pridať z obchodu Chrome Web Store"
+  },
+  "popup_store_firefox": {
+    "message": "Pridať z addons.mozilla.org"
+  },
+  "popup_declined": {
+    "message": "Ponechané prehliadaču: $name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "Posledné stiahnutie bolo ponechané prehliadaču."
+  },
+  "declined_file_type": {
+    "message": "Jeho typ nie je v Možnostiach → Typy súborov."
+  },
+  "declined_site": {
+    "message": "Jeho stránka je v Možnostiach → Typy súborov, stránky ponechané prehliadaču."
+  },
+  "declined_address": {
+    "message": "Jeho adresa je v Možnostiach → Typy súborov, adresy ponechané prehliadaču."
+  },
+  "declined_small": {
+    "message": "Je menšia ako minimálna veľkosť v Možnostiach → Typy súborov."
+  },
+  "declined_browser": {
+    "message": "Tento prehliadač nie je začiarknutý v Možnostiach → Všeobecné."
+  },
+  "declined_integration_off": {
+    "message": "Použiť rozšírenú integráciu prehliadača je vypnuté v Možnostiach → Všeobecné."
+  },
+  "declined_torrents": {
+    "message": "Je to torrent a možnosť Otvoriť magnetické odkazy a súbory .torrent pomocou Retriever je v nastaveniach torrentov vypnutá."
+  },
+  "declined_site_access": {
+    "message": "Rozšírenie nemá povolené čítať túto stránku (prístup prehliadača k stránke)."
+  },
+  "popup_alt": {
+    "message": "Podržte kláves Alt a kliknite na odkaz, aby ho stiahol prehliadač."
+  },
+  "popup_media": {
+    "message": "Médiá na tejto stránke"
+  },
+  "popup_media_none": {
+    "message": "Na tejto stránke sa zatiaľ nenašlo žiadne video ani zvuk. Prehrajte ho a potom toto znova otvorte."
+  },
+  "popup_media_streamed": {
+    "message": "Prehrávač na tejto stránke streamuje video po častiach, takže tu nie je žiadny súbor na zobrazenie. Ukážte na video a použite jeho tlačidlo „Stiahnuť video“."
+  },
+  "popup_media_store": {
+    "message": "Pravidlá Internetového obchodu Chrome držia túto kópiu doplnku mimo videí tejto stránky. V Pomocníkovi nájdete, čo môžete urobiť."
+  },
+  "popup_media_download": {
+    "message": "Stiahnuť"
+  },
+  "popup_media_protected": {
+    "message": "Chránené"
+  },
+  "popup_media_live": {
+    "message": "Naživo"
+  },
+  "video_off": {
+    "message": "Vypnuté na tejto lokalite"
+  },
+  "video_drm": {
+    "message": "Chránené video"
+  },
+  "video_unnamed": {
+    "message": "Nedá sa zistiť, o ktoré video ide: otvorte jeho vlastnú stránku a skúste to tam"
+  },
+  "video_looking": {
+    "message": "Vyhľadávanie kvalít…"
+  },
+  "video_no_choices": {
+    "message": "Tu nie je žiadne video na stiahnutie"
+  },
+  "video_playlist": {
+    "message": "Zoznam videí: vyberte ich v Retriever"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever potrebuje pre toto video yt-dlp"
+  },
+  "video_too_long": {
+    "message": "Vyhľadávanie trvalo príliš dlho"
+  },
+  "video_busy": {
+    "message": "Retriever je zaneprázdnený inými videami"
+  },
+  "video_queued": {
+    "message": "Pridané do radu"
+  },
+  "video_failed_lookup": {
+    "message": "Vyhľadanie zlyhalo"
+  },
+  "video_tab_video": {
+    "message": "Video"
+  },
+  "video_tab_audio": {
+    "message": "Zvuk"
+  },
+  "video_open_post": {
+    "message": "Otvoriť príspevok a stiahnuť video"
+  },
+  "popup_send_to": {
+    "message": "Odoslať sťahovania do"
+  },
+  "popup_send_here": {
+    "message": "Tento počítač"
+  },
+  "popup_send_remote": {
+    "message": "Iný Retriever (server)"
+  },
+  "popup_remote_code": {
+    "message": "Párovací kód"
+  },
+  "popup_remote_open": {
+    "message": "Otvoriť"
+  },
+  "popup_remote_pair": {
+    "message": "Spárovať"
+  },
+  "popup_remote_help": {
+    "message": "Otvorte jeho adresu raz a prijmite jeho certifikát, potom zadajte kód z jeho Možnosti, Vzdialené, Spárovať zariadenie (alebo retriever-cli pair)."
+  },
+  "status_remote": {
+    "message": "Sťahovania idú na $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "Zadajte jeho adresu https://."
+  },
+  "remote_unreachable": {
+    "message": "Nedostupné. Otvorte jeho adresu raz v tomto prehliadači a prijmite jeho certifikát, potom skúste znova."
+  },
+  "remote_wrong_code": {
+    "message": "Nesprávny kód."
+  },
+  "remote_no_code": {
+    "message": "Teraz nezobrazuje žiadny kód: najprv tam kliknite na Spárovať zariadenie."
+  },
+  "remote_too_soon": {
+    "message": "Počkajte chvíľu a potom skúste znova."
+  },
+  "remote_failed": {
+    "message": "Nepodarilo sa. Skúste znova."
+  },
+  "remote_device_name": {
+    "message": "Rozšírenie prehliadača"
+  },
+  "popup_media_title_name": {
+    "message": "Pridať názov stránky pred názvy mediálnych súborov"
+  },
+  "video_cant_save": {
+    "message": "nedá sa uložiť"
+  },
+  "video_open_post_button": {
+    "message": "Otvoriť príspevok"
+  },
+  "video_drag_dots": {
+    "message": "Potiahnutím bodiek ho presuniete po okraji"
+  },
+  "video_tip": {
+    "message": "Stiahnuť $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "Stiahnuť najlepšiu kvalitu"
+  },
+  "video_sending": {
+    "message": "Odosiela sa do Retriever..."
+  },
+  "video_added": {
+    "message": "Pridané do Retriever"
+  },
+  "video_show": {
+    "message": "Zobraziť"
+  },
+  "video_no_answer": {
+    "message": "Retriever neodpovedal"
+  },
+  "video_get_mdm": {
+    "message": "Získať Retriever"
+  },
+  "video_retry": {
+    "message": "Znova"
+  },
+  "video_turn_on": {
+    "message": "Zapnúť"
+  },
+  "video_best": {
+    "message": "najlepšie"
+  },
+  "video_all_qualities": {
+    "message": "Všetky kvality a titulky..."
+  },
+  "video_part": {
+    "message": "Stiahnuť časť odtiaľto..."
+  },
+  "video_failed": {
+    "message": "Retriever nie je nainštalovaný alebo sa nespustil"
+  },
+  "video_download_best": {
+    "message": "Stiahnuť najlepšiu kvalitu"
+  },
+  "video_original": {
+    "message": "pôvodné"
+  },
+  "video_compatible": {
+    "message": "Najkompatibilnejší"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "Skryť tlačidlo sťahovania v režime celej obrazovky"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "Keď je stránka v režime celej obrazovky, pri jej videách sa nezobrazuje tlačidlo Stiahnuť video"
+  },
+  "popup_remote_forget": {
+    "message": "Zabudnúť"
+  },
+  "popup_gear": {
+    "message": "Možnosti v aplikácii Retriever"
+  },
+  "popup_tabs": {
+    "message": "Sekcie kontextovej ponuky"
+  },
+  "popup_tab_downloads": {
+    "message": "Sťahovania"
+  },
+  "popup_tab_page": {
+    "message": "Táto stránka"
+  },
+  "popup_tab_settings": {
+    "message": "Nastavenia"
+  },
+  "popup_conn": {
+    "message": "Pripojené · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "Pripojené"
+  },
+  "popup_conn_off": {
+    "message": "Nepripojené"
+  },
+  "popup_conn_paused": {
+    "message": "Pozastavené"
+  },
+  "popup_conn_update": {
+    "message": "Aktualizovať Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "Odosiela sa na $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "Zrušiť"
+  },
+  "popup_page_none": {
+    "message": "Toto nie je webová stránka: tu nie je čo robiť."
+  },
+  "popup_exclude_by_rule": {
+    "message": "Ponechané prehliadaču pravidlom v Možnostiach"
+  },
+  "popup_dl_search": {
+    "message": "Hľadať sťahovania"
+  },
+  "popup_dl_filters": {
+    "message": "Zobraziť"
+  },
+  "popup_dl_all": {
+    "message": "Všetky"
+  },
+  "popup_dl_running": {
+    "message": "Spustené"
+  },
+  "popup_dl_done_filter": {
+    "message": "Hotovo"
+  },
+  "popup_dl_failed_filter": {
+    "message": "Zlyhalo"
+  },
+  "popup_dl_clear": {
+    "message": "Vymazať dokončené"
+  },
+  "popup_dl_running_count": {
+    "message": "$count$ sa sťahuje",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "Toto sú sťahovania aplikácie Retriever na $server$. Otvorte ich súbory tam.",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "Najnovších $shown$ z $total$. Retriever ich zobrazuje všetky.",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ z $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "Zostáva $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "Spúšťa sa..."
+  },
+  "popup_dl_paused": {
+    "message": "Pozastavené"
+  },
+  "popup_dl_waiting": {
+    "message": "Čaká sa"
+  },
+  "popup_dl_done": {
+    "message": "Hotovo"
+  },
+  "popup_dl_just_now": {
+    "message": "práve teraz"
+  },
+  "popup_dl_failed": {
+    "message": "Zlyhalo"
+  },
+  "popup_dl_failed_why": {
+    "message": "Zlyhalo: $why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "Súbor bol odstránený alebo presunutý"
+  },
+  "popup_dl_loading": {
+    "message": "Hľadajú sa sťahovania..."
+  },
+  "popup_dl_none": {
+    "message": "Zatiaľ žiadne sťahovania"
+  },
+  "popup_dl_none_text": {
+    "message": "To, čo stiahnete pomocou aplikácie Retriever, sa zobrazí tu."
+  },
+  "popup_dl_no_match": {
+    "message": "Nič sa nezhoduje"
+  },
+  "popup_dl_no_match_text": {
+    "message": "Žiadne sťahovanie nemá v názve alebo adrese „$words$“.",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "Zobraziť všetky sťahovania"
+  },
+  "popup_list_off": {
+    "message": "Retriever nie je spustený"
+  },
+  "popup_list_off_text": {
+    "message": "Spustite ho, aby ste tu videli svoje sťahovania."
+  },
+  "popup_list_start": {
+    "message": "Spustiť Retriever"
+  },
+  "popup_list_old": {
+    "message": "Aktualizovať Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "Táto verzia zatiaľ nemôže zobraziť svoje sťahovania."
+  },
+  "popup_list_busy": {
+    "message": "Aplikácia Retriever je zaneprázdnená. Skúša sa znova..."
+  },
+  "popup_list_unreached": {
+    "message": "Nedá sa pripojiť k Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "Nedá sa pripojiť k aplikácii Retriever na serveri $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "Skontrolujte, či je spustený a či tento prehliadač akceptuje jeho certifikát (Nastavenia → Posielať sťahovania do → Otvoriť).",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "Otvoriť"
+  },
+  "popup_act_open_named": {
+    "message": "Otvoriť $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "Zobraziť v priečinku"
+  },
+  "popup_act_folder_named": {
+    "message": "Zobraziť $file$ v priečinku",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "Kopírovať súbor"
+  },
+  "popup_act_share": {
+    "message": "Zdieľať..."
+  },
+  "popup_act_copy_link": {
+    "message": "Kopírovať odkaz"
+  },
+  "popup_act_pause": {
+    "message": "Pozastaviť"
+  },
+  "popup_act_pause_named": {
+    "message": "Pozastaviť $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "Pokračovať"
+  },
+  "popup_act_resume_named": {
+    "message": "Pokračovať v sťahovaní $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "Stiahnuť znova"
+  },
+  "popup_act_remove": {
+    "message": "Odstrániť zo zoznamu"
+  },
+  "popup_act_delete": {
+    "message": "Odstrániť súbor..."
+  },
+  "popup_act_more": {
+    "message": "Ďalšie akcie"
+  },
+  "popup_act_more_named": {
+    "message": "Ďalšie akcie pre $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "Odstrániť súbor?"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ sa odstráni z vášho počítača a sťahovanie sa odstráni zo zoznamu. Túto akciu nemožno vrátiť späť.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "Odstrániť"
+  },
+  "popup_ask_clear_title": {
+    "message": "Vymazať dokončené sťahovania?"
+  },
+  "popup_ask_clear": {
+    "message": "Dokončených $count$ sťahovaní sa odstráni zo zoznamu. Ich súbory zostanú tam, kde sú.",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "Vymazať"
+  },
+  "popup_said_file": {
+    "message": "Súbor $file$ bol skopírovaný. Prilepte ho do priečinka, chatu alebo správy.",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "Odkaz skopírovaný"
+  },
+  "popup_said_removed": {
+    "message": "$file$ odstránený zo zoznamu",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ odstránený",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "Sťahuje sa súbor $file$ znova",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "Dokončené sťahovania vymazané"
+  },
+  "popup_act_gone": {
+    "message": "Toto sťahovanie už nie je v zozname."
+  },
+  "popup_act_missing": {
+    "message": "Jeho súbor už nie je tam, kde bol uložený (presunutý alebo odstránený)."
+  },
+  "popup_act_running": {
+    "message": "Najprv ho pozastavte."
+  },
+  "popup_act_cant": {
+    "message": "Toto sa nedá vykonať s týmto sťahovaním."
+  },
+  "popup_act_unsupported": {
+    "message": "Tento systém to nedokáže."
+  },
+  "popup_act_off": {
+    "message": "Retriever nie je spustený."
+  },
+  "popup_act_busy": {
+    "message": "Retriever neodpovedal včas. Skúste to znova."
+  },
+  "popup_act_failed": {
+    "message": "Nepodarilo sa. Skúste to znova."
+  },
+  "status_running": {
+    "message": "Sťahuje sa: $count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "Otvoriť jeho stránku"
+  }
+}

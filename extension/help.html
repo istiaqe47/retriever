@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retriever for your browser: help</title>
+<style>
+  :root { color-scheme: light dark; --bg: #fafafb; --card: #ffffff; --fg: #222226; --dim: #5e5c64; --accent: #2a9db0; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #222226; --card: #2e2e32; --fg: #ffffff; --dim: #c0bfc4; --accent: #5bc8af; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 Cantarell, "Adwaita Sans", Inter, system-ui, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 18px 64px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
+  header img { width: 64px; height: 64px; }
+  h1 { font-size: 26px; margin: 0; }
+  h2 { font-size: 17px; margin: 0 0 8px; }
+  section { background: var(--card); border-radius: 12px; padding: 16px 18px; margin: 12px 0;
+            box-shadow: 0 0 0 1px rgba(0,0,0,.03), 0 1px 3px 1px rgba(0,0,0,.07); }
+  section:target { box-shadow: 0 0 0 2px var(--accent); }
+  p, li { color: var(--dim); margin: 6px 0; }
+  code { background: rgba(127,127,127,.15); border-radius: 6px; padding: 1px 6px; font-family: "Adwaita Mono", monospace; font-size: 13px; }
+  ol { padding-left: 22px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icons/icon-128.png" alt="">
+    <div><h1>Retriever for your browser</h1><p>Hands your downloads, a page's links, videos and magnet links to the Retriever app.</p></div>
+  </header>
+
+  <section id="install">
+    <h2>Install the Retriever app</h2>
+    <p>This extension needs the Retriever app on this computer. On Arch or CachyOS, in the folder you extracted it to:</p>
+    <p><code>makepkg -si</code></p>
+    <p>Then open Retriever once: it sets up the connection for every browser it finds.</p>
+  </section>
+
+  <section id="not-installed">
+    <h2>“Retriever isn't installed”</h2>
+    <p>The browser can't find Retriever's connection (its native messaging host).</p>
+    <ol>
+      <li>Install Retriever (above), and open it once.</li>
+      <li>Restart the browser.</li>
+      <li>Some browsers can't start Retriever's helper: Zen and other Firefox-based browsers, and browsers installed as a Flatpak or a Snap. Keep Retriever open: they connect to it directly. The first time, Retriever asks whether to allow the browser: choose <b>Allow</b>.</li>
+    </ol>
+  </section>
+
+  <section id="not-allowed">
+    <h2>“Retriever wasn't allowed to connect”</h2>
+    <p>Retriever asked whether to connect this browser, and the answer was Don't Allow. Open the extension's popup again: Retriever asks once more. To start over for every browser, use <b>Forget</b> in Retriever's Preferences → Browsers → Connected Browsers.</p>
+  </section>
+
+  <section id="not-found">
+    <h2>Retriever can't be found</h2>
+    <p>Open Retriever once (it registers its connection with each browser), then restart the browser.</p>
+  </section>
+
+  <section id="refused">
+    <h2>“Retriever doesn't accept this copy of the extension”</h2>
+    <p>The connection only answers Retriever's own extension. Update Retriever: an older version doesn't know this copy of the extension yet.</p>
+  </section>
+
+  <section id="not-running">
+    <h2>“Retriever didn't start in time”</h2>
+    <p>Start Retriever from the app grid, then try again. If it never starts, run <code>retriever</code> in a terminal to see why.</p>
+  </section>
+
+  <section id="unsupported">
+    <h2>“Update Retriever”</h2>
+    <p>This extension asked for something your Retriever doesn't do yet. Update Retriever.</p>
+  </section>
+
+  <section id="drm">
+    <h2>A protected video</h2>
+    <p>Videos protected against copying (DRM, as on Netflix) can't be downloaded.</p>
+  </section>
+
+  <section id="gone">
+    <h2>The video is gone</h2>
+    <p>The page changed, or the video ended. Reload the page and try again.</p>
+  </section>
+
+  <section id="too-large">
+    <h2>Too many links</h2>
+    <p>The page has more links than the browser can hand over at once. Use Retriever's Grab Links (the arrow beside +) with the page's address instead.</p>
+  </section>
+
+  <section id="address">
+    <h2>An address Retriever can't download</h2>
+    <p>Retriever downloads http, https, ftp and ftps addresses, and magnet links. A <code>blob:</code> or <code>data:</code> address exists only inside the page: it stays with the browser.</p>
+  </section>
+
+  <section id="store-youtube">
+    <h2>YouTube</h2>
+    <p>Retriever downloads YouTube's videos with yt-dlp (installed with it). For all of YouTube's qualities, install Deno: <code>sudo pacman -S deno</code>.</p>
+  </section>
+
+  <section id="firefox">
+    <h2>Firefox, Zen, LibreWolf, Floorp</h2>
+    <p>Firefox installs only add-ons signed by Mozilla. Sign this one once with your free addons.mozilla.org account (Retriever's <code>sign-firefox.sh</code>), then open the signed <code>.xpi</code> in Firefox. LibreWolf can also install it unsigned.</p>
+  </section>
+
+  <section id="chromium">
+    <h2>Chrome, Chromium, Brave, Vivaldi, Edge, Opera</h2>
+    <ol>
+      <li>Open <code>chrome://extensions</code> (Brave: <code>brave://extensions</code>).</li>
+      <li>Turn on Developer mode, top right.</li>
+      <li>Load unpacked, and choose <code>/usr/share/retriever/extension/chromium</code>.</li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>

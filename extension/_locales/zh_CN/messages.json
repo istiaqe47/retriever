@@ -1,0 +1,766 @@
+{
+  "name": {
+    "message": "Retriever"
+  },
+  "description": {
+    "message": "将下载任务从浏览器转交给 Retriever。"
+  },
+  "menu": {
+    "message": "使用 Retriever 下载"
+  },
+  "video_download": {
+    "message": "下载视频"
+  },
+  "video_more": {
+    "message": "更多选项"
+  },
+  "video_hide_here": {
+    "message": "仅在此视频上隐藏"
+  },
+  "video_never_site": {
+    "message": "在 $site$ 上永不显示",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "video_settings": {
+    "message": "按钮设置..."
+  },
+  "video_sent": {
+    "message": "已发送到 Retriever"
+  },
+  "menu_selected": {
+    "message": "使用 Retriever 下载选定链接"
+  },
+  "menu_all": {
+    "message": "使用 Retriever 下载所有链接"
+  },
+  "status_connected": {
+    "message": "已连接到 Retriever"
+  },
+  "status_connected_version": {
+    "message": "已连接到 Retriever $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.2.5"
+      }
+    }
+  },
+  "status_paused": {
+    "message": "已暂停：下载任务将由浏览器处理"
+  },
+  "status_not_installed": {
+    "message": "Retriever 未安装，或其浏览器集成未配置"
+  },
+  "status_forbidden": {
+    "message": "Retriever 不接受此扩展副本"
+  },
+  "status_not_running": {
+    "message": "Retriever 未及时启动"
+  },
+  "status_host_failed": {
+    "message": "与 Retriever 的连接失败"
+  },
+  "status_too_large": {
+    "message": "此下载任务的详细信息过大，无法转交"
+  },
+  "status_update_app": {
+    "message": "更新 Retriever，即可使用此扩展的全部功能"
+  },
+  "popup_take": {
+    "message": "从此浏览器接管下载任务"
+  },
+  "popup_proxy": {
+    "message": "通过此浏览器的代理或 VPN 扩展发送下载任务"
+  },
+  "popup_proxy_title": {
+    "message": "Retriever 将通过与此浏览器相同的代理下载。浏览器会向您请求一次授权；关闭此开关即撤销授权。"
+  },
+  "popup_proxy_title_chromium": {
+    "message": "Retriever 将通过与此浏览器相同的代理下载。关闭此开关时，扩展不会读取浏览器的代理设置。"
+  },
+  "popup_exclude_site": {
+    "message": "永不接管来自 $site$ 的下载任务",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_excluded": {
+    "message": "来自 $site$ 的下载任务将由浏览器处理",
+    "placeholders": {
+      "site": {
+        "content": "$1",
+        "example": "example.com"
+      }
+    }
+  },
+  "popup_open": {
+    "message": "打开 Retriever"
+  },
+  "popup_options": {
+    "message": "选项..."
+  },
+  "popup_help": {
+    "message": "帮助"
+  },
+  "popup_support": {
+    "message": "赞助 Retriever"
+  },
+  "popup_fix": {
+    "message": "如何修复"
+  },
+  "popup_by_hand": {
+    "message": "此副本是手动加载的，不会自动更新。"
+  },
+  "popup_by_hand_firefox": {
+    "message": "此副本是手动加载的：它不会自行更新，并且浏览器重启时会将其删除。"
+  },
+  "popup_store_chrome": {
+    "message": "从 Chrome 网上应用店添加"
+  },
+  "popup_store_firefox": {
+    "message": "从 addons.mozilla.org 添加"
+  },
+  "popup_declined": {
+    "message": "已留给浏览器：$name$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "setup.png"
+      }
+    }
+  },
+  "popup_declined_unnamed": {
+    "message": "上次下载任务已交由浏览器处理。"
+  },
+  "declined_file_type": {
+    "message": "其文件类型不在“选项”→“文件类型”列表中。"
+  },
+  "declined_site": {
+    "message": "其网站已列入“选项”→“文件类型”中留给浏览器的网站。"
+  },
+  "declined_address": {
+    "message": "其地址已列入“选项”→“文件类型”中留给浏览器的地址。"
+  },
+  "declined_small": {
+    "message": "文件小于“选项”→“文件类型”中设置的最小大小。"
+  },
+  "declined_browser": {
+    "message": "“选项”→“常规”中未勾选此浏览器。"
+  },
+  "declined_integration_off": {
+    "message": "“选项”→“常规”中已关闭“使用高级浏览器集成”。"
+  },
+  "declined_torrents": {
+    "message": "这是一个种子文件，并且“在 Torrent 设置中用 Retriever 打开磁力链接和 .torrent 文件”已关闭。"
+  },
+  "declined_site_access": {
+    "message": "此扩展无权读取此网站（浏览器的网站访问权限）。"
+  },
+  "popup_alt": {
+    "message": "按住 Alt 键并单击链接，让浏览器下载。"
+  },
+  "popup_media": {
+    "message": "此页面上的媒体"
+  },
+  "popup_media_none": {
+    "message": "此页面上尚未找到视频或音频。请播放后再次打开。"
+  },
+  "popup_media_streamed": {
+    "message": "此页面的播放器分段流式传输视频，没有可列出的文件。将鼠标移到视频上，点击“下载视频”按钮。"
+  },
+  "popup_media_store": {
+    "message": "受 Chrome 应用商店规则限制，此版本扩展无法下载该网站的视频。请查看“帮助”了解解决办法。"
+  },
+  "popup_media_download": {
+    "message": "下载"
+  },
+  "popup_media_protected": {
+    "message": "受保护"
+  },
+  "popup_media_live": {
+    "message": "直播"
+  },
+  "video_off": {
+    "message": "此站点已关闭"
+  },
+  "video_drm": {
+    "message": "受保护视频"
+  },
+  "video_unnamed": {
+    "message": "无法判断这是哪个视频：请打开该视频所在页面重试"
+  },
+  "video_looking": {
+    "message": "正在查找画质…"
+  },
+  "video_no_choices": {
+    "message": "此处没有可下载的视频"
+  },
+  "video_playlist": {
+    "message": "视频列表：请在 Retriever 中选择"
+  },
+  "video_no_ytdlp": {
+    "message": "Retriever 需要 yt-dlp 才能下载此视频"
+  },
+  "video_too_long": {
+    "message": "查找耗时过长"
+  },
+  "video_busy": {
+    "message": "Retriever 正忙于处理其他视频"
+  },
+  "video_queued": {
+    "message": "已添加到队列"
+  },
+  "video_failed_lookup": {
+    "message": "无法查找"
+  },
+  "video_tab_video": {
+    "message": "视频"
+  },
+  "video_tab_audio": {
+    "message": "音频"
+  },
+  "video_open_post": {
+    "message": "打开帖子以下载"
+  },
+  "popup_send_to": {
+    "message": "将下载任务发送到"
+  },
+  "popup_send_here": {
+    "message": "此电脑"
+  },
+  "popup_send_remote": {
+    "message": "另一个 Retriever（服务器）"
+  },
+  "popup_remote_code": {
+    "message": "配对码"
+  },
+  "popup_remote_open": {
+    "message": "打开地址"
+  },
+  "popup_remote_pair": {
+    "message": "配对"
+  },
+  "popup_remote_help": {
+    "message": "请先打开其地址并接受证书，然后输入其“选项”→“远程”→“配对设备”中显示的配对码（或 retriever-cli pair）。"
+  },
+  "status_remote": {
+    "message": "下载任务发送到 $address$",
+    "placeholders": {
+      "address": {
+        "content": "$1",
+        "example": "https://192.168.1.10:8463/"
+      }
+    }
+  },
+  "remote_address": {
+    "message": "输入其 https:// 地址。"
+  },
+  "remote_unreachable": {
+    "message": "无法访问。请先在此浏览器中打开其地址并接受其证书，然后重试。"
+  },
+  "remote_wrong_code": {
+    "message": "配对码错误。"
+  },
+  "remote_no_code": {
+    "message": "Retriever 未显示配对码：请先在 Retriever 中点击“配对设备”。"
+  },
+  "remote_too_soon": {
+    "message": "请稍等片刻后重试。"
+  },
+  "remote_failed": {
+    "message": "操作失败。请重试。"
+  },
+  "remote_device_name": {
+    "message": "浏览器扩展"
+  },
+  "popup_media_title_name": {
+    "message": "在媒体文件名前加上页面标题"
+  },
+  "video_cant_save": {
+    "message": "无法保存"
+  },
+  "video_open_post_button": {
+    "message": "打开帖子"
+  },
+  "video_drag_dots": {
+    "message": "拖动圆点可沿边缘移动"
+  },
+  "video_tip": {
+    "message": "下载 $what$",
+    "placeholders": {
+      "what": {
+        "content": "$1",
+        "example": "1080p MP4 · 412 MB"
+      }
+    }
+  },
+  "video_tip_best": {
+    "message": "下载最佳画质"
+  },
+  "video_sending": {
+    "message": "正在发送到 Retriever..."
+  },
+  "video_added": {
+    "message": "已添加到 Retriever"
+  },
+  "video_show": {
+    "message": "显示"
+  },
+  "video_no_answer": {
+    "message": "Retriever 未响应"
+  },
+  "video_get_mdm": {
+    "message": "获取 Retriever"
+  },
+  "video_retry": {
+    "message": "重试"
+  },
+  "video_turn_on": {
+    "message": "启用"
+  },
+  "video_best": {
+    "message": "最佳"
+  },
+  "video_all_qualities": {
+    "message": "所有画质和字幕..."
+  },
+  "video_part": {
+    "message": "从此处下载部分..."
+  },
+  "video_failed": {
+    "message": "Retriever 未安装或未启动"
+  },
+  "video_download_best": {
+    "message": "下载最佳"
+  },
+  "video_original": {
+    "message": "原始"
+  },
+  "video_compatible": {
+    "message": "最兼容"
+  },
+  "popup_video_hide_fullscreen": {
+    "message": "全屏时隐藏下载按钮"
+  },
+  "popup_video_hide_fullscreen_title": {
+    "message": "页面全屏时，视频上不会显示“下载视频”按钮"
+  },
+  "popup_remote_forget": {
+    "message": "忘记"
+  },
+  "popup_gear": {
+    "message": "在 Retriever 中设置选项"
+  },
+  "popup_tabs": {
+    "message": "弹出窗口部分"
+  },
+  "popup_tab_downloads": {
+    "message": "下载"
+  },
+  "popup_tab_page": {
+    "message": "此页面"
+  },
+  "popup_tab_settings": {
+    "message": "设置"
+  },
+  "popup_conn": {
+    "message": "已连接 · $version$",
+    "placeholders": {
+      "version": {
+        "content": "$1",
+        "example": "0.5.2"
+      }
+    }
+  },
+  "popup_conn_plain": {
+    "message": "已连接"
+  },
+  "popup_conn_off": {
+    "message": "未连接"
+  },
+  "popup_conn_paused": {
+    "message": "已暂停"
+  },
+  "popup_conn_update": {
+    "message": "更新 Retriever"
+  },
+  "popup_conn_remote": {
+    "message": "正在发送到 $server$",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_cancel": {
+    "message": "取消"
+  },
+  "popup_page_none": {
+    "message": "这不是网页：此处无事可做。"
+  },
+  "popup_exclude_by_rule": {
+    "message": "根据“选项”中的规则，已留给浏览器处理"
+  },
+  "popup_dl_search": {
+    "message": "搜索下载"
+  },
+  "popup_dl_filters": {
+    "message": "显示"
+  },
+  "popup_dl_all": {
+    "message": "所有"
+  },
+  "popup_dl_running": {
+    "message": "正在运行"
+  },
+  "popup_dl_done_filter": {
+    "message": "已完成"
+  },
+  "popup_dl_failed_filter": {
+    "message": "失败"
+  },
+  "popup_dl_clear": {
+    "message": "清除已完成"
+  },
+  "popup_dl_running_count": {
+    "message": "正在下载 $count$ 个",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_remote": {
+    "message": "这些是 $server$ 上的 Retriever 的下载。请在那里打开其文件。",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_dl_more": {
+    "message": "显示 $total$ 个中的最新 $shown$ 个。Retriever 列出所有下载。",
+    "placeholders": {
+      "shown": {
+        "content": "$1",
+        "example": "60"
+      },
+      "total": {
+        "content": "$2",
+        "example": "245"
+      }
+    }
+  },
+  "popup_dl_of": {
+    "message": "$done$ / $size$",
+    "placeholders": {
+      "done": {
+        "content": "$1",
+        "example": "12.3 MB"
+      },
+      "size": {
+        "content": "$2",
+        "example": "48.7 MB"
+      }
+    }
+  },
+  "popup_dl_left": {
+    "message": "剩余 $time$",
+    "placeholders": {
+      "time": {
+        "content": "$1",
+        "example": "0:42"
+      }
+    }
+  },
+  "popup_dl_starting": {
+    "message": "正在启动..."
+  },
+  "popup_dl_paused": {
+    "message": "已暂停"
+  },
+  "popup_dl_waiting": {
+    "message": "正在等待"
+  },
+  "popup_dl_done": {
+    "message": "已完成"
+  },
+  "popup_dl_just_now": {
+    "message": "刚刚"
+  },
+  "popup_dl_failed": {
+    "message": "失败"
+  },
+  "popup_dl_failed_why": {
+    "message": "失败：$why$",
+    "placeholders": {
+      "why": {
+        "content": "$1",
+        "example": "the server refused the connection"
+      }
+    }
+  },
+  "popup_dl_gone": {
+    "message": "文件已删除或移动"
+  },
+  "popup_dl_loading": {
+    "message": "正在查找下载..."
+  },
+  "popup_dl_none": {
+    "message": "暂无下载"
+  },
+  "popup_dl_none_text": {
+    "message": "您使用 Retriever 下载的内容将显示在此处。"
+  },
+  "popup_dl_no_match": {
+    "message": "无匹配项"
+  },
+  "popup_dl_no_match_text": {
+    "message": "没有下载任务的名称或地址包含“$words$”。",
+    "placeholders": {
+      "words": {
+        "content": "$1",
+        "example": "report"
+      }
+    }
+  },
+  "popup_dl_show_all": {
+    "message": "显示所有下载"
+  },
+  "popup_list_off": {
+    "message": "Retriever 未运行"
+  },
+  "popup_list_off_text": {
+    "message": "启动它以在此处查看您的下载。"
+  },
+  "popup_list_start": {
+    "message": "启动 Retriever"
+  },
+  "popup_list_old": {
+    "message": "更新 Retriever"
+  },
+  "popup_list_old_text": {
+    "message": "此版本尚无法在此处列出其下载。"
+  },
+  "popup_list_busy": {
+    "message": "Retriever 正忙。正在重试..."
+  },
+  "popup_list_unreached": {
+    "message": "无法连接到 Retriever"
+  },
+  "popup_list_remote_unreachable": {
+    "message": "无法连接到 Retriever（服务器：$server$）",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_list_remote_unreachable_text": {
+    "message": "请检查它是否正在运行，以及此浏览器是否接受其证书（设置 → 发送下载到 → 打开它）。",
+    "placeholders": {
+      "server": {
+        "content": "$1",
+        "example": "192.168.1.10:8463"
+      }
+    }
+  },
+  "popup_act_open": {
+    "message": "打开"
+  },
+  "popup_act_open_named": {
+    "message": "打开 $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_folder": {
+    "message": "在文件夹中显示"
+  },
+  "popup_act_folder_named": {
+    "message": "在文件夹中显示 $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_copy_file": {
+    "message": "复制文件"
+  },
+  "popup_act_share": {
+    "message": "共享..."
+  },
+  "popup_act_copy_link": {
+    "message": "复制链接"
+  },
+  "popup_act_pause": {
+    "message": "暂停"
+  },
+  "popup_act_pause_named": {
+    "message": "暂停 $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_resume": {
+    "message": "恢复"
+  },
+  "popup_act_resume_named": {
+    "message": "恢复 $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_act_again": {
+    "message": "重新下载"
+  },
+  "popup_act_remove": {
+    "message": "从列表中移除"
+  },
+  "popup_act_delete": {
+    "message": "删除文件..."
+  },
+  "popup_act_more": {
+    "message": "更多操作"
+  },
+  "popup_act_more_named": {
+    "message": "$file$ 的更多操作",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_title": {
+    "message": "删除文件？"
+  },
+  "popup_ask_delete": {
+    "message": "$file$ 将从您的计算机中删除，并从列表中移除下载。此操作无法撤销。",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_ask_delete_ok": {
+    "message": "删除"
+  },
+  "popup_ask_clear_title": {
+    "message": "清除已完成的下载？"
+  },
+  "popup_ask_clear": {
+    "message": "$count$ 个已完成的下载将从列表中移除。其文件保留在原位。",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "8"
+      }
+    }
+  },
+  "popup_ask_clear_ok": {
+    "message": "清除"
+  },
+  "popup_said_file": {
+    "message": "已复制 $file$。请将其粘贴到文件夹、聊天或消息中。",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_link": {
+    "message": "链接已复制"
+  },
+  "popup_said_removed": {
+    "message": "$file$ 已从列表中移除",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_deleted": {
+    "message": "$file$ 已删除",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_again": {
+    "message": "正在重新下载 $file$",
+    "placeholders": {
+      "file": {
+        "content": "$1",
+        "example": "report.pdf"
+      }
+    }
+  },
+  "popup_said_cleared": {
+    "message": "已清除已完成的下载"
+  },
+  "popup_act_gone": {
+    "message": "该下载已不在列表中。"
+  },
+  "popup_act_missing": {
+    "message": "其文件已不在保存位置（已移动或删除）。"
+  },
+  "popup_act_running": {
+    "message": "请先暂停。"
+  },
+  "popup_act_cant": {
+    "message": "当前无法对该下载执行此操作。"
+  },
+  "popup_act_unsupported": {
+    "message": "此系统无法执行此操作。"
+  },
+  "popup_act_off": {
+    "message": "Retriever 未运行。"
+  },
+  "popup_act_busy": {
+    "message": "Retriever 未及时响应。请重试。"
+  },
+  "popup_act_failed": {
+    "message": "操作失败。请重试。"
+  },
+  "status_running": {
+    "message": "正在下载：$count$",
+    "placeholders": {
+      "count": {
+        "content": "$1",
+        "example": "2"
+      }
+    }
+  },
+  "popup_dl_open_remote": {
+    "message": "打开其页面"
+  }
+}
