@@ -1,0 +1,50 @@
+# Maintainer: Istiaqe Tanvir (https://github.com/istiaqe47)
+pkgname=retriever
+pkgver=1.0.1
+pkgrel=1
+pkgdesc="Fast download manager for GNOME (GTK 4 + libadwaita): files, videos, torrents, browser integration"
+arch=('x86_64' 'aarch64')
+url="https://github.com/istiaqe47/retriever"
+license=('GPL-3.0-or-later')
+depends=('gtk4' 'libadwaita' 'glib2' 'gcc-libs' 'glibc' 'hicolor-icon-theme' 'yt-dlp' 'ffmpeg')
+optdepends=('deno: all of YouTube'"'"'s qualities (yt-dlp needs a JavaScript runtime there)'
+            '7zip: extracting 7z and RAR archives')
+# cmake, clang and go: BoringSSL, for the browser-like connection that gets past bot checks.
+makedepends=('cargo' 'pkgconf' 'cmake' 'clang' 'go' 'git')
+options=('!lto' '!debug')
+source=("$pkgname-$pkgver.tar.gz::$url/releases/download/v$pkgver/$pkgname-$pkgver.tar.gz")
+sha256sums=('648860fde37687a02f87f0f741fdb01fcef1bbd9dc8d48e1c67fc96cd17ba883')
+
+prepare() {
+    cd "$pkgname-$pkgver"
+    export RUSTUP_TOOLCHAIN=stable
+    cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+}
+
+build() {
+    cd "$pkgname-$pkgver"
+    export RUSTUP_TOOLCHAIN=stable
+    export CARGO_TARGET_DIR="$srcdir/target"
+    cargo build --release --frozen -p retriever -p mdm-nmhost
+    # The browser extension: unpacked for Chromium browsers, an .xpi for Firefox.
+    sh extension/build.sh "$srcdir/extension"
+}
+
+package() {
+    cd "$pkgname-$pkgver"
+    local id=io.github.retriever.Retriever
+    install -Dm755 "$srcdir/target/release/retriever" "$pkgdir/usr/bin/retriever"
+    install -Dm755 "$srcdir/target/release/retriever-host" "$pkgdir/usr/bin/retriever-host"
+    # Browser host manifests for Firefox, Chrome, Chromium and Edge.
+    "$srcdir/target/release/retriever-host" --package-manifests "$pkgdir"
+    rm -rf "$pkgdir/usr/lib64"
+    install -Dm644 "crates/retriever/data/$id.desktop" "$pkgdir/usr/share/applications/$id.desktop"
+    install -Dm644 "crates/retriever/data/$id.metainfo.xml" "$pkgdir/usr/share/metainfo/$id.metainfo.xml"
+    install -Dm644 "crates/retriever/data/$id.svg" "$pkgdir/usr/share/icons/hicolor/scalable/apps/$id.svg"
+    install -Dm644 "crates/retriever/data/$id-symbolic.svg" "$pkgdir/usr/share/icons/hicolor/symbolic/apps/$id-symbolic.svg"
+    install -d "$pkgdir/usr/share/retriever/extension"
+    cp -r "$srcdir/extension/chromium" "$pkgdir/usr/share/retriever/extension/chromium"
+    install -Dm644 "$srcdir/extension/retriever-firefox.xpi" "$pkgdir/usr/share/retriever/extension/retriever-firefox.xpi"
+    install -Dm755 extension/sign-firefox.sh "$pkgdir/usr/share/retriever/extension/sign-firefox.sh"
+    install -Dm644 LICENSE "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
+}
