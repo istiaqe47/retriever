@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in Retriever or its browser extension doesn't work
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Retriever version
+      description: Main menu → About Retriever.
+      placeholder: "1.0.1"
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Linux distribution and version
+      placeholder: "CachyOS, Ubuntu 24.04, Fedora 43…"
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part?
+      options:
+        - Downloading files
+        - Videos (yt-dlp)
+        - Torrents
+        - Browser extension
+        - Scheduler or speed limits
+        - The window or its look
+        - Installing
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser (for extension problems)
+      placeholder: "Firefox 146, Zen, Chrome, Brave…"
+  - type: textarea
+    id: log
+    attributes:
+      label: What Retriever prints
+      description: Quit Retriever, run `retriever` in a terminal, do the steps again, and paste what it printed. Remove any web addresses you'd rather keep private.
+      render: text

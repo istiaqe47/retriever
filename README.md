@@ -60,6 +60,14 @@ GNOME desktop**? Retriever is all three:
 <td align="center">Add a link, a video, a torrent, or grab a page's links</td>
 </tr>
 <tr>
+<td><img src="docs/screenshots/download-window-dark.png" alt="A download's window: progress, speed, time left"></td>
+<td><img src="docs/screenshots/connect-browser.png" alt="Retriever asking to connect a browser"></td>
+</tr>
+<tr>
+<td align="center">Each download's progress, in GNOME's own dialog</td>
+<td align="center">Zen and Flatpak browsers connect with one click</td>
+</tr>
+<tr>
 <td><img src="docs/screenshots/preferences-dark.png" alt="Preferences"></td>
 <td><img src="docs/screenshots/video-menu-dark.png" alt="Download button over a video in the browser"></td>
 </tr>
@@ -269,6 +277,10 @@ Update: install the newer release the same way. Uninstall: `sudo pacman -R retri
 | Ctrl+, | Preferences |
 | Ctrl+? | All keyboard shortcuts |
 | Ctrl+Q | Quit (downloads pause and resume next time) |
+
+## What's new
+
+See [CHANGELOG.md](CHANGELOG.md).
 
 ## Contributing
 

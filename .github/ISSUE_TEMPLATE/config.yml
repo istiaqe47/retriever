@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Help with installing or using Retriever
+    url: https://github.com/istiaqe47/retriever#faq
+    about: The FAQ and troubleshooting answer the common questions.
