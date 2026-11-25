@@ -150,6 +150,10 @@ To just try it without signing: `about:debugging` → **This Firefox** → **Loa
 LibreWolf can install it unsigned after setting `xpinstall.signatures.required` to `false`
 in `about:config`.
 
+**Already have Mister Download Manager's extension?** Keep it: Retriever answers it too, in
+Firefox and Chromium browsers alike (as long as Mister Download Manager itself isn't installed;
+then its extension stays with it).
+
 **Zen, Flatpak and Snap browsers**: some browsers can't start Retriever's helper program. They
 connect to Retriever directly while it's open: the first time, Retriever asks
 **"Connect Zen?"**. Choose **Allow**, and that's it.
@@ -171,6 +175,14 @@ Retriever is a fork of MDM. The download, video, torrent and browser engine is M
 interface is new and built for GNOME with GTK 4 and libadwaita. Retriever also adds its own
 extension, a GNOME-style toolbar popup and video button, select mode, "Remove Finished
 Downloads", a way for Zen and Flatpak browsers to connect, and Arch and Debian packages.
+</details>
+
+<details>
+<summary><b>Can I use Mister Download Manager's browser extension with it?</b></summary>
+
+Yes. If you already have MDM's extension from the Chrome Web Store or addons.mozilla.org, it
+connects to Retriever on its own: open Retriever once, then restart the browser. If Mister Download
+Manager is also installed, its extension stays with MDM, and Retriever uses its own extension.
 </details>
 
 <details>

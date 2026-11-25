@@ -22,8 +22,16 @@ pub const FIREFOX_ID: &str = RETRIEVER_FIREFOX_ID;
 /// manifest.json) and its Firefox add-on ID. The host serves it as it serves MDM's.
 pub const RETRIEVER_ID: &str = "haolajnpdmfpbcpghiinnnighjfhofmb";
 pub const RETRIEVER_FIREFOX_ID: &str = "{bb6871c1-d6dc-44a5-bde5-1601d6ca0100}";
+/// Mister Download Manager's own extension, which Retriever answers too (its host name, its
+/// Chromium IDs unpacked and from the Chrome Web Store, its Firefox add-on ID): someone with MDM's
+/// extension installed can use Retriever without changing it. Never when MDM itself is installed
+/// (the host's `--repair` leaves MDM's name to MDM then).
+pub const MDM_HOST_NAME: &str = "com.misterdownloadmanager.host";
+pub const MDM_CHROMIUM_IDS: [&str; 2] =
+    ["oogbclbbninliongijffeeggalppliok", "ejoleppdfgjdndddcjoehopknmlglojp"];
+pub const MDM_FIREFOX_ID: &str = "integration@misterdownloadmanager.com";
 /// The Firefox add-ons the host serves.
-pub const FIREFOX_IDS: [&str; 1] = [RETRIEVER_FIREFOX_ID];
+pub const FIREFOX_IDS: [&str; 2] = [RETRIEVER_FIREFOX_ID, MDM_FIREFOX_ID];
 /// Chrome's update service: an external-install entry naming it makes Chrome offer the store's
 /// extension at its next start (developer.chrome.com, "Alternative extension distribution
 /// options").
@@ -45,7 +53,7 @@ pub fn store_id() -> Option<&'static str> {
 
 /// The Chromium extensions the native host serves: unpacked, and each store's once listed.
 pub fn chromium_ids() -> Vec<&'static str> {
-    vec![RETRIEVER_ID]
+    std::iter::once(RETRIEVER_ID).chain(MDM_CHROMIUM_IDS).collect()
 }
 
 /// The extension's page in the Chrome Web Store (Chrome, Edge, Brave, Opera and Vivaldi all
@@ -130,11 +138,12 @@ mod tests {
         assert_eq!(store_page().is_some(), store_id().is_some());
     }
 
-    /// Only Retriever's own extension reaches the host, and no store is offered (none lists it).
+    /// Retriever's extension and MDM's reach the host; no store is offered (none lists Retriever).
     #[test]
-    fn only_retrievers_extension_served() {
-        assert_eq!(chromium_ids(), vec![RETRIEVER_ID]);
-        assert_eq!(FIREFOX_IDS, [RETRIEVER_FIREFOX_ID]);
+    fn retrievers_and_mdms_extensions_served() {
+        assert_eq!(chromium_ids()[0], RETRIEVER_ID);
+        assert!(MDM_CHROMIUM_IDS.iter().all(|id| chromium_ids().contains(id) && valid_id(id)));
+        assert_eq!(FIREFOX_IDS, [RETRIEVER_FIREFOX_ID, MDM_FIREFOX_ID]);
         assert!(store_id().is_none() && store_page().is_none());
     }
 

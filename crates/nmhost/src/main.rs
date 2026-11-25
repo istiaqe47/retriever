@@ -1360,8 +1360,12 @@ fn this_program() -> Result<PathBuf, String> {
 /// The manifest Chromium browsers read: the host (`program`) may serve our extension's origin
 /// only.
 fn chromium_manifest(program: &std::path::Path) -> serde_json::Value {
+    chromium_manifest_named(HOST_NAME, program)
+}
+
+fn chromium_manifest_named(name: &str, program: &std::path::Path) -> serde_json::Value {
     serde_json::json!({
-        "name": HOST_NAME,
+        "name": name,
         "description": "Retriever",
         "path": program,
         "type": "stdio",
@@ -1371,8 +1375,12 @@ fn chromium_manifest(program: &std::path::Path) -> serde_json::Value {
 
 /// Firefox's manifest: the same host, allowed for our add-on ID instead of an origin.
 fn firefox_manifest(program: &std::path::Path) -> serde_json::Value {
+    firefox_manifest_named(HOST_NAME, program)
+}
+
+fn firefox_manifest_named(name: &str, program: &std::path::Path) -> serde_json::Value {
     serde_json::json!({
-        "name": HOST_NAME,
+        "name": name,
         "description": "Retriever",
         "path": program,
         "type": "stdio",
@@ -1702,6 +1710,9 @@ fn register_as(all_users: bool, at_start: bool) -> Result<(), String> {
     if !failed.is_empty() {
         return Err(failed.join("; "));
     }
+    if !all_users {
+        mdm_extension(&program);
+    }
     // Linux, the .deb's or .rpm's helper for one user: no offer in the home folder, which the
     // package manager couldn't take away with the package (#266); the app's window offers it.
     #[cfg(target_os = "linux")]
@@ -1729,8 +1740,72 @@ fn unregister(all_users: bool) -> Result<(), String> {
     for (dir, _) in external_dirs(all_users) {
         let _ = std::fs::remove_file(dir.join(format!("{STORE_ID}.json")));
     }
+    if let Ok(program) = this_program() {
+        forget_mdm_extension(&program);
+    }
     println!("unregistered {HOST_NAME}");
     Ok(())
+}
+
+/// Mister Download Manager's extension, answered by this program: a manifest under MDM's host
+/// name in each browser's folder of this user, so MDM's extension reaches Retriever. Not when MDM
+/// itself is installed: then its name is MDM's, and the ones this program wrote are taken away.
+#[cfg(not(windows))]
+fn mdm_extension(program: &std::path::Path) {
+    use mdm_ipc::extension::MDM_HOST_NAME;
+    if mdm_installed(program) {
+        forget_mdm_extension(program);
+        println!("left {MDM_HOST_NAME} to Mister Download Manager, which is installed");
+        return;
+    }
+    for (dir, is_firefox) in host_dirs(false, None) {
+        let manifest = if is_firefox {
+            firefox_manifest_named(MDM_HOST_NAME, program)
+        } else {
+            chromium_manifest_named(MDM_HOST_NAME, program)
+        };
+        let file = dir.join(format!("{MDM_HOST_NAME}.json"));
+        if std::fs::create_dir_all(&dir).is_ok() && write_json(&file, &manifest).is_ok() {
+            println!("registered {MDM_HOST_NAME} (Mister Download Manager's extension) in {}", dir.display());
+        }
+    }
+}
+
+/// The manifests under MDM's name that name this program, taken away.
+#[cfg(not(windows))]
+fn forget_mdm_extension(program: &std::path::Path) {
+    use mdm_ipc::extension::MDM_HOST_NAME;
+    for (dir, _) in host_dirs(false, None) {
+        let file = dir.join(format!("{MDM_HOST_NAME}.json"));
+        if names(&file) == Some(program.to_path_buf()) {
+            let _ = std::fs::remove_file(&file);
+        }
+    }
+}
+
+/// The program a manifest names.
+#[cfg(not(windows))]
+fn names(manifest: &std::path::Path) -> Option<PathBuf> {
+    let v: serde_json::Value = serde_json::from_slice(&std::fs::read(manifest).ok()?).ok()?;
+    v.get("path")?.as_str().map(PathBuf::from)
+}
+
+/// Mister Download Manager is installed here: its manifest for everyone, a manifest of this user's
+/// under its name naming another program that exists, or its program.
+#[cfg(not(windows))]
+fn mdm_installed(program: &std::path::Path) -> bool {
+    use mdm_ipc::extension::MDM_HOST_NAME;
+    let file = format!("{MDM_HOST_NAME}.json");
+    let system = host_dirs(true, None)
+        .into_iter()
+        .any(|(dir, _)| names(&dir.join(&file)).is_some_and(|p| p != program));
+    let user = host_dirs(false, None).into_iter().any(|(dir, _)| {
+        names(&dir.join(&file)).is_some_and(|p| p != program && p.exists())
+    });
+    let binary = ["/usr/bin", "/usr/local/bin", "/opt/misterdownloadmanager"]
+        .iter()
+        .any(|d| std::path::Path::new(d).join("misterdownloadmanager").exists());
+    system || user || binary
 }
 
 /// Linux: where the .deb and .rpm install this program, which their manifests name.
@@ -1917,8 +1992,12 @@ mod tests {
     #[test]
     fn store_and_unpacked_extensions_both_allowed() {
         let manifest = chromium_manifest(&this_program().unwrap());
-        // Retriever's extension only: MDM's IDs are not served.
-        for id in ["haolajnpdmfpbcpghiinnnighjfhofmb"] {
+        // Retriever's extension, and MDM's (unpacked and from the store).
+        for id in [
+            "haolajnpdmfpbcpghiinnnighjfhofmb",
+            "oogbclbbninliongijffeeggalppliok",
+            "ejoleppdfgjdndddcjoehopknmlglojp",
+        ] {
             let o = format!("chrome-extension://{id}/");
             assert!(
                 manifest["allowed_origins"]
@@ -1932,8 +2011,9 @@ mod tests {
         assert!(!our_caller(&[
             "chrome-extension://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/".into()
         ]));
-        assert!(!our_caller(&[
-            "chrome-extension://ejoleppdfgjdndddcjoehopknmlglojp/".into()
+        assert!(our_caller(&[
+            "/x/com.misterdownloadmanager.host.json".into(),
+            "integration@misterdownloadmanager.com".into()
         ]));
     }
 
