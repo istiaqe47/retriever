@@ -1,6 +1,6 @@
 # Build and install:  makepkg -si   (run in this folder)
 pkgname=retriever
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="A download manager for GNOME (GTK 4 / libadwaita): files, videos, torrents, browser integration"
 arch=('x86_64' 'aarch64')

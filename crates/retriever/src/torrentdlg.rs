@@ -51,7 +51,7 @@ pub fn dialog(ui: &UiRc, given: Option<Given>) {
 
     let spinner = crate::native::spinner();
     let said = gtk::Label::builder().wrap(true).xalign(0.0).build();
-    said.add_css_class("dim-label");
+    crate::native::dim(&said);
     let state = gtk::Box::builder().spacing(12).visible(false).build();
     state.append(&spinner);
     state.append(&said);

@@ -37,7 +37,7 @@ const KEY: &str = include_str!("../keys/gallery-dl.asc");
 const RELEASES: &str = "https://codeberg.org/api/v1/repos/mikf/gallery-dl/releases/latest";
 /// MDM as sites see it: gallery-dl's own name is refused by some (Wikimedia's servers answer
 /// 429 to unnamed tools); this one says who asks and where to read about it.
-pub const USER_AGENT: &str = "Retriever/1.0.0 gallery-dl";
+pub const USER_AGENT: &str = concat!("Retriever/", env!("CARGO_PKG_VERSION"), " gallery-dl");
 
 /// gallery-dl's program for this system and processor in its releases: see [`asset_for`].
 pub fn asset() -> Option<&'static str> {

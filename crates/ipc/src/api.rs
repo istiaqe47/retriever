@@ -646,22 +646,7 @@ pub fn schema() -> serde_json::Value {
 mod tests {
     use super::*;
 
-    #[test]
-    fn schema_file_is_current() {
-        let path = std::path::Path::new(env!("CARGO_MANIFEST_DIR"))
-            .join("../../docs/automation-api.schema.json");
-        let made = serde_json::to_string_pretty(&schema()).unwrap() + "\n";
-        if std::env::var_os("MDM_WRITE_SCHEMA").is_some() {
-            std::fs::write(&path, &made).unwrap();
-        }
-        let file = std::fs::read_to_string(&path)
-            .unwrap_or_default()
-            .replace("\r\n", "\n");
-        assert!(
-            file == made,
-            "docs/automation-api.schema.json is out of date: MDM_WRITE_SCHEMA=1 cargo test -p mdm-ipc schema"
-        );
-    }
+    // (MDM's schema_file_is_current test is gone with docs/: Retriever doesn't ship the API docs.)
 
     #[test]
     fn errors_and_answers_read_back() {

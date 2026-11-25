@@ -228,7 +228,7 @@ pub(crate) async fn signed_list(
 }
 
 /// MDM's own name, sent when it fetches its helpers and its updates.
-pub const USER_AGENT: &str = "Retriever/1.0.0";
+pub const USER_AGENT: &str = concat!("Retriever/", env!("CARGO_PKG_VERSION"));
 
 /// How MDM downloads its helpers and its updates: through its own engine (several connections,
 /// resumable), as MDM itself, through `proxy` (Options → Proxy / Socks).

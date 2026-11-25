@@ -75,21 +75,21 @@ Get the files from the [**latest release**](https://github.com/istiaqe47/retriev
 
 ### Arch Linux, CachyOS, EndeavourOS, Manjaro
 
-Download `retriever-1.0.0.tar.gz`, then:
+Download `retriever-1.0.1.tar.gz`, then:
 
 ```sh
-tar xf retriever-1.0.0.tar.gz
-cd retriever-1.0.0
+tar xf retriever-1.0.1.tar.gz
+cd retriever-1.0.1
 makepkg -si
 ```
 
 ### Ubuntu, Debian, Linux Mint, Pop!_OS, Zorin OS
 
 Needs **Ubuntu 24.04 or newer** or **Debian 13 or newer** (and distributions built on them,
-like Linux Mint 22, Pop!_OS 24.04 and Zorin OS 18). Download `retriever_1.0.0-1_amd64.deb`, then:
+like Linux Mint 22, Pop!_OS 24.04 and Zorin OS 18). Download `retriever_1.0.1-1_amd64.deb`, then:
 
 ```sh
-sudo apt install ./retriever_1.0.0-1_amd64.deb
+sudo apt install ./retriever_1.0.1-1_amd64.deb
 ```
 
 Then open **Retriever** from your app grid, or run `retriever`.
@@ -142,6 +142,8 @@ free and takes a few minutes):
    sh /usr/share/retriever/extension/sign-firefox.sh 'YOUR-JWT-ISSUER' 'YOUR-JWT-SECRET'
    ```
 3. Open the signed `.xpi` it saves in `~/Downloads`: `about:addons` → ⚙ → **Install Add-on From File…**
+4. **After every Retriever update**, run the same command again and install the new `.xpi`
+   over the old one (your settings stay). Each signing gets its own version number by itself.
 
 To just try it without signing: `about:debugging` → **This Firefox** → **Load Temporary Add-on…**
 → `/usr/share/retriever/extension/retriever-firefox.xpi` (removed when Firefox restarts).
@@ -264,6 +266,7 @@ Bug reports, ideas and pull requests are welcome in
 
 ## License
 
-GPL-3.0-or-later. Retriever is a fork of
+GPL-3.0-or-later. Privacy: everything stays on your computer, see [PRIVACY.md](PRIVACY.md).
+Retriever is a fork of
 [Mister Download Manager](https://github.com/anefzaoui/misterdownloadmanager) by Ahmed Nefzaoui
 and contributors (GPL-3.0); their copyright notices are kept in the source.

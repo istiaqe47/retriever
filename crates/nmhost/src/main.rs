@@ -1917,10 +1917,8 @@ mod tests {
     #[test]
     fn store_and_unpacked_extensions_both_allowed() {
         let manifest = chromium_manifest(&this_program().unwrap());
-        for id in [
-            "ejoleppdfgjdndddcjoehopknmlglojp",
-            "oogbclbbninliongijffeeggalppliok",
-        ] {
+        // Retriever's extension only: MDM's IDs are not served.
+        for id in ["haolajnpdmfpbcpghiinnnighjfhofmb"] {
             let o = format!("chrome-extension://{id}/");
             assert!(
                 manifest["allowed_origins"]
@@ -1933,6 +1931,9 @@ mod tests {
         }
         assert!(!our_caller(&[
             "chrome-extension://aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa/".into()
+        ]));
+        assert!(!our_caller(&[
+            "chrome-extension://ejoleppdfgjdndddcjoehopknmlglojp/".into()
         ]));
     }
 

@@ -1044,7 +1044,7 @@ fn start_extract(e: &mut Entry) {
             ),
             Err(mdm_extract::Error::NeedsPassword) => "Not extracted: it needs a password".into(),
             Err(mdm_extract::Error::NoTool) => {
-                "Not extracted: 7z and RAR archives need 7-Zip (sudo pacman -S 7zip)".into()
+                format!("Not extracted: 7z and RAR archives need 7-Zip ({})", crate::model::install_hint("7zip", "sudo apt install 7zip"))
             }
             Err(mdm_extract::Error::Unsupported) => "Not an archive this app extracts".into(),
             Err(e) => format!("Not extracted: {e}"),
@@ -1085,7 +1085,7 @@ fn start_video(e: &mut Entry, opts: Options) {
         e.item.error = Some(why);
     };
     let Some(exe) = crate::video::ytdlp() else {
-        fail(e, "yt-dlp isn't installed (sudo pacman -S yt-dlp)".into());
+        fail(e, format!("yt-dlp isn't installed ({})", crate::model::install_hint("yt-dlp", "pipx install yt-dlp")));
         return;
     };
     let _ = std::fs::create_dir_all(&e.item.folder);

@@ -56,7 +56,7 @@ pub fn add_url_with(ui: &UiRc, text: Option<String>, extra: manager::Extra) {
 
     let address = adw::EntryRow::builder().title("Address").build();
     let found = gtk::Label::new(None);
-    found.add_css_class("dim-label");
+    crate::native::dim(&found);
     found.add_css_class("caption");
     address.add_suffix(&found);
 
@@ -122,6 +122,22 @@ pub fn add_url_with(ui: &UiRc, text: Option<String>, extra: manager::Extra) {
         })
         .build();
     group.add(&when);
+    // "At the Scheduled Time" says when that is, or that the scheduler is off (they'd wait for
+    // good otherwise).
+    {
+        let sched = ui.manager.borrow().settings.schedule.clone();
+        let say = move |row: &adw::ComboRow| {
+            row.set_subtitle(&if row.selected() != 2 {
+                String::new()
+            } else if sched.enabled {
+                format!("Every day at {:02}:{:02}", sched.start / 60, sched.start % 60)
+            } else {
+                "The scheduler is off".to_owned()
+            });
+        };
+        say(&when);
+        when.connect_selected_notify(say);
+    }
     let page = adw::PreferencesPage::new();
     page.add(&group);
 
@@ -264,7 +280,7 @@ struct ProgressRows {
     eta: gtk::Label,
     resume: gtk::Label,
     folder: adw::ActionRow,
-    segs: gtk::DrawingArea,
+    bar: gtk::ProgressBar,
     conns: adw::PreferencesGroup,
     conn_rows: RefCell<Vec<adw::ActionRow>>,
     pause: gtk::Button,
@@ -348,22 +364,14 @@ pub fn progress(ui: &UiRc, id: u64) {
         .xalign(0.0)
         .ellipsize(gtk::pango::EllipsizeMode::End)
         .build();
-    headline.add_css_class("dim-label");
-    let segs = gtk::DrawingArea::builder()
-        .content_height(14)
-        .margin_top(6)
-        .tooltip_text(
-            "Each part of the file and how far it came; a mark where a connection's part starts",
-        )
-        .build();
-    segs.add_css_class("accent");
-    segs.update_property(&[gtk::accessible::Property::Label(
-        "The file's parts and how far each has come",
-    )]);
+    crate::native::dim(&headline);
+    // GNOME's progress bar (each connection's own progress is in Connections below).
+    let bar = gtk::ProgressBar::builder().margin_top(8).build();
+    bar.update_property(&[gtk::accessible::Property::Label("Download progress")]);
     let hero = gtk::Box::new(gtk::Orientation::Vertical, 4);
     hero.append(&percent);
     hero.append(&headline);
-    hero.append(&segs);
+    hero.append(&bar);
     let top = adw::PreferencesGroup::new();
     top.add(&hero);
 
@@ -415,7 +423,7 @@ pub fn progress(ui: &UiRc, id: u64) {
         eta,
         resume,
         folder,
-        segs: segs.clone(),
+        bar: bar.clone(),
         conns,
         conn_rows: RefCell::new(Vec::new()),
         pause: pause.clone(),
@@ -423,59 +431,6 @@ pub fn progress(ui: &UiRc, id: u64) {
         extracted: extracted.clone(),
     });
 
-    // The parts: each one's span of the file, filled as far as it came.
-    {
-        let ui = ui.clone();
-        segs.set_draw_func(move |area, cr, w, h| {
-            let (w, h) = (w as f64, h as f64);
-            // The track in the text's colour, faint; the parts in the system's accent
-            // (the area has the `accent` style class, whose colour is the accent's).
-            let fg = area.parent().map_or_else(|| area.color(), |p| p.color());
-            let ac = area.color();
-            let accent = (ac.red() as f64, ac.green() as f64, ac.blue() as f64);
-            rounded(cr, 0.0, 0.0, w, h, h / 2.0);
-            cr.set_source_rgba(fg.red() as f64, fg.green() as f64, fg.blue() as f64, 0.12);
-            let _ = cr.fill_preserve();
-            cr.clip();
-            let m = ui.manager.borrow();
-            let Some(e) = m.entry(id) else { return };
-            cr.set_source_rgb(accent.0, accent.1, accent.2);
-            match (&e.snap, e.item.size) {
-                (Some(s), Some(total)) if total > 0 && !s.segments.is_empty() => {
-                    let x = |b: u64| b as f64 / total as f64 * w;
-                    // Done is everything outside the parts left.
-                    let mut left: Vec<(u64, u64)> = s
-                        .segments
-                        .iter()
-                        .map(|g| (g.cursor.min(g.end), g.end))
-                        .collect();
-                    left.sort();
-                    let mut at = 0u64;
-                    for (a, b) in &left {
-                        if *a > at {
-                            cr.rectangle(x(at), 0.0, x(*a) - x(at), h);
-                        }
-                        at = at.max(*b);
-                    }
-                    if at < total {
-                        cr.rectangle(x(at), 0.0, w - x(at), h);
-                    }
-                    let _ = cr.fill();
-                    // Where each part starts.
-                    cr.set_source_rgba(fg.red() as f64, fg.green() as f64, fg.blue() as f64, 0.55);
-                    for g in &s.segments {
-                        cr.rectangle(x(g.start).max(0.0), 0.0, 1.5, h);
-                    }
-                    let _ = cr.fill();
-                }
-                _ => {
-                    let f = manager::fraction(&e.item);
-                    cr.rectangle(0.0, 0.0, w * f, h);
-                    let _ = cr.fill();
-                }
-            }
-        });
-    }
     {
         let ui = ui.clone();
         pause.connect_clicked(move |_| {
@@ -564,7 +519,12 @@ pub fn progress(ui: &UiRc, id: u64) {
                     .display()
                     .to_string(),
             );
-            rows.segs.queue_draw();
+            match it.size {
+                Some(t) if t > 0 => rows.bar.set_fraction(manager::fraction(it)),
+                // Size unknown: it moves while downloading, as GNOME's bars do.
+                _ if downloading => rows.bar.pulse(),
+                _ => rows.bar.set_fraction(if it.status == Status::Done { 1.0 } else { 0.0 }),
+            }
             rows.pause.set_label(match it.status {
                 Status::Paused | Status::Failed => "Resume",
                 _ => "Pause",
@@ -645,17 +605,6 @@ fn detailed_status(e: &manager::Entry) -> String {
         }
         _ => manager::status_words(e),
     }
-}
-
-fn rounded(cr: &gtk::cairo::Context, x: f64, y: f64, w: f64, h: f64, r: f64) {
-    use std::f64::consts::PI;
-    let r = r.min(w / 2.0).min(h / 2.0);
-    cr.new_sub_path();
-    cr.arc(x + w - r, y + r, r, -PI / 2.0, 0.0);
-    cr.arc(x + w - r, y + h - r, r, 0.0, PI / 2.0);
-    cr.arc(x + r, y + h - r, r, PI / 2.0, PI);
-    cr.arc(x + r, y + r, r, PI, 1.5 * PI);
-    cr.close_path();
 }
 
 pub fn preferences(ui: &UiRc) {
@@ -772,12 +721,12 @@ pub fn preferences_at(ui: &UiRc, at: Option<&str>) {
     g.add(&found(
         "yt-dlp",
         crate::video::ytdlp(),
-        "sudo pacman -S yt-dlp",
+        &crate::model::install_hint("yt-dlp", "pipx install yt-dlp"),
     ));
     g.add(&found(
         "ffmpeg",
         crate::video::ffmpeg(),
-        "sudo pacman -S ffmpeg",
+        &crate::model::install_hint("ffmpeg", "sudo apt install ffmpeg"),
     ));
     let seed = adw::SwitchRow::builder()
         .title("Keep Sharing Finished Torrents")
@@ -898,8 +847,9 @@ pub fn preferences_at(ui: &UiRc, at: Option<&str>) {
         .title("Download Button on Videos")
         .description(if have_ytdlp {
             "Shown over videos in the browser: one click downloads, its arrow lists the qualities"
+                .to_owned()
         } else {
-            "Needs yt-dlp: sudo pacman -S yt-dlp"
+            format!("Needs yt-dlp: {}", crate::model::install_hint("yt-dlp", "pipx install yt-dlp"))
         })
         .build();
     let video_button = adw::SwitchRow::builder()
@@ -983,6 +933,8 @@ pub fn about(ui: &UiRc) {
         .comments("Download files, videos and torrents")
         .copyright("Based on Mister Download Manager, GPL-3.0")
         .license_type(gtk::License::Gpl30)
+        .website("https://github.com/istiaqe47/retriever")
+        .issue_url("https://github.com/istiaqe47/retriever/issues")
         .build();
     a.present(Some(&ui.window));
 }

@@ -3,19 +3,21 @@
 //! install it until one has).
 
 /// The extension's ID loaded unpacked (the public key in extension/manifest.json).
-pub const UNPACKED_ID: &str = "oogbclbbninliongijffeeggalppliok";
+pub const UNPACKED_ID: &str = RETRIEVER_ID;
 /// Its ID in the Chrome Web Store, which signs it with the store's own key
 /// (tools/extension/pack.ps1 leaves the manifest's key out of the store's copy). [`store_id`] is
 /// `None` while this is not a valid ID (a placeholder), and then nothing names it.
-pub const STORE_ID: &str = "ejoleppdfgjdndddcjoehopknmlglojp";
+// Retriever isn't in the Chrome Web Store: MDM's store ID here made the host offer MDM's
+// extension to Chrome.
+pub const STORE_ID: &str = "STORE_ID_PENDING";
 /// Its IDs in Microsoft Edge Add-ons and Opera add-ons, which give their own; placeholders until
 /// listed there, never served then (`valid_id`).
 pub const OTHER_STORE_IDS: [&str; 2] = ["EDGE_ADDONS_ID_PENDING", "OPERA_ADDONS_ID_PENDING"];
 /// The Firefox add-on's page on addons.mozilla.org (listed: Firefox installs and updates it from
 /// there).
-pub const FIREFOX_PAGE: &str = "https://addons.mozilla.org/firefox/addon/mister-download-manager/";
+pub const FIREFOX_PAGE: &str = "https://addons.mozilla.org/firefox/addon/retriever/";
 /// The Firefox add-on's ID (extension/manifest.firefox.json).
-pub const FIREFOX_ID: &str = "integration@misterdownloadmanager.com";
+pub const FIREFOX_ID: &str = RETRIEVER_FIREFOX_ID;
 /// Retriever's own extension (MDM's, renamed): its Chromium ID (the public key in its
 /// manifest.json) and its Firefox add-on ID. The host serves it as it serves MDM's.
 pub const RETRIEVER_ID: &str = "haolajnpdmfpbcpghiinnnighjfhofmb";
@@ -50,7 +52,7 @@ pub fn chromium_ids() -> Vec<&'static str> {
 /// install from it), once it is listed: the listing's own address, its name then its ID.
 pub fn store_page() -> Option<String> {
     store_id()
-        .map(|id| format!("https://chromewebstore.google.com/detail/mister-download-manager/{id}"))
+        .map(|id| format!("https://chromewebstore.google.com/detail/retriever/{id}"))
 }
 
 /// The tutorial that adds the extension: from the stores, and by hand (a build of its own, or
@@ -128,23 +130,12 @@ mod tests {
         assert_eq!(store_page().is_some(), store_id().is_some());
     }
 
-    /// The store's copy and the app folder's (unpacked) both reach the host: the manifests'
-    /// allowed_origins and the host's own caller check are this list.
+    /// Only Retriever's own extension reaches the host, and no store is offered (none lists it).
     #[test]
-    fn store_and_unpacked_both_served() {
-        assert_eq!(STORE_ID, "ejoleppdfgjdndddcjoehopknmlglojp");
-        assert_eq!(UNPACKED_ID, "oogbclbbninliongijffeeggalppliok");
-        let ids = chromium_ids();
-        assert!(
-            ids.contains(&UNPACKED_ID) && ids.contains(&STORE_ID),
-            "{ids:?}"
-        );
-        assert_eq!(
-            store_page().as_deref(),
-            Some(
-                "https://chromewebstore.google.com/detail/mister-download-manager/ejoleppdfgjdndddcjoehopknmlglojp"
-            )
-        );
+    fn only_retrievers_extension_served() {
+        assert_eq!(chromium_ids(), vec![RETRIEVER_ID]);
+        assert_eq!(FIREFOX_IDS, [RETRIEVER_FIREFOX_ID]);
+        assert!(store_id().is_none() && store_page().is_none());
     }
 
     #[test]

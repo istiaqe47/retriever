@@ -285,7 +285,7 @@ pub fn build(app: &adw::Application) -> UiRc {
                 .build(),
         );
         let count = gtk::Label::new(None);
-        count.add_css_class("dim-label");
+        crate::native::dim(&count);
         count.add_css_class("numeric");
         row_box.append(&count);
         counts.push((c, count));
@@ -654,11 +654,11 @@ fn download_row(o: &DlObject, action: RowAction) -> gtk::ListBoxRow {
         .hexpand(true)
         .ellipsize(gtk::pango::EllipsizeMode::End)
         .build();
-    status.add_css_class("dim-label");
+    crate::native::dim(&status);
     status.add_css_class("caption");
     bound(o, "status-text", &status, "label");
     let detail2 = gtk::Label::builder().xalign(1.0).build();
-    detail2.add_css_class("dim-label");
+    crate::native::dim(&detail2);
     detail2.add_css_class("caption");
     detail2.add_css_class("numeric");
     bound(o, "detail2", &detail2, "label");
@@ -946,6 +946,9 @@ fn actions(ui: &UiRc) {
             ui2.manager.borrow_mut().set_scheduled(&ids, on);
             a.set_state(&on.to_variant());
             ui2.after_change();
+            if on && !ui2.manager.borrow().settings.schedule.enabled {
+                ui2.toast("The scheduler is off: turn it on in Scheduler…");
+            }
         });
         ui.window.add_action(&a);
     }

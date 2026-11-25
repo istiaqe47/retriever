@@ -5,3 +5,4 @@
 *.xpi
 *.tar.gz
 web-ext-artifacts/
+*.deb

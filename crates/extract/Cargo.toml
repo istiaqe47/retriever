@@ -21,5 +21,8 @@ tracing.workspace = true
 # A RAR volume's end-of-archive header is checked by its CRC (is the set complete, #1661).
 crc32fast.workspace = true
 
+[dev-dependencies]
+tempfile.workspace = true
+
 [lints]
 workspace = true

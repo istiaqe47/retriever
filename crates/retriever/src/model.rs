@@ -584,3 +584,15 @@ mod site_list_tests {
         assert_eq!(super::site_list(&l, "www.youtube.com", false), "a.test");
     }
 }
+
+/// How to install a program here: pacman's command on Arch and its family, the given one on
+/// Debian, Ubuntu and theirs (whose names and sources differ).
+pub fn install_hint(arch: &str, debian: &str) -> String {
+    if std::path::Path::new("/usr/bin/pacman").exists() {
+        format!("sudo pacman -S {arch}")
+    } else if std::path::Path::new("/usr/bin/apt").exists() {
+        debian.to_owned()
+    } else {
+        format!("install {arch}")
+    }
+}

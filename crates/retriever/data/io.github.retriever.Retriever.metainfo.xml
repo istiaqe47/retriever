@@ -13,6 +13,9 @@
     file, pause and resume, automatic retries, a queue and a scheduler, videos from web pages,
     torrents, link grabbing, archive extraction and browser integration.</p>
   </description>
+  <url type="homepage">https://github.com/istiaqe47/retriever</url>
+  <url type="bugtracker">https://github.com/istiaqe47/retriever/issues</url>
+  <url type="vcs-browser">https://github.com/istiaqe47/retriever</url>
   <launchable type="desktop-id">io.github.retriever.Retriever.desktop</launchable>
   <content_rating type="oars-1.1"/>
   <branding>
@@ -28,6 +31,7 @@
     <control>touch</control>
   </supports>
   <releases>
+    <release version="1.0.1" date="2026-11-25"/>
     <release version="1.0.0" date="2026-11-23"/>
   </releases>
 </component>

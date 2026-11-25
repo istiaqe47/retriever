@@ -4,7 +4,7 @@ resolver = "3"
 members = ["crates/engine", "crates/ipc", "crates/nmhost", "crates/torrent", "crates/tools", "crates/extract", "crates/retriever"]
 
 [workspace.package]
-version = "1.0.0"
+version = "1.0.1"
 edition = "2024"
 rust-version = "1.95"
 license = "GPL-3.0-or-later"
@@ -12,6 +12,8 @@ authors = ["Ahmed Nefzaoui", "Retriever contributors"]
 publish = false
 
 [workspace.dependencies]
+# Tests only (dev-dependencies).
+tempfile = "3.27.0"
 mdm-engine = { path = "crates/engine" }
 mdm-ipc = { path = "crates/ipc" }
 mdm-torrent = { path = "crates/torrent" }

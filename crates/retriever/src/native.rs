@@ -110,3 +110,9 @@ pub fn shortcuts(window: &adw::ApplicationWindow, groups: &[(&str, &[(&str, &str
         w.present();
     }
 }
+
+/// Dimmed text: libadwaita 1.7 renamed `.dim-label` to `.dimmed`; the name this one knows.
+pub fn dim(w: &impl IsA<gtk::Widget>) {
+    let new = adw::major_version() > 1 || adw::minor_version() >= 7;
+    w.add_css_class(if new { "dimmed" } else { "dim-label" });
+}

@@ -11,12 +11,22 @@ use std::cell::RefCell;
 use std::path::PathBuf;
 use std::rc::Rc;
 
+/// A program: the person's own first (`~/.local/bin`, where `pipx install yt-dlp` puts a current
+/// yt-dlp, often newer than the distribution's), then the PATH, then the usual folders: an app
+/// opened from the app grid may not have the shell's PATH.
 fn which(name: &str) -> Option<PathBuf> {
-    std::env::var_os("PATH").and_then(|paths| {
-        std::env::split_paths(&paths)
-            .map(|d| d.join(name))
-            .find(|p| p.is_file())
-    })
+    use std::os::unix::fs::PermissionsExt;
+    let home = std::env::var_os("HOME").map(PathBuf::from);
+    let path = std::env::var_os("PATH").unwrap_or_default();
+    home.iter()
+        .map(|h| h.join(".local/bin"))
+        .chain(std::env::split_paths(&path))
+        .chain(["/usr/local/bin", "/usr/bin", "/bin"].map(PathBuf::from))
+        .filter(|d| d.is_absolute())
+        .map(|d| d.join(name))
+        .find(|p| {
+            std::fs::metadata(p).is_ok_and(|m| m.is_file() && m.permissions().mode() & 0o111 != 0)
+        })
 }
 
 pub fn ytdlp() -> Option<PathBuf> {
@@ -70,7 +80,7 @@ pub fn dialog(ui: &UiRc, page: Option<String>, extra: Extra) {
 
     let spinner = crate::native::spinner();
     let said = gtk::Label::builder().wrap(true).xalign(0.0).build();
-    said.add_css_class("dim-label");
+    crate::native::dim(&said);
     let state = gtk::Box::builder().spacing(12).visible(false).build();
     state.append(&spinner);
     state.append(&said);
@@ -152,7 +162,7 @@ pub fn dialog(ui: &UiRc, page: Option<String>, extra: Extra) {
             }
             let Some(exe) = ytdlp() else {
                 say(
-                    "yt-dlp isn't installed. Install it with: sudo pacman -S yt-dlp ffmpeg",
+                    &format!("yt-dlp isn't installed. Install it with: {}", crate::model::install_hint("yt-dlp", "pipx install yt-dlp")),
                     false,
                 );
                 return;
@@ -194,9 +204,9 @@ pub fn dialog(ui: &UiRc, page: Option<String>, extra: Extra) {
                         title_row.set_subtitle(&v.title);
                         let mut note = String::new();
                         if v.needs_js_runtime {
-                            note = "More qualities are offered with Deno installed (sudo pacman -S deno)".into();
+                            note = format!("More qualities are offered with Deno installed ({})", crate::model::install_hint("deno", "curl -fsSL https://deno.land/install.sh | sh"));
                         } else if !can_merge {
-                            note = "Picture and sound come apart without ffmpeg (sudo pacman -S ffmpeg)".into();
+                            note = format!("Picture and sound come apart without ffmpeg ({})", crate::model::install_hint("ffmpeg", "sudo apt install ffmpeg"));
                         }
                         say(&note, false);
                         choice.set_visible(true);
